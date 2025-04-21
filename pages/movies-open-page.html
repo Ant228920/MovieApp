@@ -4,7 +4,384 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
-<body>
+<body style="background: aquamarine">
+<header class="page-header">
+    <h1 class="header-title">Movie Platform</h1>
+    <form class="search-form">
+        <label for="search-text" class="search-label">Enter the movie name!</label><br>
+        <input type="text" id="search-text" class="search-input" placeholder="Enter here!">
+        <button type="submit" class="search-button">Enter</button>
+    </form>
 
+    <div class="search-results">
+        <h2 class="search-results__title">Результати пошуку</h2>
+        <div class="search-results__container">
+        </div>
+    </div>
+
+    <nav class="main-nav">
+        <img class="nav-logo" src="../images/logo-icon.svg" alt="StreamVibe logo">
+
+        <ul class="nav-menu">
+            <li><a class="nav-link nav-link--active" href="../pages/home-page.html">Home</a></li>
+            <li><a class="nav-link" href="../pages/movies-shows-page.html">Movies & Shows</a></li>
+            <li><a class="nav-link" href="../pages/support-page.html">Support</a></li>
+            <li><a class="nav-link" href="../pages/subscription-page.html">Subscriptions</a></li>
+        </ul>
+
+        <ul class="nav-actions">
+            <li>
+                <a class="action-button" href="#">
+                    <img class="action-icon" src="../images/search-icon.svg" alt="Search">
+                </a>
+            </li>
+            <li>
+                <a class="action-button" href="#">
+                    <img class="action-icon" src="../images/notification-icon.svg" alt="Notifications">
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="featured-movie" style="background: url('../images/kantara-bg.png') no-repeat">
+        <div class="featured-movie__container">
+            <div class="featured-movie__content">
+                <h3 class="featured-movie__title">Kantara</h3>
+                <div class="featured-movie__description">A fiery young man clashes an unflinching forest officer in a south Indian village where spirituality, fate and folklore rule the lands.</div>
+            </div>
+            <div class="featured-movie__actions">
+                <button class="play-button">
+                    <img src="../images/btn-arrow.svg" alt="">
+                    <span>Play now</span>
+                </button>
+                <div class="action-buttons">
+                    <img class="action-icon" alt="Add to list" src="../images/plus.svg">
+                    <img class="action-icon" alt="Like" src="../images/like-icon.svg">
+                    <img class="action-icon" alt="Volume" src="../images/volume-icon.svg">
+                </div>
+            </div>
+        </div>
+        <div class="slider-controls">
+            <a class="slider-arrow">
+                <img class="arrow-icon" alt="Previous" src="../images/categories-left-arrow.svg">
+            </a>
+
+            <div class="slider-dots">
+                <div class="slider-dot slider-dot--active"></div>
+                <div class="slider-dot"></div>
+                <div class="slider-dot"></div>
+                <div class="slider-dot"></div>
+            </div>
+            <a class="slider-arrow">
+                <img class="arrow-icon" alt="Next" src="../images/categories-right-arrow.svg">
+            </a>
+        </div>
+    </section>
+
+    <section class="movie-details">
+        <div class="details-main">
+            <div class="description-block">
+                <h2 class="section-title">Description</h2>
+                <p class="description-text">A fiery young man clashes with an unflinching forest officer in a south Indian village where spirituality, fate and folklore rule the lands.</p>
+            </div>
+
+            <div class="cast-section">
+                <div class="section-header">
+                    <h3 class="section-subtitle">Cast</h3>
+                    <div class="slider-controls">
+                        <a class="slider-arrow" href="#">
+                            <img class="arrow-icon" alt="Previous" src="../images/arrow-left-description.svg">
+                        </a>
+                        <a class="slider-arrow" href="#">
+                            <img class="arrow-icon" alt="Next" src="../images/arrow-right-description.svg">
+                        </a>
+                    </div>
+                </div>
+                <div class="cast-grid">
+                    <img class="cast-photo" alt="Cast member" src="../images/cast1.svg">
+                    <img class="cast-photo" alt="Cast member" src="../images/cast2.svg">
+                    <img class="cast-photo" alt="Cast member" src="../images/cast3.svg">
+                    <img class="cast-photo" alt="Cast member" src="../images/cast4.svg">
+                    <img class="cast-photo" alt="Cast member" src="../images/cast5.svg">
+                    <img class="cast-photo" alt="Cast member" src="../images/cast6.svg">
+                    <img class="cast-photo" alt="Cast member" src="../images/cast7.svg">
+                    <img class="cast-photo" alt="Cast member" src="../images/cast8.svg">
+                </div>
+            </div>
+
+            <div class="reviews-section">
+                <div class="section-header">
+                    <h3 class="section-subtitle">Reviews</h3>
+                    <button class="review-button">
+                        <img src="../images/plus.svg" alt="Add review">
+                        <span>Add Your Review</span>
+                    </button>
+                </div>
+
+                <div class="reviews-grid">
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="reviewer-info">
+                                <h4 class="reviewer-name">Aniket Roy</h4>
+                                <span class="reviewer-location">From India</span>
+                            </div>
+                            <div class="review-rating">
+                                <div class="stars">
+                                    <img class="star-icon" alt="Full star" src="../images/fullrate-icon.svg">
+                                    <img class="star-icon" alt="Full star" src="../images/fullrate-icon.svg">
+                                    <img class="star-icon" alt="Full star" src="../images/fullrate-icon.svg">
+                                    <img class="star-icon" alt="Full star" src="../images/fullrate-icon.svg">
+                                    <img class="star-icon" alt="Half star" src="../images/halfrate-icon.svg">
+                                </div>
+                                <span class="rating-value">4.5</span>
+                            </div>
+                        </div>
+                        <p class="review-content">This movie was recommended to me by a very dear friend who went for the movie by herself. I went to the cinemas to watch but had a houseful board so couldn't watch it.</p>
+                    </div>
+
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="reviewer-info">
+                                <h4 class="reviewer-name">Swaraj</h4>
+                                <span class="reviewer-location">From India</span>
+                            </div>
+                            <div class="review-rating">
+                                <div class="stars">
+                                    <img class="star-icon" alt="Full star" src="../images/fullrate-icon.svg">
+                                    <img class="star-icon" alt="Full star" src="../images/fullrate-icon.svg">
+                                    <img class="star-icon" alt="Full star" src="../images/fullrate-icon.svg">
+                                    <img class="star-icon" alt="Full star" src="../images/fullrate-icon.svg">
+                                    <img class="star-icon" alt="Full star" src="../images/fullrate-icon.svg">
+                                </div>
+                                <span class="rating-value">5</span>
+                            </div>
+                        </div>
+                        <p class="review-content">A restless king promises his lands to the local tribals in exchange of a stone (Panjurli, a deity of Keradi Village) wherein he finds solace and peace of mind.</p>
+                    </div>
+                </div>
+
+                <div class="slider-controls">
+                    <a class="slider-arrow" href="#">
+                        <img class="arrow-icon" alt="Previous" src="../images/arrow-left-description.svg">
+                    </a>
+                    <div class="slider-dots">
+                        <div class="dot dot--active"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
+                    <a class="slider-arrow" href="#">
+                        <img class="arrow-icon" alt="Next" src="../images/arrow-right-description.svg">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="details-sidebar">
+            <div class="info-card">
+                <div class="info-header">
+                    <img class="info-icon" alt="Calendar" src="../images/calendar-icon.svg">
+                    <h3 class="info-title">Released Year</h3>
+                </div>
+                <div class="info-value">2022</div>
+            </div>
+
+            <div class="info-card">
+                <div class="info-header">
+                    <img class="info-icon" alt="Language" src="../images/language-icon.svg">
+                    <h3 class="info-title">Available Languages</h3>
+                </div>
+                <div class="tags-container">
+                    <span class="language-tag">English</span>
+                    <span class="language-tag">Hindi</span>
+                    <span class="language-tag">Tamil</span>
+                    <span class="language-tag">Telegu</span>
+                    <span class="language-tag">Kannada</span>
+                </div>
+            </div>
+
+            <div class="info-card">
+                <div class="info-header">
+                    <img class="info-icon" alt="Star" src="../images/star-icon.svg">
+                    <h3 class="info-title">Ratings</h3>
+                </div>
+                <div class="ratings-container">
+                    <div class="rating-item">
+                        <h4 class="rating-source">IMDb</h4>
+                        <div class="rating-value-container">
+                            <div class="stars">
+                                <img class="star-icon" alt="Full star" src="../images/fullrate-icon.svg">
+                                <img class="star-icon" alt="Full star" src="../images/fullrate-icon.svg">
+                                <img class="star-icon" alt="Full star" src="../images/fullrate-icon.svg">
+                                <img class="star-icon" alt="Full star" src="../images/fullrate-icon.svg">
+                                <img class="star-icon" alt="Half star" src="../images/halfrate-icon.svg">
+                            </div>
+                            <span class="rating-value">4.5</span>
+                        </div>
+                    </div>
+                    <div class="rating-item">
+                        <h4 class="rating-source">Streamvibe</h4>
+                        <div class="rating-value-container">
+                            <div class="stars">
+                                <img class="star-icon" alt="Full star" src="../images/fullrate-icon.svg">
+                                <img class="star-icon" alt="Full star" src="../images/fullrate-icon.svg">
+                                <img class="star-icon" alt="Full star" src="../images/fullrate-icon.svg">
+                                <img class="star-icon" alt="Full star" src="../images/fullrate-icon.svg">
+                                <img class="star-icon" alt="Empty star" src="../images/nullrate-icon.svg">
+                            </div>
+                            <span class="rating-value">4</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-card">
+                <div class="info-header">
+                    <img class="info-icon" alt="Genres" src="../images/genres-icon.svg">
+                    <h3 class="info-title">Genres</h3>
+                </div>
+                <div class="tags-container">
+                    <span class="genre-tag">Action</span>
+                    <span class="genre-tag">Adventure</span>
+                </div>
+            </div>
+
+            <div class="info-card">
+                <h3 class="info-title">Director</h3>
+                <div class="person-card">
+                    <img class="person-photo" alt="Director" src="../images/cast1.svg">
+                    <div class="person-info">
+                        <h4 class="person-name">Rishab Shetty</h4>
+                        <span class="person-location">From India</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-card">
+                <h3 class="info-title">Music</h3>
+                <div class="person-card">
+                    <img class="person-photo" alt="Composer" src="../images/cast9.svg">
+                    <div class="person-info">
+                        <h4 class="person-name">B. Ajaneesh Loknath</h4>
+                        <span class="person-location">From India</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="trial-section">
+        <div class="trial-background">
+            <div class="movie-grid movie-grid--row1">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/first-movie.svg">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/second-movie.svg">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/third-movie.svg">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/fourth-movie.svg">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/fifth-movie.svg">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/sixth-movie.svg">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/seventh-movie.svg">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/eighth-movie.svg">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/nineth-movie.svg">
+            </div>
+            <div class="movie-grid movie-grid--row2">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/secondrow-first-movie.svg">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/secondrow-second-movie.svg">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/secondrow-third-movie.svg">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/secondrow-fourth-movie.svg">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/secondrow-fifth-movie.svg">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/secondrow-sixth-movie.svg">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/secondrow-seventh-movie.svg">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/secondrow-eighth-movie.svg">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/secondrow-nineth-movie.svg">
+            </div>
+            <div class="movie-grid movie-grid--row3">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/thirdrow-first-movie.svg">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/thirdrow-second-movie.svg">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/thirdrow-third-movie.svg">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/thirdrow-fourth-movie.svg">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/thirdrow-fifth-movie.svg">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/thirdrow-sixth-movie.svg">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/thirdrow-seventh-movie.svg">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/thirdrow-eigtht-movie.svg">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/thirdrow-nineth-movie.svg">
+            </div>
+            <div class="movie-grid movie-grid--row4">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/fourthrow-first-movie.svg">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/fourthrow-second-movie.svg">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/fourthrow-third-movie.svg">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/fourthrow-fourth-movie.svg">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/fourthrow-fifth-movie.svg">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/fourthrow-sixth-movie.svg">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/fourthrow-seventh-movie.svg">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/fourthrow-eighth-movie.svg">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/fourthrow-nineth-movie.svg">
+            </div>
+            <div class="fade-overlay fade-overlay--left"></div>
+        </div>
+        <div class="trial-content">
+            <h2 class="trial-heading">Start your free trial today!</h2>
+            <p class="trial-text">This is a clear and concise call to action that encourages users to sign up for a free trial of StreamVibe.</p>
+        </div>
+        <button class="trial-button">
+            Start a Free Trial
+        </button>
+    </section>
+
+
+</main>
+
+<footer class="page-footer">
+    <div class="footer-content">
+        <div class="footer-section">
+            <h3 class="footer-heading">Home</h3>
+            <ul class="footer-links">
+                <li><a href="#" class="footer-link">Categories</a></li>
+                <li><a href="#" class="footer-link">Devices</a></li>
+                <li><a href="#" class="footer-link">Pricing</a></li>
+                <li><a href="#" class="footer-link">FAQ</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3 class="footer-heading">Movies</h3>
+            <ul class="footer-links">
+                <li><a href="#" class="footer-link">Genres</a></li>
+                <li><a href="#" class="footer-link">Trending</a></li>
+                <li><a href="#" class="footer-link">New Release</a></li>
+                <li><a href="#" class="footer-link">Popular</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3 class="footer-heading">Connect With Us</h3>
+            <div class="social-links">
+                <a href="#" class="social-link" aria-label="Facebook">
+                    <img src="../images/facebook-icon.svg" alt="Facebook">
+                </a>
+                <a href="#" class="social-link" aria-label="Twitter">
+                    <img src="../images/twitter-icon.svg" alt="Twitter">
+                </a>
+                <a href="#" class="social-link" aria-label="LinkedIn">
+                    <img src="../images/linkedin-icon.svg" alt="Linkedin">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="footer-info">
+            <span class="copyright">© 2023 StreamVibe, All Rights Reserved</span>
+            <div class="legal-links">
+                <a href="#" class="legal-link">Terms of Use</a>
+                <span class="divider"></span>
+                <a href="#" class="legal-link">Privacy Policy</a>
+                <span class="divider"></span>
+                <a href="#" class="legal-link">Cookie Policy</a>
+            </div>
+        </div>
+    </div>
+</footer>
 </body>
 </html>

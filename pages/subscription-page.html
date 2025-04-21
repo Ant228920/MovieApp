@@ -4,7 +4,397 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
-<body>
+<body style="background: aquamarine">
+<header>
+    <h1>Movie Platform</h1>
+    <form class="search-form">
+        <label for="search-text">Enter the movie name!</label><br>
+        <input type="text" id="search-text" placeholder="Enter here!">
+        <button type="submit">Enter</button>
+    </form>
+
+
+    <div class="search-results">
+        <h2 class="search-results__title">Результати пошуку</h2>
+        <div class="search-results__container">
+        </div>
+    </div>
+
+
+    <nav class="navbar">
+        <img class="logo-icon" src="../images/logo-icon.svg" alt="logo-icon">
+
+        <ul class="buttons-container">
+            <li><a class = "nav-button active" href="../pages/home-page.html">Home</a></li>
+            <li><a class = "nav-button" href="../pages/movies-shows-page.html">Movies & Shows</a></li>
+            <li><a class = "nav-button" href="../pages/support-page.html">Support</a></li>
+            <li><a class = "nav-button" href="../pages/subscription-page.html">Subscriptions</a></li>
+        </ul>
+
+        <ul class="buttons-container">
+            <li>
+                <a class="icon-button" href="">
+                    <img class="icon" src="../images/search-icon.svg" alt="search-icon">
+                </a>
+            </li>
+            <li>
+                <a class="icon-button" href="">
+                    <img class="icon" src="../images/notification-icon.svg" alt="notification-icon">
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="pricing-section">
+        <div class="section-header">
+            <div class="header-text">
+                <h2 class="section-title">Choose the plan that's right for you</h2>
+                <p class="section-subtitle">Join StreamVibe and select from our flexible subscription options tailored to suit your viewing preferences. Get ready for non-stop entertainment!</p>
+            </div>
+            <div class="toggle-switch">
+                <button class="toggle-option toggle-option--active">
+                    <span>Monthly</span>
+                </button>
+                <button class="toggle-option">
+                    <span>Yearly</span>
+                </button>
+            </div>
+        </div>
+        <div class="pricing-cards">
+            <div class="plan-card">
+                <div class="plan-info">
+                    <h3 class="plan-name">Basic Plan</h3>
+                    <p class="plan-description">Enjoy an extensive library of movies and shows, featuring a range of content, including recently released titles.</p>
+                </div>
+                <div class="plan-price">
+                    <span class="price">$9.99</span>
+                    <span class="billing-cycle">/month</span>
+                </div>
+                <div class="plan-actions">
+                    <button class="secondary-button">
+                        <span>Start Free Trial</span>
+                    </button>
+                    <button class="primary-button">
+                        <span>Choose Plan</span>
+                    </button>
+                </div>
+            </div>
+            <div class="plan-card">
+                <div class="plan-info">
+                    <h3 class="plan-name">Standard Plan</h3>
+                    <p class="plan-description">Access to a wider selection of movies and shows, including most new releases and exclusive content</p>
+                </div>
+                <div class="plan-price">
+                    <span class="price">$12.99</span>
+                    <span class="billing-cycle">/month</span>
+                </div>
+                <div class="plan-actions">
+                    <button class="secondary-button">
+                        <span>Start Free Trial</span>
+                    </button>
+                    <button class="primary-button">
+                        <span>Choose Plan</span>
+                    </button>
+                </div>
+            </div>
+            <div class="plan-card">
+                <div class="plan-info">
+                    <h3 class="plan-name">Premium Plan</h3>
+                    <p class="plan-description">Access to a widest selection of movies and shows, including all new releases and Offline Viewing</p>
+                </div>
+                <div class="plan-price">
+                    <span class="price">$14.99</span>
+                    <span class="billing-cycle">/month</span>
+                </div>
+                <div class="plan-actions">
+                    <button class="secondary-button">
+                        <span>Start Free Trial</span>
+                    </button>
+                    <button class="primary-button">
+                        <span>Choose Plan</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pricing-compare-section">
+        <div class="pricing-header">
+            <h3 class="pricing-title">Compare our plans and find the right one for you</h3>
+            <div class="pricing-description">StreamVibe offers three different plans to fit your needs: Basic, Standard, and Premium. Compare the features of each plan and choose the one that's right for you.</div>
+        </div>
+        <div class="pricing-table">
+            <div class="pricing-row pricing-header-row">
+                <div class="feature-column">
+                    <div class="feature-title">Features</div>
+                </div>
+                <div class="plan-column">
+                    <div class="plan-name">Basic</div>
+                </div>
+                <div class="plan-column highlighted-plan">
+                    <div class="plan-name">Standard</div>
+                    <div class="popular-badge">
+                        <div class="badge-text">Popular</div>
+                    </div>
+                </div>
+                <div class="plan-column">
+                    <div class="plan-name">Premium</div>
+                </div>
+            </div>
+            <div class="pricing-row">
+                <div class="feature-column">
+                    <div class="feature-name">Price</div>
+                </div>
+                <div class="plan-column">
+                    <div class="plan-feature">$9.99/Month</div>
+                </div>
+                <div class="plan-column">
+                    <div class="plan-feature">$12.99/Month</div>
+                </div>
+                <div class="plan-column">
+                    <div class="plan-feature">$14.99/Month</div>
+                </div>
+            </div>
+            <div class="pricing-row">
+                <div class="feature-column">
+                    <div class="feature-name">Content</div>
+                </div>
+                <div class="plan-column">
+                    <div class="plan-feature">Access to a wide selection of movies and shows, including some new releases.</div>
+                </div>
+                <div class="plan-column">
+                    <div class="plan-feature">Access to a wider selection of movies and shows, including most new releases and exclusive content</div>
+                </div>
+                <div class="plan-column">
+                    <div class="plan-feature">Access to a widest selection of movies and shows, including all new releases and Offline Viewing</div>
+                </div>
+            </div>
+            <div class="pricing-row">
+                <div class="feature-column">
+                    <div class="feature-name">Devices</div>
+                </div>
+                <div class="plan-column">
+                    <div class="plan-feature">Watch on one device simultaneously</div>
+                </div>
+                <div class="plan-column">
+                    <div class="plan-feature">Watch on Two device simultaneously</div>
+                </div>
+                <div class="plan-column">
+                    <div class="plan-feature">Watch on Four device simultaneously</div>
+                </div>
+            </div>
+            <div class="pricing-row">
+                <div class="feature-column">
+                    <div class="feature-name">Free Trial</div>
+                </div>
+                <div class="plan-column">
+                    <div class="plan-feature">7 Days</div>
+                </div>
+                <div class="plan-column">
+                    <div class="plan-feature">7 Days</div>
+                </div>
+                <div class="plan-column">
+                    <div class="plan-feature">7 Days</div>
+                </div>
+            </div>
+            <div class="pricing-row">
+                <div class="feature-column">
+                    <div class="feature-name">Cancel Anytime</div>
+                </div>
+                <div class="plan-column">
+                    <div class="plan-feature">Yes</div>
+                </div>
+                <div class="plan-column">
+                    <div class="plan-feature">Yes</div>
+                </div>
+                <div class="plan-column">
+                    <div class="plan-feature">Yes</div>
+                </div>
+            </div>
+            <div class="pricing-row">
+                <div class="feature-column">
+                    <div class="feature-name">HDR</div>
+                </div>
+                <div class="plan-column">
+                    <div class="plan-feature">No</div>
+                </div>
+                <div class="plan-column">
+                    <div class="plan-feature">Yes</div>
+                </div>
+                <div class="plan-column">
+                    <div class="plan-feature">Yes</div>
+                </div>
+            </div>
+            <div class="pricing-row">
+                <div class="feature-column">
+                    <div class="feature-name">Dolby Atmos</div>
+                </div>
+                <div class="plan-column">
+                    <div class="plan-feature">No</div>
+                </div>
+                <div class="plan-column">
+                    <div class="plan-feature">Yes</div>
+                </div>
+                <div class="plan-column">
+                    <div class="plan-feature">Yes</div>
+                </div>
+            </div>
+            <div class="pricing-row">
+                <div class="feature-column">
+                    <div class="feature-name">Ad-Free</div>
+                </div>
+                <div class="plan-column">
+                    <div class="plan-feature">No</div>
+                </div>
+                <div class="plan-column">
+                    <div class="plan-feature">Yes</div>
+                </div>
+                <div class="plan-column">
+                    <div class="plan-feature">Yes</div>
+                </div>
+            </div>
+            <div class="pricing-row">
+                <div class="feature-column">
+                    <div class="feature-name">Offline Viewing</div>
+                </div>
+                <div class="plan-column">
+                    <div class="plan-feature">No</div>
+                </div>
+                <div class="plan-column">
+                    <div class="plan-feature">Yes, for select titles.</div>
+                </div>
+                <div class="plan-column">
+                    <div class="plan-feature">Yes, for all titles.</div>
+                </div>
+            </div>
+            <div class="pricing-row last-row">
+                <div class="feature-column">
+                    <div class="feature-name">Family Sharing</div>
+                </div>
+                <div class="plan-column">
+                    <div class="plan-feature">No</div>
+                </div>
+                <div class="plan-column">
+                    <div class="plan-feature">Yes, up to 5 family members.</div>
+                </div>
+                <div class="plan-column">
+                    <div class="plan-feature">Yes, up to 6 family members.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="trial-section">
+        <div class="trial-background">
+            <div class="movie-grid movie-grid--row1">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/first-movie.svg">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/second-movie.svg">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/third-movie.svg">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/fourth-movie.svg">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/fifth-movie.svg">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/sixth-movie.svg">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/seventh-movie.svg">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/eighth-movie.svg">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/nineth-movie.svg">
+            </div>
+            <div class="movie-grid movie-grid--row2">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/secondrow-first-movie.svg">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/secondrow-second-movie.svg">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/secondrow-third-movie.svg">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/secondrow-fourth-movie.svg">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/secondrow-fifth-movie.svg">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/secondrow-sixth-movie.svg">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/secondrow-seventh-movie.svg">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/secondrow-eighth-movie.svg">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/secondrow-nineth-movie.svg">
+            </div>
+            <div class="movie-grid movie-grid--row3">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/thirdrow-first-movie.svg">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/thirdrow-second-movie.svg">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/thirdrow-third-movie.svg">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/thirdrow-fourth-movie.svg">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/thirdrow-fifth-movie.svg">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/thirdrow-sixth-movie.svg">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/thirdrow-seventh-movie.svg">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/thirdrow-eigtht-movie.svg">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/thirdrow-nineth-movie.svg">
+            </div>
+            <div class="movie-grid movie-grid--row4">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/fourthrow-first-movie.svg">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/fourthrow-second-movie.svg">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/fourthrow-third-movie.svg">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/fourthrow-fourth-movie.svg">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/fourthrow-fifth-movie.svg">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/fourthrow-sixth-movie.svg">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/fourthrow-seventh-movie.svg">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/fourthrow-eighth-movie.svg">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/fourthrow-nineth-movie.svg">
+            </div>
+            <div class="fade-overlay fade-overlay--left"></div>
+        </div>
+        <div class="trial-content">
+            <h2 class="trial-heading">Start your free trial today!</h2>
+            <p class="trial-text">This is a clear and concise call to action that encourages users to sign up for a free trial of StreamVibe.</p>
+        </div>
+        <button class="trial-button">
+            Start a Free Trial
+        </button>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="footer-grid">
+        <div class="footer-section">
+            <h3 class="footer-heading">Home</h3>
+            <ul class="footer-links">
+                <li><a href="#" class="footer-link">Categories</a></li>
+                <li><a href="#" class="footer-link">Devices</a></li>
+                <li><a href="#" class="footer-link">Pricing</a></li>
+                <li><a href="#" class="footer-link">FAQ</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3 class="footer-heading">Movies</h3>
+            <ul class="footer-links">
+                <li><a href="#" class="footer-link">Genres</a></li>
+                <li><a href="#" class="footer-link">Trending</a></li>
+                <li><a href="#" class="footer-link">New Release</a></li>
+                <li><a href="#" class="footer-link">Popular</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3 class="footer-heading">Connect With Us</h3>
+            <div class="social-icons">
+                <a href="#" aria-label="Facebook">
+                    <img src="../images/facebook-icon.svg" alt="Facebook">
+                </a>
+                <a href="#" aria-label="Twitter">
+                    <img src="../images/twitter-icon.svg" alt="Twitter">
+                </a>
+                <a href="#">
+                    <img src="../images/linkedin-icon.svg" alt="Linkedin">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="copyright">
+            <span>© 2023 StreamVibe, All Rights Reserved</span>
+            <div class="legal-links">
+                <a href="#">Terms of Use</a>
+                <div class="line"></div>
+                <a href="#">Privacy Policy</a>
+                <div class="line"></div>
+                <a href="#">Cookie Policy</a>
+            </div>
+        </div>
+    </div>
+</footer>
 
 </body>
 </html>

@@ -5,33 +5,39 @@
     <title>Title</title>
 </head>
 <body style="background-color: aquamarine">
-<header>
-    <h1>Movie Platform</h1>
+<header class="page-header">
+    <h1 class="header-title">Movie Platform</h1>
     <form class="search-form">
-        <label for="search-text">Enter the movie name!</label><br>
-        <input type="text" id="search-text" placeholder="Enter here!">
-        <button type="submit">Enter</button>
+        <label for="search-text" class="search-label">Enter the movie name!</label><br>
+        <input type="text" id="search-text" class="search-input" placeholder="Enter here!">
+        <button type="submit" class="search-button">Enter</button>
     </form>
 
-    <nav class="navbar">
-        <img class="logo-icon" src="../images/logo-icon.svg" alt="logo-icon">
+    <div class="search-results">
+        <h2 class="search-results__title">Результати пошуку</h2>
+        <div class="search-results__container">
+        </div>
+    </div>
 
-        <ul class="buttons-container">
-            <li><a class = "nav-button" href="../pages/home-page.html">Home</a></li>
-            <li><a class = "nav-button active" href="../pages/movies-shows-page.html">Movies & Shows</a></li>
-            <li><a class = "nav-button" href="../pages/support-page.html">Support</a></li>
-            <li><a class = "nav-button" href="../pages/subscription-page.html">Subscriptions</a></li>
+    <nav class="main-nav">
+        <img class="nav-logo" src="../images/logo-icon.svg" alt="StreamVibe logo">
+
+        <ul class="nav-menu">
+            <li><a class="nav-link nav-link--active" href="../pages/home-page.html">Home</a></li>
+            <li><a class="nav-link" href="../pages/movies-shows-page.html">Movies & Shows</a></li>
+            <li><a class="nav-link" href="../pages/support-page.html">Support</a></li>
+            <li><a class="nav-link" href="../pages/subscription-page.html">Subscriptions</a></li>
         </ul>
 
-        <ul class="buttons-container">
+        <ul class="nav-actions">
             <li>
-                <a class="icon-button" href="">
-                    <img class="icon" src="../images/search-icon.svg" alt="search-icon">
+                <a class="action-button" href="#">
+                    <img class="action-icon" src="../images/search-icon.svg" alt="Search">
                 </a>
             </li>
             <li>
-                <a class="icon-button" href="">
-                    <img class="icon" src="../images/notification-icon.svg" alt="notification-icon">
+                <a class="action-button" href="#">
+                    <img class="action-icon" src="../images/notification-icon.svg" alt="Notifications">
                 </a>
             </li>
         </ul>
@@ -39,993 +45,969 @@
 </header>
 
 <main>
-    <section class="container" style="background: url('../images/secondrow-eighth-movie.svg') no-repeat">
-        <div class="sub-container">
-            <div class="text-container">
-                <h3 class="heading">Avengers : Endgame</h3>
-                <div class="paragraph">With the help of remaining allies, the Avengers must assemble once more in order to undo Thanos's actions and undo the chaos to the universe, no matter what consequences may be in store, and no matter who they face... Avenge the fallen.</div>
+    <section class="featured-movie" style="background: url('../images/avengers-bg.png') no-repeat">
+        <div class="featured-movie__container">
+            <div class="featured-movie__content">
+                <h3 class="featured-movie__title">Avengers : Endgame</h3>
+                <div class="featured-movie__description">With the help of remaining allies, the Avengers must assemble once more in order to undo Thanos's actions and undo the chaos to the universe, no matter what consequences may be in store, and no matter who they face... Avenge the fallen.</div>
             </div>
-            <div class="container1">
-                <button class="link-button">
+            <div class="featured-movie__actions">
+                <button class="play-button">
                     <img src="../images/btn-arrow.svg" alt="">
                     <span>Play now</span>
                 </button>
-                <div class="buttons-container">
-                    <img class="button-icon" alt="" src="../images/plus.svg">
-                    <img class="button-icon" alt="" src="../images/like-icon.svg">
-                    <img class="button-icon" alt="" src="../images/volume-icon.svg">
+                <div class="action-buttons">
+                    <img class="action-icon" alt="Add to list" src="../images/plus.svg">
+                    <img class="action-icon" alt="Like" src="../images/like-icon.svg">
+                    <img class="action-icon" alt="Volume" src="../images/volume-icon.svg">
                 </div>
             </div>
         </div>
-        <div class="buttons-container1">
-            <img class="button-icon" alt="" src="../images/categories-left-arrow.svg">
-            <div class="indicators-container">
-                <div class="shape">
-                </div>
-                <div class="shape1">
-                </div>
-                <div class="shape1">
-                </div>
-                <div class="shape1">
-                </div>
+        <div class="slider-controls">
+            <a class="slider-arrow" href="#">
+                <img class="arrow-icon" alt="Previous" src="../images/categories-left-arrow.svg">
+            </a>
+
+            <div class="slider-dots">
+                <div class="slider-dot slider-dot--active"></div>
+                <div class="slider-dot"></div>
+                <div class="slider-dot"></div>
+                <div class="slider-dot"></div>
             </div>
-            <img class="button-icon" alt="" src="../images/categories-right-arrow.svg">
+            <a class="slider-arrow" href="#">
+                <img class="arrow-icon" alt="Next" src="../images/categories-right-arrow.svg">
+            </a>
         </div>
     </section>
-    <section class="movie-genres-section">
-        <div class="sub-container">
-            <div class="text-container">
-                <div class="heading">Movies</div>
-            </div>
-        </div>
-        <div class="sub-container1">
-            <div class="container1">
-                <div class="sub-container2">
-                    <b class="heading1">Our Genres</b>
-                    <div class="buttons-container">
-                        <img class="button-icon" alt="" src="../images/categories-left-arrow.svg">
-                        <div class="indicators-container">
-                            <div class="shape">
-                            </div>
-                            <div class="shape1">
-                            </div>
-                            <div class="shape1">
-                            </div>
-                            <div class="shape1">
-                            </div>
-                        </div>
-                        <img class="button-icon" alt="" src="../images/categories-right-arrow.svg">
-                    </div>
-                </div>
-                <div class="sub-container3">
-                    <div class="card">
-                        <div class="container1">
-                            <div class="image-container">
-                                <img class="image-icon" alt="movie-icon" src="../images/card1-first-movie.svg">
-                                <img class="image-icon" alt="movie-icon" src="../images/card1-second-movie.svg">
-                            </div>
-                            <div class="image-container1">
-                                <img class="image-icon" alt="movie-icon" src="../images/card1-third-movie.svg">
-                                <img class="image-icon" alt="movie-icon" src="../images/card1-fourth-movie.svg">
-                            </div>
-                            <div class="fade-out-bottom">
-                            </div>
-                        </div>
-                        <div class="container2">
-                            <span class="heading1">Action</span>
-                            <img class="icon" alt="movie-icon" src="../images/categories-right-arrow.svg">
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="container1">
-                            <div class="image-container">
-                                <img class="image-icon" alt="movie-icon" src="../images/card2-first-movie.svg">
-                                <img class="image-icon" alt="movie-icon" src="../images/card2-second-movie.svg">
-                            </div>
-                            <div class="image-container1">
-                                <img class="image-icon" alt="movie-icon" src="../images/card2-third-movie.svg">
-                                <img class="image-icon" alt="movie-icon" src="../images/card2-fourth-movie.svg">
-                            </div>
-                            <div class="fade-out-bottom">
-                            </div>
-                        </div>
-                        <div class="container2">
-                            <span class="heading1">Adventure</span>
-                            <img class="icon" alt="movie-icon" src="../images/categories-right-arrow.svg">
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="container1">
-                            <div class="image-container">
-                                <img class="image-icon" alt="movie-icon" src="../images/card3-first-movie.svg">
-                                <img class="image-icon" alt="movie-icon" src="../images/card3-second-movie.svg">
-                            </div>
-                            <div class="image-container1">
-                                <img class="image-icon" alt="movie-icon" src="../images/card3-third-movie.svg">
-                                <img class="image-icon" alt="movie-icon" src="../images/card3-fourth-movie.svg">
-                            </div>
-                            <div class="fade-out-bottom">
-                            </div>
-                        </div>
-                        <div class="container2">
-                            <span class="heading1">Comedy</span>
-                            <img class="icon" alt="movie-icon" src="../images/categories-right-arrow.svg">
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="container1">
-                            <div class="image-container">
-                                <img class="image-icon" alt="movie-icon" src="../images/card4-first-movie.svg">
-                                <img class="image-icon" alt="movie-icon" src="../images/card4-second-movie.svg">
-                            </div>
-                            <div class="image-container1">
-                                <img class="image-icon" alt="movie-icon" src="../images/card4-third-movie.svg">
-                                <img class="image-icon" alt="movie-icon" src="../images/card4-fourth-movie.svg">
-                            </div>
-                            <div class="fade-out-bottom">
-                            </div>
-                        </div>
-                        <div class="container2">
-                            <span class="heading1">Drama</span>
-                            <img class="icon" alt="movie-icon" src="../images/categories-right-arrow.svg">
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="container1">
-                            <div class="image-container">
-                                <img class="image-icon" alt="movie-icon" src="../images/card5-first-movie.svg">
-                                <img class="image-icon" alt="movie-icon" src="../images/card5-second-movie.svg">
-                            </div>
-                            <div class="image-container1">
-                                <img class="image-icon" alt="movie-icon" src="../images/card5-third-movie.svg">
-                                <img class="image-icon" alt="movie-icon" src="../images/card5-fourth-movie.svg">
-                            </div>
-                            <div class="fade-out-bottom">
-                            </div>
-                        </div>
-                        <div class="container2">
-                            <span class="heading1">Horror</span>
-                            <img class="icon" alt="movie-icon" src="../images/categories-right-arrow.svg">
-                        </div>
-                    </div>
-            </div>
-            <div class="container1">
-                <div class="sub-container2">
-                    <b class="heading1">Popular Top 10 In Genres</b>
-                    <div class="buttons-container">
-                        <img class="button-icon" alt="" src="../images/categories-left-arrow.svg">
-                        <div class="indicators-container">
-                            <div class="shape">
-                            </div>
-                            <div class="shape1">
-                            </div>
-                            <div class="shape1">
-                            </div>
-                            <div class="shape1">
-                            </div>
-                        </div>
-                        <img class="button-icon" alt="" src="../images/categories-right-arrow.svg">
-                    </div>
-                </div>
-                <div class="sub-container5">
-                    <div class="card5">
-                        <div class="container13">
-                            <div class="image-container10">
-                                <img class="image-icon20" alt="" src="../images/freedom-icon.svg">
-                                <img class="image-icon20" alt="" src="../images/baetti-icon.svg">
-                            </div>
-                            <div class="image-container11">
-                                <img class="image-icon20" alt="" src="../images/action-icon.svg">
-                                <img class="image-icon20" alt="" src="../images/ironman-icon.svg">
-                            </div>
-                            <div class="fade-out-bottom5">
-                            </div>
-                        </div>
-                        <div class="container14">
-                            <div class="sub-container6">
-                                <div class="container15">
-                                    <span class="heading">Top 10 In</span>
-                                </div>
-                                <span class="heading8">Action</span>
-                            </div>
-                            <img class="icon" alt="" src="../images/categories-right-arrow.svg">
-                        </div>
-                    </div>
-                    <div class="card5">
-                        <div class="container13">
-                            <div class="image-container10">
-                                <img class="image-icon20" alt="" src="../images/card2-first-movie.svg">
-                                <img class="image-icon20" alt="" src="../images/card2-second-movie.svg">
-                            </div>
-                            <div class="image-container11">
-                                <img class="image-icon20" alt="" src="../images/immortal-icon.svg">
-                                <img class="image-icon20" alt="" src="../images/vampires-icon.svg">
-                            </div>
-                            <div class="fade-out-bottom5">
-                            </div>
-                        </div>
-                        <div class="container14">
-                            <div class="sub-container6">
-                                <div class="container15">
-                                    <span class="heading">Top 10 In</span>
-                                </div>
-                                <span class="heading8">Adventure</span>
-                            </div>
-                            <img class="icon" alt="" src="../images/categories-right-arrow.svg">
-                        </div>
-                    </div>
-                    <div class="card5">
-                        <div class="container13">
-                            <div class="image-container10">
-                                <img class="image-icon20" alt="" src="../images/card3-second-movie.svg">
-                                <img class="image-icon20" alt="" src="../images/indiancomedy-icon.svg">
-                            </div>
-                            <div class="image-container11">
-                                <img class="image-icon20" alt="" src="../images/januu-icon.svg">
-                                <img class="image-icon20" alt="" src="../images/maids-icon.svg">
-                            </div>
-                            <div class="fade-out-bottom5">
-                            </div>
-                        </div>
-                        <div class="container14">
-                            <div class="sub-container6">
-                                <div class="container15">
-                                    <span class="heading">Top 10 In</span>
-                                </div>
-                                <span class="heading8">Comedy</span>
-                            </div>
-                            <img class="icon" alt="" src="../images/categories-right-arrow.svg">
-                        </div>
-                    </div>
-                    <div class="card5">
-                        <div class="container13">
-                            <div class="image-container10">
-                                <img class="image-icon20" alt="" src="../images/society-icon.svg">
-                                <img class="image-icon20" alt="" src="../images/secondrow-second-movie.svg">
-                            </div>
-                            <div class="image-container11">
-                                <img class="image-icon20" alt="" src="../images/hole-icon.svg">
-                                <img class="image-icon20" alt="" src="../images/nolan-icon.svg">
-                            </div>
-                            <div class="fade-out-bottom5">
-                            </div>
-                        </div>
-                        <div class="container14">
-                            <div class="sub-container6">
-                                <div class="container15">
-                                    <span class="heading">Top 10 In</span>
-                                </div>
-                                <span class="heading8">Drama</span>
-                            </div>
-                            <img class="icon" alt="" src="../images/categories-right-arrow.svg">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container1">
-                <div class="sub-container2">
-                    <b class="heading1">Trending Now</b>
-                    <div class="buttons-container">
-                        <img class="button-icon" alt="" src="../images/categories-left-arrow.svg">
-                        <div class="indicators-container">
-                            <div class="shape">
-                            </div>
-                            <div class="shape1">
-                            </div>
-                            <div class="shape1">
-                            </div>
-                            <div class="shape1">
-                            </div>
-                        </div>
-                        <img class="button-icon" alt="" src="../images/categories-right-arrow.svg">
-                    </div>
-                </div>
-                <div class="sub-container11">
-                    <div class="card9">
-                        <img class="image-icon36" alt="" src="../images/morbious-icon.svg">
-                        <div class="container26">
-                            <div class="sub-container12">
-                                <img class="icon9" alt="" src="../images/time-icon.svg">
-                                <div class="text4">1h 30min</div>
-                            </div>
-                            <div class="sub-container13">
-                                <img class="icon9" alt="" src="../images/views-icon.svg">
-                                <div class="text4">2K</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card9">
-                        <img class="image-icon36" alt="" src="../images/jaan-icon.svg">
-                        <div class="container26">
-                            <div class="sub-container12">
-                                <img class="icon9" alt="" src="../images/time-icon.svg">
-                                <div class="text4">1h 57min</div>
-                            </div>
-                            <div class="sub-container13">
-                                <img class="icon9" alt="" src="../images/views-icon.svg">
-                                <div class="text4">1.5K</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card9">
-                        <img class="image-icon36" alt="" src="../images/suraj-icon.svg">
-                        <div class="container26">
-                            <div class="sub-container12">
-                                <img class="icon9" alt="" src="../images/time-icon.svg">
-                                <div class="text4">2h 10min</div>
-                            </div>
-                            <div class="sub-container13">
-                                <img class="icon9" alt="" src="../images/views-icon.svg">
-                                <div class="text4">1.8K</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card9">
-                        <img class="image-icon36" alt="" src="../images/pathan-icon.svg">
-                        <div class="container26">
-                            <div class="sub-container12">
-                                <img class="icon9" alt="" src="../images/time-icon.svg">
-                                <div class="text4">2h 20min</div>
-                            </div>
-                            <div class="sub-container13">
-                                <img class="icon9" alt="" src="../images/views-icon.svg">
-                                <div class="text4">3K</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card9">
-                        <img class="image-icon36" alt="" src="../images/thirdrow-sixth-movie.svg">
-                        <div class="container26">
-                            <div class="sub-container12">
-                                <img class="icon9" alt="" src="../images/time-icon.svg">
-                                <div class="text4">1h 42min</div>
-                            </div>
-                            <div class="sub-container13">
-                                <img class="icon9" alt="" src="../images/views-icon.svg">
-                                <div class="text4">5K</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container1">
-                <div class="sub-container2">
-                    <b class="heading1">New Releases</b>
-                    <div class="buttons-container">
-                        <img class="button-icon" alt="" src="../images/categories-left-arrow.svg">
-                        <div class="indicators-container">
-                            <div class="shape">
-                            </div>
-                            <div class="shape1">
-                            </div>
-                            <div class="shape1">
-                            </div>
-                            <div class="shape1">
-                            </div>
-                        </div>
-                        <img class="button-icon" alt="" src="../images/categories-right-arrow.svg">
-                    </div>
-                </div>
-                <div class="sub-container23">
-                    <div class="card9">
-                        <img class="image-icon36" alt="" src="../images/rush-icon.svg">
-                        <div class="container32">
-                            <div class="text14">
-                                <span>Released at </span>
-                                <span class="april-2023">14 April 2023</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card9">
-                        <img class="image-icon36" alt="" src="../images/action-icon.svg">
-                        <div class="container32">
-                            <div class="text14">
-                                <span>Released at </span>
-                                <span class="april-2023">22 April 2023</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card9">
-                        <img class="image-icon36" alt="" src="../images/sincity-icon.svg">
-                        <div class="container32">
-                            <div class="text14">
-                                <span>Released at </span>
-                                <span class="april-2023">13 April 2023</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card9">
-                        <img class="image-icon36" alt="" src="../images/tomorrow-icon.svg">
-                        <div class="container32">
-                            <div class="text14">
-                                <span>Released at </span>
-                                <span class="april-2023">19 April 2023</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card9">
-                        <img class="image-icon36" alt="" src="../images/misfire-icon.svg">
-                        <div class="container32">
-                            <div class="text14">
-                                <span>Released at </span>
-                                <span class="april-2023">11 April 2023</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container1">
-                <div class="sub-container2">
-                    <b class="heading1">Must - Watch Movies</b>
-                    <div class="buttons-container">
-                        <img class="button-icon" alt="" src="../images/categories-left-arrow.svg">
-                        <div class="indicators-container">
-                            <div class="shape">
-                            </div>
-                            <div class="shape1">
-                            </div>
-                            <div class="shape1">
-                            </div>
-                            <div class="shape1">
-                            </div>
-                        </div>
-                        <img class="button-icon" alt="" src="../images/categories-right-arrow.svg">
-                    </div>
-                </div>
-                <div class="sub-container11">
-                    <div class="card19">
-                        <img class="image-icon36" alt="" src="../images/kantar-icon.svg">
-                        <div class="container38">
-                            <div class="sub-container12">
-                                <img class="icon9" alt="" src="../images/time-icon.svg">
-                                <div class="text4">1h 57min</div>
-                            </div>
-                            <div class="sub-container27">
-                                <div class="icon20">
-                                    <img class="shape-icon" alt="" src="../images/fullrate-icon.svg">
-                                    <img class="shape-icon" alt="" src="../images/fullrate-icon.svg">
-                                    <img class="shape-icon" alt="" src="../images/fullrate-icon.svg">
-                                    <img class="shape-icon" alt="" src="../images/fullrate-icon.svg">
-                                    <img class="shape-icon" alt="" src="../images/halfrate-icon.svg">
-                                </div>
-                                <div class="text4">20K</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card20">
-                        <img class="image-icon36" alt="" src="../images/pushpa-icon.svg">
-                        <div class="container38">
-                            <div class="sub-container12">
-                                <img class="icon9" alt="" src="../images/time-icon.svg">
-                                <div class="text4">1h 30min</div>
-                            </div>
-                            <div class="sub-container29">
-                                <div class="icon20">
-                                    <img class="shape-icon" alt="" src="../images/fullrate-icon.svg">
-                                    <img class="shape-icon" alt="" src="../images/fullrate-icon.svg">
-                                    <img class="shape-icon" alt="" src="../images/fullrate-icon.svg">
-                                    <img class="shape-icon" alt="" src="../images/fullrate-icon.svg">
-                                    <img class="shape-icon" alt="" src="../images/nullrate-icon.svg">
-                                </div>
-                                <div class="text4">20K</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card19">
-                        <img class="image-icon36" alt="" src="../images/bladerunner-icon.svg">
-                        <div class="container38">
-                            <div class="sub-container12">
-                                <img class="icon9" alt="" src="../images/time-icon.svg">
-                                <div class="text4">1h 42min</div>
-                            </div>
-                            <div class="sub-container27">
-                                <div class="icon20">
-                                    <img class="shape-icon" alt="" src="../images/fullrate-icon.svg">
-                                    <img class="shape-icon" alt="" src="../images/fullrate-icon.svg">
-                                    <img class="shape-icon" alt="" src="../images/fullrate-icon.svg">
-                                    <img class="shape-icon" alt="" src="../images/fullrate-icon.svg">
-                                    <img class="shape-icon" alt="" src="../images/halfrate-icon.svg">
-                                </div>
-                                <div class="text4">20K</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card19">
-                        <img class="image-icon36" alt="" src="../images/rush-icon.svg">
-                        <div class="container38">
-                            <div class="sub-container12">
-                                <img class="icon9" alt="" src="../images/time-icon.svg">
-                                <div class="text4">2h 10min</div>
-                            </div>
-                            <div class="sub-container27">
-                                <div class="icon20">
-                                    <img class="shape-icon" alt="" src="../images/fullrate-icon.svg">
-                                    <img class="shape-icon" alt="" src="../images/fullrate-icon.svg">
-                                    <img class="shape-icon" alt="" src="../images/fullrate-icon.svg">
-                                    <img class="shape-icon" alt="" src="../images/fullrate-icon.svg">
-                                    <img class="shape-icon" alt="" src="../images/nullrate-icon.svg">
-                                </div>
-                                <div class="text4">20K</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </div>
 
-
+    <section class="movies-section">
+        <div class="section-header">
+            <div class="section-title-container">
+                <h2 class="section-title">Movies</h2>
+            </div>
+        </div>
+        <div class="movies-content">
+            <div class="movies-column">
+                <div class="section-controls">
+                    <div class="section-subheader">
+                        <h3 class="section-subtitle">Our Genres</h3>
+                    </div>
+                    <div class="slider-controls">
+                        <a class="slider-arrow" href="#">
+                            <img class="arrow-icon" alt="Previous" src="../images/categories-left-arrow.svg">
+                        </a>
+                        <div class="slider-dots">
+                            <div class="slider-dot slider-dot--active"></div>
+                            <div class="slider-dot"></div>
+                            <div class="slider-dot"></div>
+                            <div class="slider-dot"></div>
+                        </div>
+                        <a class="slider-arrow" href="#">
+                            <img class="arrow-icon" alt="Next" src="../images/categories-right-arrow.svg">
+                        </a>
+                    </div>
+                </div>
+                <div class="genre-cards">
+                    <div class="genre-card">
+                        <div class="genre-preview">
+                            <div class="preview-row">
+                                <img class="preview-image" alt="Action movie" src="../images/card1-first-movie.svg">
+                                <img class="preview-image" alt="Action movie" src="../images/card1-second-movie.svg">
+                            </div>
+                            <div class="preview-row">
+                                <img class="preview-image" alt="Action movie" src="../images/card1-third-movie.svg">
+                                <img class="preview-image" alt="Action movie" src="../images/card1-fourth-movie.svg">
+                            </div>
+                            <div class="preview-overlay"></div>
+                        </div>
+                        <div class="genre-footer">
+                            <span class="genre-name">Action</span>
+                            <img class="arrow-icon" alt="View more" src="../images/categories-right-arrow.svg">
+                        </div>
+                    </div>
+                    <div class="genre-card">
+                        <div class="genre-preview">
+                            <div class="preview-row">
+                                <img class="preview-image" alt="Adventure movie" src="../images/card2-first-movie.svg">
+                                <img class="preview-image" alt="Adventure movie" src="../images/card2-second-movie.svg">
+                            </div>
+                            <div class="preview-row">
+                                <img class="preview-image" alt="Adventure movie" src="../images/card2-third-movie.svg">
+                                <img class="preview-image" alt="Adventure movie" src="../images/card2-fourth-movie.svg">
+                            </div>
+                            <div class="preview-overlay"></div>
+                        </div>
+                        <div class="genre-footer">
+                            <span class="genre-name">Adventure</span>
+                            <img class="arrow-icon" alt="View more" src="../images/categories-right-arrow.svg">
+                        </div>
+                    </div>
+                    <div class="genre-card">
+                        <div class="genre-preview">
+                            <div class="preview-row">
+                                <img class="preview-image" alt="Comedy movie" src="../images/card3-first-movie.svg">
+                                <img class="preview-image" alt="Comedy movie" src="../images/card3-second-movie.svg">
+                            </div>
+                            <div class="preview-row">
+                                <img class="preview-image" alt="Comedy movie" src="../images/card3-third-movie.svg">
+                                <img class="preview-image" alt="Comedy movie" src="../images/card3-fourth-movie.svg">
+                            </div>
+                            <div class="preview-overlay"></div>
+                        </div>
+                        <div class="genre-footer">
+                            <span class="genre-name">Comedy</span>
+                            <img class="arrow-icon" alt="View more" src="../images/categories-right-arrow.svg">
+                        </div>
+                    </div>
+                    <div class="genre-card">
+                        <div class="genre-preview">
+                            <div class="preview-row">
+                                <img class="preview-image" alt="Drama movie" src="../images/card4-first-movie.svg">
+                                <img class="preview-image" alt="Drama movie" src="../images/card4-second-movie.svg">
+                            </div>
+                            <div class="preview-row">
+                                <img class="preview-image" alt="Drama movie" src="../images/card4-third-movie.svg">
+                                <img class="preview-image" alt="Drama movie" src="../images/card4-fourth-movie.svg">
+                            </div>
+                            <div class="preview-overlay"></div>
+                        </div>
+                        <div class="genre-footer">
+                            <span class="genre-name">Drama</span>
+                            <img class="arrow-icon" alt="View more" src="../images/categories-right-arrow.svg">
+                        </div>
+                    </div>
+                    <div class="genre-card">
+                        <div class="genre-preview">
+                            <div class="preview-row">
+                                <img class="preview-image" alt="Horror movie" src="../images/card5-first-movie.svg">
+                                <img class="preview-image" alt="Horror movie" src="../images/card5-second-movie.svg">
+                            </div>
+                            <div class="preview-row">
+                                <img class="preview-image" alt="Horror movie" src="../images/card5-third-movie.svg">
+                                <img class="preview-image" alt="Horror movie" src="../images/card5-fourth-movie.svg">
+                            </div>
+                            <div class="preview-overlay"></div>
+                        </div>
+                        <div class="genre-footer">
+                            <span class="genre-name">Horror</span>
+                            <img class="arrow-icon" alt="View more" src="../images/categories-right-arrow.svg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="movies-column">
+                <div class="section-controls">
+                    <div class="section-subheader">
+                        <h3 class="section-subtitle">Popular Top 10 In Genres</h3>
+                    </div>
+                    <div class="slider-controls">
+                        <a class="slider-arrow" href="#">
+                            <img class="arrow-icon" alt="Previous" src="../images/categories-left-arrow.svg">
+                        </a>
+                        <div class="slider-dots">
+                            <div class="slider-dot slider-dot--active"></div>
+                            <div class="slider-dot"></div>
+                            <div class="slider-dot"></div>
+                            <div class="slider-dot"></div>
+                        </div>
+                        <a class="slider-arrow" href="#">
+                            <img class="arrow-icon" alt="Next" src="../images/categories-right-arrow.svg">
+                        </a>
+                    </div>
+                </div>
+                <div class="top-genres">
+                    <div class="top-genre-card">
+                        <div class="genre-preview">
+                            <div class="preview-row">
+                                <img class="preview-image" alt="Action movie" src="../images/freedom-icon.svg">
+                                <img class="preview-image" alt="Action movie" src="../images/baetti-icon.svg">
+                            </div>
+                            <div class="preview-row">
+                                <img class="preview-image" alt="Action movie" src="../images/action-icon.svg">
+                                <img class="preview-image" alt="Action movie" src="../images/ironman-icon.svg">
+                            </div>
+                            <div class="preview-overlay"></div>
+                        </div>
+                        <div class="top-genre-footer">
+                            <div class="top-genre-label">
+                                <div class="top-genre-prefix">Top 10 In</div>
+                                <span class="top-genre-name">Action</span>
+                            </div>
+                            <img class="arrow-icon" alt="View more" src="../images/categories-right-arrow.svg">
+                        </div>
+                    </div>
+                    <div class="top-genre-card">
+                        <div class="genre-preview">
+                            <div class="preview-row">
+                                <img class="preview-image" alt="Adventure movie" src="../images/card2-first-movie.svg">
+                                <img class="preview-image" alt="Adventure movie" src="../images/card2-second-movie.svg">
+                            </div>
+                            <div class="preview-row">
+                                <img class="preview-image" alt="Adventure movie" src="../images/immortal-icon.svg">
+                                <img class="preview-image" alt="Adventure movie" src="../images/vampires-icon.svg">
+                            </div>
+                            <div class="preview-overlay"></div>
+                        </div>
+                        <div class="top-genre-footer">
+                            <div class="top-genre-label">
+                                <div class="top-genre-prefix">Top 10 In</div>
+                                <span class="top-genre-name">Adventure</span>
+                            </div>
+                            <img class="arrow-icon" alt="View more" src="../images/categories-right-arrow.svg">
+                        </div>
+                    </div>
+                    <div class="top-genre-card">
+                        <div class="genre-preview">
+                            <div class="preview-row">
+                                <img class="preview-image" alt="Comedy movie" src="../images/card3-second-movie.svg">
+                                <img class="preview-image" alt="Comedy movie" src="../images/indiancomedy-icon.svg">
+                            </div>
+                            <div class="preview-row">
+                                <img class="preview-image" alt="Comedy movie" src="../images/januu-icon.svg">
+                                <img class="preview-image" alt="Comedy movie" src="../images/maids-icon.svg">
+                            </div>
+                            <div class="preview-overlay"></div>
+                        </div>
+                        <div class="top-genre-footer">
+                            <div class="top-genre-label">
+                                <div class="top-genre-prefix">Top 10 In</div>
+                                <span class="top-genre-name">Comedy</span>
+                            </div>
+                            <img class="arrow-icon" alt="View more" src="../images/categories-right-arrow.svg">
+                        </div>
+                    </div>
+                    <div class="top-genre-card">
+                        <div class="genre-preview">
+                            <div class="preview-row">
+                                <img class="preview-image" alt="Drama movie" src="../images/society-icon.svg">
+                                <img class="preview-image" alt="Drama movie" src="../images/secondrow-second-movie.svg">
+                            </div>
+                            <div class="preview-row">
+                                <img class="preview-image" alt="Drama movie" src="../images/hole-icon.svg">
+                                <img class="preview-image" alt="Drama movie" src="../images/nolan-icon.svg">
+                            </div>
+                            <div class="preview-overlay"></div>
+                        </div>
+                        <div class="top-genre-footer">
+                            <div class="top-genre-label">
+                                <div class="top-genre-prefix">Top 10 In</div>
+                                <span class="top-genre-name">Drama</span>
+                            </div>
+                            <img class="arrow-icon" alt="View more" src="../images/categories-right-arrow.svg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="movies-column">
+                <div class="section-controls">
+                    <div class="section-subheader">
+                        <h3 class="section-subtitle">Trending Now</h3>
+                    </div>
+                    <div class="slider-controls">
+                        <a class="slider-arrow" href="#">
+                            <img class="arrow-icon" alt="Previous" src="../images/categories-left-arrow.svg">
+                        </a>
+                        <div class="slider-dots">
+                            <div class="slider-dot slider-dot--active"></div>
+                            <div class="slider-dot"></div>
+                            <div class="slider-dot"></div>
+                            <div class="slider-dot"></div>
+                        </div>
+                        <a class="slider-arrow" href="#">
+                            <img class="arrow-icon" alt="Next" src="../images/categories-right-arrow.svg">
+                        </a>
+                    </div>
+                </div>
+                <div class="trending-movies">
+                    <div class="movie-card">
+                        <img class="movie-poster" alt="Morbious movie" src="../images/morbious-icon.svg">
+                        <div class="movie-meta">
+                            <div class="meta-item">
+                                <img class="meta-icon" alt="Duration" src="../images/time-icon.svg">
+                                <div class="meta-text">1h 30min</div>
+                            </div>
+                            <div class="meta-item">
+                                <img class="meta-icon" alt="Views" src="../images/views-icon.svg">
+                                <div class="meta-text">2K</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie-card">
+                        <img class="movie-poster" alt="Jaan movie" src="../images/jaan-icon.svg">
+                        <div class="movie-meta">
+                            <div class="meta-item">
+                                <img class="meta-icon" alt="Duration" src="../images/time-icon.svg">
+                                <div class="meta-text">1h 57min</div>
+                            </div>
+                            <div class="meta-item">
+                                <img class="meta-icon" alt="Views" src="../images/views-icon.svg">
+                                <div class="meta-text">1.5K</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie-card">
+                        <img class="movie-poster" alt="Suraj movie" src="../images/suraj-icon.svg">
+                        <div class="movie-meta">
+                            <div class="meta-item">
+                                <img class="meta-icon" alt="Duration" src="../images/time-icon.svg">
+                                <div class="meta-text">2h 10min</div>
+                            </div>
+                            <div class="meta-item">
+                                <img class="meta-icon" alt="Views" src="../images/views-icon.svg">
+                                <div class="meta-text">1.8K</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie-card">
+                        <img class="movie-poster" alt="Pathan movie" src="../images/pathan-icon.svg">
+                        <div class="movie-meta">
+                            <div class="meta-item">
+                                <img class="meta-icon" alt="Duration" src="../images/time-icon.svg">
+                                <div class="meta-text">2h 20min</div>
+                            </div>
+                            <div class="meta-item">
+                                <img class="meta-icon" alt="Views" src="../images/views-icon.svg">
+                                <div class="meta-text">3K</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie-card">
+                        <img class="movie-poster" alt="Movie" src="../images/thirdrow-sixth-movie.svg">
+                        <div class="movie-meta">
+                            <div class="meta-item">
+                                <img class="meta-icon" alt="Duration" src="../images/time-icon.svg">
+                                <div class="meta-text">1h 42min</div>
+                            </div>
+                            <div class="meta-item">
+                                <img class="meta-icon" alt="Views" src="../images/views-icon.svg">
+                                <div class="meta-text">5K</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="movies-column">
+                <div class="section-controls">
+                    <div class="section-subheader">
+                        <h3 class="section-subtitle">New Releases</h3>
+                    </div>
+                    <div class="slider-controls">
+                        <a class="slider-arrow" href="#">
+                            <img class="arrow-icon" alt="Previous" src="../images/categories-left-arrow.svg">
+                        </a>
+                        <div class="slider-dots">
+                            <div class="slider-dot slider-dot--active"></div>
+                            <div class="slider-dot"></div>
+                            <div class="slider-dot"></div>
+                            <div class="slider-dot"></div>
+                        </div>
+                        <a class="slider-arrow" href="#">
+                            <img class="arrow-icon" alt="Next" src="../images/categories-right-arrow.svg">
+                        </a>
+                    </div>
+                </div>
+                <div class="new-releases">
+                    <div class="release-card">
+                        <img class="release-poster" alt="Rush movie" src="../images/rush-icon.svg">
+                        <div class="release-date">
+                            <span>Released at </span>
+                            <span class="date">14 April 2023</span>
+                        </div>
+                    </div>
+                    <div class="release-card">
+                        <img class="release-poster" alt="Action movie" src="../images/action-icon.svg">
+                        <div class="release-date">
+                            <span>Released at </span>
+                            <span class="date">22 April 2023</span>
+                        </div>
+                    </div>
+                    <div class="release-card">
+                        <img class="release-poster" alt="Sin City movie" src="../images/sincity-icon.svg">
+                        <div class="release-date">
+                            <span>Released at </span>
+                            <span class="date">13 April 2023</span>
+                        </div>
+                    </div>
+                    <div class="release-card">
+                        <img class="release-poster" alt="Tomorrow movie" src="../images/tomorrow-icon.svg">
+                        <div class="release-date">
+                            <span>Released at </span>
+                            <span class="date">19 April 2023</span>
+                        </div>
+                    </div>
+                    <div class="release-card">
+                        <img class="release-poster" alt="Misfire movie" src="../images/misfire-icon.svg">
+                        <div class="release-date">
+                            <span>Released at </span>
+                            <span class="date">11 April 2023</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="movies-column">
+                <div class="section-controls">
+                    <div class="section-subheader">
+                        <h3 class="section-subtitle">Must - Watch Movies</h3>
+                    </div>
+                    <div class="slider-controls">
+                        <a class="slider-arrow" href="#">
+                            <img class="arrow-icon" alt="Previous" src="../images/categories-left-arrow.svg">
+                        </a>
+                        <div class="slider-dots">
+                            <div class="slider-dot slider-dot--active"></div>
+                            <div class="slider-dot"></div>
+                            <div class="slider-dot"></div>
+                            <div class="slider-dot"></div>
+                        </div>
+                        <a class="slider-arrow" href="#">
+                            <img class="arrow-icon" alt="Next" src="../images/categories-right-arrow.svg">
+                        </a>
+                    </div>
+                </div>
+                <div class="must-watch-movies">
+                    <div class="must-watch-card">
+                        <img class="must-watch-poster" alt="Kantara movie" src="../images/kantar-icon.svg">
+                        <div class="must-watch-meta">
+                            <div class="meta-item">
+                                <img class="meta-icon" alt="Duration" src="../images/time-icon.svg">
+                                <div class="meta-text">1h 57min</div>
+                            </div>
+                            <div class="rating-container">
+                                <div class="rating-stars">
+                                    <img class="star-icon" alt="Full star" src="../images/fullrate-icon.svg">
+                                    <img class="star-icon" alt="Full star" src="../images/fullrate-icon.svg">
+                                    <img class="star-icon" alt="Full star" src="../images/fullrate-icon.svg">
+                                    <img class="star-icon" alt="Full star" src="../images/fullrate-icon.svg">
+                                    <img class="star-icon" alt="Half star" src="../images/halfrate-icon.svg">
+                                </div>
+                                <div class="rating-count">20K</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="must-watch-card">
+                        <img class="must-watch-poster" alt="Pushpa movie" src="../images/pushpa-icon.svg">
+                        <div class="must-watch-meta">
+                            <div class="meta-item">
+                                <img class="meta-icon" alt="Duration" src="../images/time-icon.svg">
+                                <div class="meta-text">1h 30min</div>
+                            </div>
+                            <div class="rating-container">
+                                <div class="rating-stars">
+                                    <img class="star-icon" alt="Full star" src="../images/fullrate-icon.svg">
+                                    <img class="star-icon" alt="Full star" src="../images/fullrate-icon.svg">
+                                    <img class="star-icon" alt="Full star" src="../images/fullrate-icon.svg">
+                                    <img class="star-icon" alt="Full star" src="../images/fullrate-icon.svg">
+                                    <img class="star-icon" alt="Empty star" src="../images/nullrate-icon.svg">
+                                </div>
+                                <div class="rating-count">20K</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="must-watch-card">
+                        <img class="must-watch-poster" alt="Blade Runner movie" src="../images/bladerunner-icon.svg">
+                        <div class="must-watch-meta">
+                            <div class="meta-item">
+                                <img class="meta-icon" alt="Duration" src="../images/time-icon.svg">
+                                <div class="meta-text">1h 42min</div>
+                            </div>
+                            <div class="rating-container">
+                                <div class="rating-stars">
+                                    <img class="star-icon" alt="Full star" src="../images/fullrate-icon.svg">
+                                    <img class="star-icon" alt="Full star" src="../images/fullrate-icon.svg">
+                                    <img class="star-icon" alt="Full star" src="../images/fullrate-icon.svg">
+                                    <img class="star-icon" alt="Full star" src="../images/fullrate-icon.svg">
+                                    <img class="star-icon" alt="Half star" src="../images/halfrate-icon.svg">
+                                </div>
+                                <div class="rating-count">20K</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="must-watch-card">
+                        <img class="must-watch-poster" alt="Rush movie" src="../images/rush-icon.svg">
+                        <div class="must-watch-meta">
+                            <div class="meta-item">
+                                <img class="meta-icon" alt="Duration" src="../images/time-icon.svg">
+                                <div class="meta-text">2h 10min</div>
+                            </div>
+                            <div class="rating-container">
+                                <div class="rating-stars">
+                                    <img class="star-icon" alt="Full star" src="../images/fullrate-icon.svg">
+                                    <img class="star-icon" alt="Full star" src="../images/fullrate-icon.svg">
+                                    <img class="star-icon" alt="Full star" src="../images/fullrate-icon.svg">
+                                    <img class="star-icon" alt="Full star" src="../images/fullrate-icon.svg">
+                                    <img class="star-icon" alt="Empty star" src="../images/nullrate-icon.svg">
+                                </div>
+                                <div class="rating-count">20K</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section class="shows-genres-section">
-        <div class="sub-container">
-            <div class="text-container">
-                <div class="heading">Shows</div>
+    <section class="tv-shows-section">
+        <div class="section-header">
+            <div class="header-content">
+                <h2 class="section-title">Shows</h2>
             </div>
         </div>
-        <div class="sub-container1">
-            <div class="container1">
-                <div class="sub-container2">
-                    <b class="heading1">Our Genres</b>
-                    <div class="buttons-container">
-                        <img class="button-icon" alt="" src="../images/categories-left-arrow.svg">
-                        <div class="indicators-container">
-                            <div class="shape">
-                            </div>
-                            <div class="shape1">
-                            </div>
-                            <div class="shape1">
-                            </div>
-                            <div class="shape1">
-                            </div>
+        <div class="section-content">
+            <div class="content-column">
+                <div class="column-header">
+                    <div class="header-wrapper">
+                        <h3 class="column-title">Our Genres</h3>
+                    </div>
+                    <div class="slider-controls">
+                        <a class="slider-arrow" href="#">
+                            <img class="arrow-icon" alt="Previous" src="../images/categories-left-arrow.svg">
+                        </a>
+                        <div class="slider-dots">
+                            <div class="dot dot--active"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
                         </div>
-                        <img class="button-icon" alt="" src="../images/categories-right-arrow.svg">
+                        <a class="slider-arrow" href="#">
+                            <img class="arrow-icon" alt="Next" src="../images/categories-right-arrow.svg">
+                        </a>
                     </div>
                 </div>
-                <div class="sub-container3">
-                    <div class="card">
-                        <div class="container2">
-                            <div class="image-container">
-                                <img class="image-icon" alt="" src="../images/card1-first-movie.svg">
-                                <img class="image-icon" alt="" src="../images/card1-second-movie.svg">
+                <div class="genre-cards">
+                    <div class="genre-card">
+                        <div class="card-preview">
+                            <div class="preview-row">
+                                <img class="preview-image" alt="Action show" src="../images/card1-first-movie.svg">
+                                <img class="preview-image" alt="Action show" src="../images/card1-second-movie.svg">
                             </div>
-                            <div class="image-container1">
-                                <img class="image-icon" alt="" src="../images/card1-third-movie.svg">
-                                <img class="image-icon" alt="" src="../images/card1-fourth-movie.svg">
+                            <div class="preview-row">
+                                <img class="preview-image" alt="Action show" src="../images/card1-third-movie.svg">
+                                <img class="preview-image" alt="Action show" src="../images/card1-fourth-movie.svg">
                             </div>
-                            <div class="fade-out-bottom">
-                            </div>
+                            <div class="preview-overlay"></div>
                         </div>
-                        <div class="container3">
-                            <div class="heading2">Action</div>
-                            <img class="icon" alt="" src="../images/categories-right-arrow.svg">
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="container2">
-                            <div class="image-container">
-                                <img class="image-icon" alt="" src="../images/card2-first-movie.svg">
-                                <img class="image-icon" alt="" src="../images/card2-second-movie.svg">
-                            </div>
-                            <div class="image-container1">
-                                <img class="image-icon" alt="" src="../images/card2-third-movie.svg">
-                                <img class="image-icon" alt="" src="../images/card2-fourth-movie.svg">
-                            </div>
-                            <div class="fade-out-bottom">
-                            </div>
-                        </div>
-                        <div class="container3">
-                            <div class="heading2">Adventure</div>
-                            <img class="icon" alt="" src="../images/categories-right-arrow.svg">
+                        <div class="card-footer">
+                            <span class="genre-name">Action</span>
+                            <img class="arrow-icon" alt="View more" src="../images/categories-right-arrow.svg">
                         </div>
                     </div>
-                    <div class="card">
-                        <div class="container2">
-                            <div class="image-container">
-                                <img class="image-icon" alt="" src="../images/card3-first-movie.svg">
-                                <img class="image-icon" alt="" src="../images/card3-second-movie.svg">
+                    <div class="genre-card">
+                        <div class="card-preview">
+                            <div class="preview-row">
+                                <img class="preview-image" alt="Adventure show" src="../images/card2-first-movie.svg">
+                                <img class="preview-image" alt="Adventure show" src="../images/card2-second-movie.svg">
                             </div>
-                            <div class="image-container1">
-                                <img class="image-icon" alt="" src="../images/card3-third-movie.svg">
-                                <img class="image-icon" alt="" src="../images/card3-fourth-movie.svg">
+                            <div class="preview-row">
+                                <img class="preview-image" alt="Adventure show" src="../images/card2-third-movie.svg">
+                                <img class="preview-image" alt="Adventure show" src="../images/card2-fourth-movie.svg">
                             </div>
-                            <div class="fade-out-bottom">
-                            </div>
+                            <div class="preview-overlay"></div>
                         </div>
-                        <div class="container3">
-                            <div class="heading2">Comedy</div>
-                            <img class="icon" alt="" src="../images/categories-right-arrow.svg">
-                        </div>
-                    </div>
-                    <div class="card">
-                        <div class="container2">
-                            <div class="image-container">
-                                <img class="image-icon" alt="" src="../images/card4-first-movie.svg">
-                                <img class="image-icon" alt="" src="../images/card4-second-movie.svg">
-                            </div>
-                            <div class="image-container1">
-                                <img class="image-icon" alt="" src="../images/card4-third-movie.svg">
-                                <img class="image-icon" alt="" src="../images/card4-fourth-movie.svg">
-                            </div>
-                            <div class="fade-out-bottom">
-                            </div>
-                        </div>
-                        <div class="container3">
-                            <div class="heading2">Drama</div>
-                            <img class="icon" alt="" src="../images/categories-right-arrow.svg">
+                        <div class="card-footer">
+                            <span class="genre-name">Adventure</span>
+                            <img class="arrow-icon" alt="View more" src="../images/categories-right-arrow.svg">
                         </div>
                     </div>
-                    <div class="card">
-                        <div class="container2">
-                            <div class="image-container">
-                                <img class="image-icon" alt="" src="../images/card5-first-movie.svg">
-                                <img class="image-icon" alt="" src="../images/card5-second-movie.svg">
+                    <div class="genre-card">
+                        <div class="card-preview">
+                            <div class="preview-row">
+                                <img class="preview-image" alt="Comedy show" src="../images/card3-first-movie.svg">
+                                <img class="preview-image" alt="Comedy show" src="../images/card3-second-movie.svg">
                             </div>
-                            <div class="image-container1">
-                                <img class="image-icon" alt="" src="../images/card5-third-movie.svg">
-                                <img class="image-icon" alt="" src="../images/card5-fourth-movie.svg">
+                            <div class="preview-row">
+                                <img class="preview-image" alt="Comedy show" src="../images/card3-third-movie.svg">
+                                <img class="preview-image" alt="Comedy show" src="../images/card3-fourth-movie.svg">
                             </div>
-                            <div class="fade-out-bottom">
-                            </div>
+                            <div class="preview-overlay"></div>
                         </div>
-                        <div class="container3">
-                            <div class="heading2">Horror</div>
-                            <img class="icon" alt="" src="../images/categories-right-arrow.svg">
+                        <div class="card-footer">
+                            <span class="genre-name">Comedy</span>
+                            <img class="arrow-icon" alt="View more" src="../images/categories-right-arrow.svg">
+                        </div>
+                    </div>
+                    <div class="genre-card">
+                        <div class="card-preview">
+                            <div class="preview-row">
+                                <img class="preview-image" alt="Drama show" src="../images/card4-first-movie.svg">
+                                <img class="preview-image" alt="Drama show" src="../images/card4-second-movie.svg">
+                            </div>
+                            <div class="preview-row">
+                                <img class="preview-image" alt="Drama show" src="../images/card4-third-movie.svg">
+                                <img class="preview-image" alt="Drama show" src="../images/card4-fourth-movie.svg">
+                            </div>
+                            <div class="preview-overlay"></div>
+                        </div>
+                        <div class="card-footer">
+                            <span class="genre-name">Drama</span>
+                            <img class="arrow-icon" alt="View more" src="../images/categories-right-arrow.svg">
+                        </div>
+                    </div>
+                    <div class="genre-card">
+                        <div class="card-preview">
+                            <div class="preview-row">
+                                <img class="preview-image" alt="Horror show" src="../images/card5-first-movie.svg">
+                                <img class="preview-image" alt="Horror show" src="../images/card5-second-movie.svg">
+                            </div>
+                            <div class="preview-row">
+                                <img class="preview-image" alt="Horror show" src="../images/card5-third-movie.svg">
+                                <img class="preview-image" alt="Horror show" src="../images/card5-fourth-movie.svg">
+                            </div>
+                            <div class="preview-overlay"></div>
+                        </div>
+                        <div class="card-footer">
+                            <span class="genre-name">Horror</span>
+                            <img class="arrow-icon" alt="View more" src="../images/categories-right-arrow.svg">
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="container1">
-                <div class="sub-container2">
-                    <b class="heading1">Popular Top 10 In Genres</b>
-                    <div class="buttons-container">
-                        <img class="button-icon" alt="" src="../images/categories-left-arrow.svg">
-                        <div class="indicators-container">
-                            <div class="shape">
-                            </div>
-                            <div class="shape1">
-                            </div>
-                            <div class="shape1">
-                            </div>
-                            <div class="shape1">
-                            </div>
+            <div class="content-column">
+                <div class="column-header">
+                    <div class="header-wrapper">
+                        <h3 class="column-title">Popular Top 10 In Genres</h3>
+                    </div>
+                    <div class="slider-controls">
+                        <a class="slider-arrow" href="#">
+                            <img class="arrow-icon" alt="Previous" src="../images/categories-left-arrow.svg">
+                        </a>
+                        <div class="slider-dots">
+                            <div class="dot dot--active"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
                         </div>
-                        <img class="button-icon" alt="" src="../images/categories-right-arrow.svg">
+                        <a class="slider-arrow" href="#">
+                            <img class="arrow-icon" alt="Next" src="../images/categories-right-arrow.svg">
+                        </a>
                     </div>
                 </div>
-                <div class="sub-container5">
-                    <div class="card5">
-                        <div class="container13">
-                            <div class="image-container10">
-                                <img class="image-icon20" alt="" src="../images/marvel-icon.svg">
-                                <img class="image-icon20" alt="" src="../images/wonderwoman-icon.svg">
+                <div class="top-genres">
+                    <div class="top-genre-card">
+                        <div class="card-preview">
+                            <div class="preview-row">
+                                <img class="preview-image" alt="Action show" src="../images/marvel-icon.svg">
+                                <img class="preview-image" alt="Action show" src="../images/wonderwoman-icon.svg">
                             </div>
-                            <div class="image-container11">
-                                <img class="image-icon20" alt="" src="../images/strangerthings-icon.svg">
-                                <img class="image-icon20" alt="" src="../images/arrow-icon.svg">
+                            <div class="preview-row">
+                                <img class="preview-image" alt="Action show" src="../images/strangerthings-icon.svg">
+                                <img class="preview-image" alt="Action show" src="../images/arrow-icon.svg">
                             </div>
-                            <div class="fade-out-bottom5">
-                            </div>
+                            <div class="preview-overlay"></div>
                         </div>
-                        <div class="container14">
-                            <div class="sub-container6">
-                                <div class="container15">
-                                    <div class="heading">Top 10 In</div>
-                                </div>
-                                <div class="heading8">Action</div>
+                        <div class="card-footer">
+                            <div class="genre-label">
+                                <div class="label-prefix">Top 10 In</div>
+                                <span class="genre-name">Action</span>
                             </div>
-                            <img class="icon" alt="" src="../images/categories-right-arrow.svg">
+                            <img class="arrow-icon" alt="View more" src="../images/categories-right-arrow.svg">
                         </div>
                     </div>
-                    <div class="card5">
-                        <div class="container13">
-                            <div class="image-container10">
-                                <img class="image-icon20" alt="" src="../images/card2-first-movie.svg">
-                                <img class="image-icon20" alt="" src="../images/card2-second-movie.svg">
+                    <div class="top-genre-card">
+                        <div class="card-preview">
+                            <div class="preview-row">
+                                <img class="preview-image" alt="Adventure show" src="../images/card2-first-movie.svg">
+                                <img class="preview-image" alt="Adventure show" src="../images/card2-second-movie.svg">
                             </div>
-                            <div class="image-container11">
-                                <img class="image-icon20" alt="" src="../images/immortal-icon.svg">
-                                <img class="image-icon20" alt="" src="../images/vampires-icon.svg">
+                            <div class="preview-row">
+                                <img class="preview-image" alt="Adventure show" src="../images/immortal-icon.svg">
+                                <img class="preview-image" alt="Adventure show" src="../images/vampires-icon.svg">
                             </div>
-                            <div class="fade-out-bottom5">
-                            </div>
+                            <div class="preview-overlay"></div>
                         </div>
-                        <div class="container14">
-                            <div class="sub-container6">
-                                <div class="container15">
-                                    <div class="heading">Top 10 In</div>
-                                </div>
-                                <div class="heading8">Adventure</div>
+                        <div class="card-footer">
+                            <div class="genre-label">
+                                <div class="label-prefix">Top 10 In</div>
+                                <span class="genre-name">Adventure</span>
                             </div>
-                            <img class="icon" alt="" src="../images/categories-right-arrow.svg">
+                            <img class="arrow-icon" alt="View more" src="../images/categories-right-arrow.svg">
                         </div>
                     </div>
-                    <div class="card5">
-                        <div class="container13">
-                            <div class="image-container10">
-                                <img class="image-icon20" alt="" src="../images/card3-second-movie.svg">
-                                <img class="image-icon20" alt="" src="../images/indiancomedy-icon.svg">
+                    <div class="top-genre-card">
+                        <div class="card-preview">
+                            <div class="preview-row">
+                                <img class="preview-image" alt="Comedy show" src="../images/card3-second-movie.svg">
+                                <img class="preview-image" alt="Comedy show" src="../images/indiancomedy-icon.svg">
                             </div>
-                            <div class="image-container11">
-                                <img class="image-icon20" alt="" src="../images/januu-icon.svg">
-                                <img class="image-icon20" alt="" src="../images/maids-icon.svg">
+                            <div class="preview-row">
+                                <img class="preview-image" alt="Comedy show" src="../images/januu-icon.svg">
+                                <img class="preview-image" alt="Comedy show" src="../images/maids-icon.svg">
                             </div>
-                            <div class="fade-out-bottom5">
-                            </div>
+                            <div class="preview-overlay"></div>
                         </div>
-                        <div class="container14">
-                            <div class="sub-container6">
-                                <div class="container15">
-                                    <div class="heading">Top 10 In</div>
-                                </div>
-                                <div class="heading8">Comedy</div>
+                        <div class="card-footer">
+                            <div class="genre-label">
+                                <div class="label-prefix">Top 10 In</div>
+                                <span class="genre-name">Comedy</span>
                             </div>
-                            <img class="icon" alt="" src="../images/categories-right-arrow.svg">
+                            <img class="arrow-icon" alt="View more" src="../images/categories-right-arrow.svg">
                         </div>
                     </div>
-                    <div class="card5">
-                        <div class="container13">
-                            <div class="image-container10">
-                                <img class="image-icon20" alt="" src="../images/society-icon.svg">
-                                <img class="image-icon20" alt="" src="../images/thirdrow-second-movie.svg">
+                    <div class="top-genre-card">
+                        <div class="card-preview">
+                            <div class="preview-row">
+                                <img class="preview-image" alt="Drama show" src="../images/society-icon.svg">
+                                <img class="preview-image" alt="Drama show" src="../images/thirdrow-second-movie.svg">
                             </div>
-                            <div class="image-container11">
-                                <img class="image-icon20" alt="" src="../images/hole-icon.svg">
-                                <img class="image-icon20" alt="" src="../images/nolan-icon.svg">
+                            <div class="preview-row">
+                                <img class="preview-image" alt="Drama show" src="../images/hole-icon.svg">
+                                <img class="preview-image" alt="Drama show" src="../images/nolan-icon.svg">
                             </div>
-                            <div class="fade-out-bottom5">
-                            </div>
+                            <div class="preview-overlay"></div>
                         </div>
-                        <div class="container14">
-                            <div class="sub-container6">
-                                <div class="container15">
-                                    <div class="heading">Top 10 In</div>
-                                </div>
-                                <div class="heading8">Drama</div>
+                        <div class="card-footer">
+                            <div class="genre-label">
+                                <div class="label-prefix">Top 10 In</div>
+                                <span class="genre-name">Drama</span>
                             </div>
-                            <img class="icon" alt="" src="../images/categories-right-arrow.svg">
+                            <img class="arrow-icon" alt="View more" src="../images/categories-right-arrow.svg">
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="container1">
-                <div class="sub-container2">
-                    <b class="heading1">Trending Shows Now</b>
-                    <div class="buttons-container">
-                        <img class="button-icon" alt="" src="Button.svg">
-                        <div class="indicators-container">
-                            <div class="shape">
-                            </div>
-                            <div class="shape1">
-                            </div>
-                            <div class="shape1">
-                            </div>
-                            <div class="shape1">
-                            </div>
+            <div class="content-column">
+                <div class="column-header">
+                    <div class="header-wrapper">
+                        <h3 class="column-title">Trending Shows Now</h3>
+                    </div>
+                    <div class="slider-controls">
+                        <a class="slider-arrow" href="#">
+                            <img class="arrow-icon" alt="Previous" src="../images/categories-left-arrow.svg">
+                        </a>
+                        <div class="slider-dots">
+                            <div class="dot dot--active"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
                         </div>
-                        <img class="button-icon" alt="" src="Button.svg">
+                        <a class="slider-arrow" href="#">
+                            <img class="arrow-icon" alt="Next" src="../images/categories-right-arrow.svg">
+                        </a>
                     </div>
                 </div>
-                <div class="sub-container11">
-                    <div class="card9">
-                        <img class="image-icon36" alt="" src="../images/strangethings2-icon.svg">
-                        <div class="container26">
-                            <div class="sub-container12">
-                                <img class="icon9" alt="" src="../images/time-icon.svg">
-                                <div class="text4">8h 20min</div>
+                <div class="trending-shows">
+                    <div class="show-card">
+                        <img class="show-poster" alt="Stranger Things" src="../images/strangethings2-icon.svg">
+                        <div class="show-meta">
+                            <div class="meta-item">
+                                <img class="meta-icon" alt="Duration" src="../images/time-icon.svg">
+                                <div class="meta-text">8h 20min</div>
                             </div>
-                            <div class="sub-container13">
-                                <img class="icon9" alt="" src="../images/seasons-icon.svg">
-                                <div class="text4">4 Season</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card9">
-                        <img class="image-icon36" alt="" src="../images/moneyheist-icon.svg">
-                        <div class="container26">
-                            <div class="sub-container12">
-                                <img class="icon9" alt="" src="../images/time-icon.svg">
-                                <div class="text4">12h 23min</div>
-                            </div>
-                            <div class="sub-container13">
-                                <img class="icon9" alt="" src="../images/seasons-icon.svg">
-                                <div class="text4">5 Season</div>
+                            <div class="meta-item">
+                                <img class="meta-icon" alt="Seasons" src="../images/seasons-icon.svg">
+                                <div class="meta-text">4 Season</div>
                             </div>
                         </div>
                     </div>
-                    <div class="card9">
-                        <img class="image-icon36" alt="" src="../images/lucifier-icon.svg">
-                        <div class="container26">
-                            <div class="sub-container12">
-                                <img class="icon9" alt="" src="../images/time-icon.svg">
-                                <div class="text4">14h 30min</div>
+                    <div class="show-card">
+                        <img class="show-poster" alt="Money Heist" src="../images/moneyheist-icon.svg">
+                        <div class="show-meta">
+                            <div class="meta-item">
+                                <img class="meta-icon" alt="Duration" src="../images/time-icon.svg">
+                                <div class="meta-text">12h 23min</div>
                             </div>
-                            <div class="sub-container13">
-                                <img class="icon9" alt="" src="../images/seasons-icon.svg">
-                                <div class="text4">3 Season</div>
+                            <div class="meta-item">
+                                <img class="meta-icon" alt="Seasons" src="../images/seasons-icon.svg">
+                                <div class="meta-text">5 Season</div>
                             </div>
                         </div>
                     </div>
-                    <div class="card9">
-                        <img class="image-icon36" alt="" src="../images/grayman-icon.svg">
-                        <div class="container26">
-                            <div class="sub-container12">
-                                <img class="icon9" alt="" src="../images/time-icon.svg">
-                                <div class="text4">7h 40min</div>
+                    <div class="show-card">
+                        <img class="show-poster" alt="Lucifer" src="../images/lucifier-icon.svg">
+                        <div class="show-meta">
+                            <div class="meta-item">
+                                <img class="meta-icon" alt="Duration" src="../images/time-icon.svg">
+                                <div class="meta-text">14h 30min</div>
                             </div>
-                            <div class="sub-container13">
-                                <img class="icon9" alt="" src="../images/seasons-icon.svg">
-                                <div class="text4">2 Season</div>
+                            <div class="meta-item">
+                                <img class="meta-icon" alt="Seasons" src="../images/seasons-icon.svg">
+                                <div class="meta-text">3 Season</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="show-card">
+                        <img class="show-poster" alt="Grey Man" src="../images/grayman-icon.svg">
+                        <div class="show-meta">
+                            <div class="meta-item">
+                                <img class="meta-icon" alt="Duration" src="../images/time-icon.svg">
+                                <div class="meta-text">7h 40min</div>
+                            </div>
+                            <div class="meta-item">
+                                <img class="meta-icon" alt="Seasons" src="../images/seasons-icon.svg">
+                                <div class="meta-text">2 Season</div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="container1">
-                <div class="sub-container2">
-                    <b class="heading1">New Released Shows</b>
-                    <div class="buttons-container">
-                        <img class="button-icon" alt="" src="../images/categories-left-arrow.svg">
-                        <div class="indicators-container">
-                            <div class="shape">
-                            </div>
-                            <div class="shape1">
-                            </div>
-                            <div class="shape1">
-                            </div>
-                            <div class="shape1">
-                            </div>
+            <div class="content-column">
+                <div class="column-header">
+                    <div class="header-wrapper">
+                        <h3 class="column-title">New Released Shows</h3>
+                    </div>
+                    <div class="slider-controls">
+                        <a class="slider-arrow" href="#">
+                            <img class="arrow-icon" alt="Previous" src="../images/categories-left-arrow.svg">
+                        </a>
+                        <div class="slider-dots">
+                            <div class="dot dot--active"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
                         </div>
-                        <img class="button-icon" alt="" src="../images/categories-right-arrow.svg">
+                        <a class="slider-arrow" href="#">
+                            <img class="arrow-icon" alt="Next" src="../images/categories-right-arrow.svg">
+                        </a>
                     </div>
                 </div>
-                <div class="sub-container11">
-                    <div class="card9">
-                        <img class="image-icon36" alt="" src="../images/hightown-icon.svg">
-                        <div class="container26">
-                            <div class="sub-container12">
-                                <img class="icon9" alt="" src="../images/time-icon.svg">
-                                <div class="text4">12h 23min</div>
+                <div class="new-shows">
+                    <div class="show-card">
+                        <img class="show-poster" alt="Hightown" src="../images/hightown-icon.svg">
+                        <div class="show-meta">
+                            <div class="meta-item">
+                                <img class="meta-icon" alt="Duration" src="../images/time-icon.svg">
+                                <div class="meta-text">12h 23min</div>
                             </div>
-                            <div class="sub-container13">
-                                <img class="icon9" alt="" src="../images/seasons-icon.svg">
-                                <div class="text4">5 Season</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card9">
-                        <img class="image-icon36" alt="" src="../images/mirzapur-icon.svg">
-                        <div class="container26">
-                            <div class="sub-container12">
-                                <img class="icon9" alt="" src="../images/time-icon.svg">
-                                <div class="text4">7h 40min</div>
-                            </div>
-                            <div class="sub-container13">
-                                <img class="icon9" alt="" src="../images/seasons-icon.svg">
-                                <div class="text4">2 Season</div>
+                            <div class="meta-item">
+                                <img class="meta-icon" alt="Seasons" src="../images/seasons-icon.svg">
+                                <div class="meta-text">5 Season</div>
                             </div>
                         </div>
                     </div>
-                    <div class="card9">
-                        <img class="image-icon36" alt="" src="../images/shadows-icon.svg">
-                        <div class="container26">
-                            <div class="sub-container12">
-                                <img class="icon9" alt="" src="../images/time-icon.svg">
-                                <div class="text4">8h 20min</div>
+                    <div class="show-card">
+                        <img class="show-poster" alt="Mirzapur" src="../images/mirzapur-icon.svg">
+                        <div class="show-meta">
+                            <div class="meta-item">
+                                <img class="meta-icon" alt="Duration" src="../images/time-icon.svg">
+                                <div class="meta-text">7h 40min</div>
                             </div>
-                            <div class="sub-container13">
-                                <img class="icon9" alt="" src="../images/seasons-icon.svg">
-                                <div class="text4">4 Season</div>
+                            <div class="meta-item">
+                                <img class="meta-icon" alt="Seasons" src="../images/seasons-icon.svg">
+                                <div class="meta-text">2 Season</div>
                             </div>
                         </div>
                     </div>
-                    <div class="card9">
-                        <img class="image-icon36" alt="" src="../images/peaky-icon.svg">
-                        <div class="container26">
-                            <div class="sub-container12">
-                                <img class="icon9" alt="" src="../images/time-icon.svg">
-                                <div class="text4">10h 30min</div>
+                    <div class="show-card">
+                        <img class="show-poster" alt="Shadows" src="../images/shadows-icon.svg">
+                        <div class="show-meta">
+                            <div class="meta-item">
+                                <img class="meta-icon" alt="Duration" src="../images/time-icon.svg">
+                                <div class="meta-text">8h 20min</div>
                             </div>
-                            <div class="sub-container13">
-                                <img class="icon9" alt="" src="../images/seasons-icon.svg">
-                                <div class="text4">3 Season</div>
+                            <div class="meta-item">
+                                <img class="meta-icon" alt="Seasons" src="../images/seasons-icon.svg">
+                                <div class="meta-text">4 Season</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="show-card">
+                        <img class="show-poster" alt="Peaky Blinders" src="../images/peaky-icon.svg">
+                        <div class="show-meta">
+                            <div class="meta-item">
+                                <img class="meta-icon" alt="Duration" src="../images/time-icon.svg">
+                                <div class="meta-text">10h 30min</div>
+                            </div>
+                            <div class="meta-item">
+                                <img class="meta-icon" alt="Seasons" src="../images/seasons-icon.svg">
+                                <div class="meta-text">3 Season</div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="container1">
-                <div class="sub-container2">
-                    <b class="heading1">Must - Watch Shows</b>
-                    <div class="buttons-container">
-                        <img class="button-icon" alt="" src="../images/categories-left-arrow.svg">
-                        <div class="indicators-container">
-                            <div class="shape">
-                            </div>
-                            <div class="shape1">
-                            </div>
-                            <div class="shape1">
-                            </div>
-                            <div class="shape1">
-                            </div>
+            <div class="content-column">
+                <div class="column-header">
+                    <div class="header-wrapper">
+                        <h3 class="column-title">Must - Watch Shows</h3>
+                    </div>
+                    <div class="slider-controls">
+                        <a class="slider-arrow" href="#">
+                            <img class="arrow-icon" alt="Previous" src="../images/categories-left-arrow.svg">
+                        </a>
+                        <div class="slider-dots">
+                            <div class="dot dot--active"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
+                            <div class="dot"></div>
                         </div>
-                        <img class="button-icon" alt="" src="../images/categories-right-arrow.svg">
+                        <a class="slider-arrow" href="#">
+                            <img class="arrow-icon" alt="Next" src="../images/categories-right-arrow.svg">
+                        </a>
                     </div>
                 </div>
-                <div class="sub-container11">
-                    <div class="card17">
-                        <img class="image-icon36" alt="" src="../images/duranga-icon.svg">
-                        <div class="container36">
-                            <div class="sub-container12">
-                                <img class="icon9" alt="" src="../images/time-icon.svg">
-                                <div class="text4">7h 40min</div>
+                <div class="must-watch-shows">
+                    <div class="must-watch-card">
+                        <img class="show-poster" alt="Duranga" src="../images/duranga-icon.svg">
+                        <div class="show-meta">
+                            <div class="meta-item">
+                                <img class="meta-icon" alt="Duration" src="../images/time-icon.svg">
+                                <div class="meta-text">7h 40min</div>
                             </div>
-                            <div class="sub-container33">
-                                <div class="icon26">
-                                    <img class="shape-icon" alt="" src="../images/fullrate-icon.svg">
-                                    <img class="shape-icon" alt="" src="../images/fullrate-icon.svg">
-                                    <img class="shape-icon" alt="" src="../images/fullrate-icon.svg">
-                                    <img class="shape-icon" alt="" src="../images/fullrate-icon.svg">
-                                    <img class="shape-icon" alt="" src="../images/halfrate-icon.svg">
+                            <div class="rating-container">
+                                <div class="rating-stars">
+                                    <img class="star-icon" alt="Full star" src="../images/fullrate-icon.svg">
+                                    <img class="star-icon" alt="Full star" src="../images/fullrate-icon.svg">
+                                    <img class="star-icon" alt="Full star" src="../images/fullrate-icon.svg">
+                                    <img class="star-icon" alt="Full star" src="../images/fullrate-icon.svg">
+                                    <img class="star-icon" alt="Half star" src="../images/halfrate-icon.svg">
                                 </div>
-                                <div class="text4">12K</div>
+                                <div class="rating-count">12K</div>
                             </div>
                         </div>
                     </div>
-                    <div class="card17">
-                        <img class="image-icon36" alt="" src="../images/moneyheist2-icon.svg">
-                        <div class="container36">
-                            <div class="sub-container12">
-                                <img class="icon9" alt="" src="../images/time-icon.svg">
-                                <div class="text4">12h 23min</div>
+                    <div class="must-watch-card">
+                        <img class="show-poster" alt="Money Heist" src="../images/moneyheist2-icon.svg">
+                        <div class="show-meta">
+                            <div class="meta-item">
+                                <img class="meta-icon" alt="Duration" src="../images/time-icon.svg">
+                                <div class="meta-text">12h 23min</div>
                             </div>
-                            <div class="sub-container33">
-                                <div class="icon26">
-                                    <img class="shape-icon" alt="" src="../images/fullrate-icon.svg">
-                                    <img class="shape-icon" alt="" src="../images/fullrate-icon.svg">
-                                    <img class="shape-icon" alt="" src="../images/fullrate-icon.svg">
-                                    <img class="shape-icon" alt="" src="../images/fullrate-icon.svg">
-                                    <img class="shape-icon" alt="" src="../images/fullrate-icon.svg">
+                            <div class="rating-container">
+                                <div class="rating-stars">
+                                    <img class="star-icon" alt="Full star" src="../images/fullrate-icon.svg">
+                                    <img class="star-icon" alt="Full star" src="../images/fullrate-icon.svg">
+                                    <img class="star-icon" alt="Full star" src="../images/fullrate-icon.svg">
+                                    <img class="star-icon" alt="Full star" src="../images/fullrate-icon.svg">
+                                    <img class="star-icon" alt="Full star" src="../images/fullrate-icon.svg">
                                 </div>
-                                <div class="text4">28K</div>
+                                <div class="rating-count">28K</div>
                             </div>
                         </div>
                     </div>
-                    <div class="card19">
-                        <img class="image-icon36" alt="" src="../images/mai-icon.svg">
-                        <div class="container36">
-                            <div class="sub-container12">
-                                <img class="icon9" alt="" src="../images/time-icon.svg">
-                                <div class="text4">10h 30min</div>
+                    <div class="must-watch-card">
+                        <img class="show-poster" alt="Mai" src="../images/mai-icon.svg">
+                        <div class="show-meta">
+                            <div class="meta-item">
+                                <img class="meta-icon" alt="Duration" src="../images/time-icon.svg">
+                                <div class="meta-text">10h 30min</div>
                             </div>
-                            <div class="sub-container37">
-                                <div class="icon26">
-                                    <img class="shape-icon" alt="" src="../images/fullrate-icon.svg">
-                                    <img class="shape-icon" alt="" src="../images/fullrate-icon.svg">
-                                    <img class="shape-icon" alt="" src="../images/fullrate-icon.svg">
-                                    <img class="shape-icon" alt="" src="../images/fullrate-icon.svg">
-                                    <img class="shape-icon" alt="" src="../images/nullrate-icon.svg">
+                            <div class="rating-container">
+                                <div class="rating-stars">
+                                    <img class="star-icon" alt="Full star" src="../images/fullrate-icon.svg">
+                                    <img class="star-icon" alt="Full star" src="../images/fullrate-icon.svg">
+                                    <img class="star-icon" alt="Full star" src="../images/fullrate-icon.svg">
+                                    <img class="star-icon" alt="Full star" src="../images/fullrate-icon.svg">
+                                    <img class="star-icon" alt="Empty star" src="../images/nullrate-icon.svg">
                                 </div>
-                                <div class="text4">2K</div>
+                                <div class="rating-count">2K</div>
                             </div>
                         </div>
                     </div>
-                    <div class="card17">
-                        <img class="image-icon36" alt="" src="../images/strangethings2-icon.svg">
-                        <div class="container36">
-                            <div class="sub-container12">
-                                <img class="icon9" alt="" src="../images/time-icon.svg">
-                                <div class="text4">8h 20min</div>
+                    <div class="must-watch-card">
+                        <img class="show-poster" alt="Stranger Things" src="../images/strangethings2-icon.svg">
+                        <div class="show-meta">
+                            <div class="meta-item">
+                                <img class="meta-icon" alt="Duration" src="../images/time-icon.svg">
+                                <div class="meta-text">8h 20min</div>
                             </div>
-                            <div class="sub-container33">
-                                <div class="icon26">
-                                    <img class="shape-icon" alt="" src="../images/fullrate-icon.svg">
-                                    <img class="shape-icon" alt="" src="../images/fullrate-icon.svg">
-                                    <img class="shape-icon" alt="" src="../images/fullrate-icon.svg">
-                                    <img class="shape-icon" alt="" src="../images/fullrate-icon.svg">
-                                    <img class="shape-icon" alt="" src="../images/halfrate-icon.svg">
+                            <div class="rating-container">
+                                <div class="rating-stars">
+                                    <img class="star-icon" alt="Full star" src="../images/fullrate-icon.svg">
+                                    <img class="star-icon" alt="Full star" src="../images/fullrate-icon.svg">
+                                    <img class="star-icon" alt="Full star" src="../images/fullrate-icon.svg">
+                                    <img class="star-icon" alt="Full star" src="../images/fullrate-icon.svg">
+                                    <img class="star-icon" alt="Half star" src="../images/halfrate-icon.svg">
                                 </div>
-                                <div class="text4">32K</div>
+                                <div class="rating-count">32K</div>
                             </div>
                         </div>
                     </div>
@@ -1036,57 +1018,56 @@
 
 
     <section class="trial-section">
-        <div class="background-images">
-            <div class="image-container">
-                <img class="image-icon" alt="movie-icon" src="../images/first-movie.svg">
-                <img class="image-icon" alt="movie-icon" src="../images/second-movie.svg">
-                <img class="image-icon" alt="movie-icon" src="../images/third-movie.svg">
-                <img class="image-icon" alt="movie-icon" src="../images/fourth-movie.svg">
-                <img class="image-icon" alt="movie-icon" src="../images/fifth-movie.svg">
-                <img class="image-icon" alt="movie-icon" src="../images/sixth-movie.svg">
-                <img class="image-icon" alt="movie-icon" src="../images/seventh-movie.svg">
-                <img class="image-icon" alt="movie-icon" src="../images/eighth-movie.svg">
-                <img class="image-icon" alt="movie-icon" src="../images/nineth-movie.svg">
+        <div class="trial-background">
+            <div class="movie-grid movie-grid--row1">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/first-movie.svg">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/second-movie.svg">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/third-movie.svg">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/fourth-movie.svg">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/fifth-movie.svg">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/sixth-movie.svg">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/seventh-movie.svg">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/eighth-movie.svg">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/nineth-movie.svg">
             </div>
-            <div class="image-container1">
-                <img class="image-icon" alt="movie-icon" src="../images/secondrow-first-movie.svg">
-                <img class="image-icon" alt="movie-icon" src="../images/secondrow-second-movie.svg">
-                <img class="image-icon" alt="movie-icon" src="../images/secondrow-third-movie.svg">
-                <img class="image-icon" alt="movie-icon" src="../images/secondrow-fourth-movie.svg">
-                <img class="image-icon" alt="movie-icon" src="../images/secondrow-fifth-movie.svg">
-                <img class="image-icon" alt="movie-icon" src="../images/secondrow-sixth-movie.svg">
-                <img class="image-icon" alt="movie-icon" src="../images/secondrow-seventh-movie.svg">
-                <img class="image-icon" alt="movie-icon" src="../images/secondrow-eighth-movie.svg">
-                <img class="image-icon" alt="movie-icon" src="../images/secondrow-nineth-movie.svg">
+            <div class="movie-grid movie-grid--row2">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/secondrow-first-movie.svg">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/secondrow-second-movie.svg">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/secondrow-third-movie.svg">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/secondrow-fourth-movie.svg">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/secondrow-fifth-movie.svg">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/secondrow-sixth-movie.svg">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/secondrow-seventh-movie.svg">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/secondrow-eighth-movie.svg">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/secondrow-nineth-movie.svg">
             </div>
-            <div class="image-container2">
-                <img class="image-icon" alt="movie-icon" src="../images/thirdrow-first-movie.svg">
-                <img class="image-icon" alt="movie-icon" src="../images/thirdrow-second-movie.svg">
-                <img class="image-icon" alt="movie-icon" src="../images/thirdrow-third-movie.svg">
-                <img class="image-icon" alt="movie-icon" src="../images/thirdrow-fourth-movie.svg">
-                <img class="image-icon" alt="movie-icon" src="../images/thirdrow-fifth-movie.svg">
-                <img class="image-icon" alt="movie-icon" src="../images/thirdrow-sixth-movie.svg">
-                <img class="image-icon" alt="movie-icon" src="../images/thirdrow-seventh-movie.svg">
-                <img class="image-icon" alt="movie-icon" src="../images/thirdrow-eigtht-movie.svg">
-                <img class="image-icon" alt="movie-icon" src="../images/thirdrow-nineth-movie.svg">
+            <div class="movie-grid movie-grid--row3">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/thirdrow-first-movie.svg">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/thirdrow-second-movie.svg">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/thirdrow-third-movie.svg">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/thirdrow-fourth-movie.svg">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/thirdrow-fifth-movie.svg">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/thirdrow-sixth-movie.svg">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/thirdrow-seventh-movie.svg">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/thirdrow-eigtht-movie.svg">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/thirdrow-nineth-movie.svg">
             </div>
-            <div class="image-container3">
-                <img class="image-icon" alt="movie-icon" src="../images/fourthrow-first-movie.svg">
-                <img class="image-icon" alt="movie-icon" src="../images/fourthrow-second-movie.svg">
-                <img class="image-icon" alt="movie-icon" src="../images/fourthrow-third-movie.svg">
-                <img class="image-icon" alt="movie-icon" src="../images/fourthrow-fourth-movie.svg">
-                <img class="image-icon" alt="movie-icon" src="../images/fourthrow-fifth-movie.svg">
-                <img class="image-icon" alt="movie-icon" src="../images/fourthrow-sixth-movie.svg">
-                <img class="image-icon" alt="movie-icon" src="../images/fourthrow-seventh-movie.svg">
-                <img class="image-icon" alt="movie-icon" src="../images/fourthrow-eighth-movie.svg">
-                <img class="image-icon" alt="movie-icon" src="../images/fourthrow-nineth-movie.svg">
+            <div class="movie-grid movie-grid--row4">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/fourthrow-first-movie.svg">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/fourthrow-second-movie.svg">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/fourthrow-third-movie.svg">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/fourthrow-fourth-movie.svg">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/fourthrow-fifth-movie.svg">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/fourthrow-sixth-movie.svg">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/fourthrow-seventh-movie.svg">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/fourthrow-eighth-movie.svg">
+                <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/fourthrow-nineth-movie.svg">
             </div>
-            <div class="fade-out-left">
-            </div>
+            <div class="fade-overlay fade-overlay--left"></div>
         </div>
-        <div class="trial-text-container">
-            <h3 class="heading">Start your free trial today!</h3>
-            <div class="paragraph">This is a clear and concise call to action that encourages users to sign up for a free trial of StreamVibe.</div>
+        <div class="trial-content">
+            <h2 class="trial-heading">Start your free trial today!</h2>
+            <p class="trial-text">This is a clear and concise call to action that encourages users to sign up for a free trial of StreamVibe.</p>
         </div>
         <button class="trial-button">
             Start a Free Trial
@@ -1096,8 +1077,8 @@
 
 </main>
 
-<footer class="footer">
-    <div class="footer-grid">
+<footer class="page-footer">
+    <div class="footer-content">
         <div class="footer-section">
             <h3 class="footer-heading">Home</h3>
             <ul class="footer-links">
@@ -1120,14 +1101,14 @@
 
         <div class="footer-section">
             <h3 class="footer-heading">Connect With Us</h3>
-            <div class="social-icons">
-                <a href="#" aria-label="Facebook">
+            <div class="social-links">
+                <a href="#" class="social-link" aria-label="Facebook">
                     <img src="../images/facebook-icon.svg" alt="Facebook">
                 </a>
-                <a href="#" aria-label="Twitter">
+                <a href="#" class="social-link" aria-label="Twitter">
                     <img src="../images/twitter-icon.svg" alt="Twitter">
                 </a>
-                <a href="#">
+                <a href="#" class="social-link" aria-label="LinkedIn">
                     <img src="../images/linkedin-icon.svg" alt="Linkedin">
                 </a>
             </div>
@@ -1135,14 +1116,14 @@
     </div>
 
     <div class="footer-bottom">
-        <div class="copyright">
-            <span>© 2023 StreamVibe, All Rights Reserved</span>
+        <div class="footer-info">
+            <span class="copyright">© 2023 StreamVibe, All Rights Reserved</span>
             <div class="legal-links">
-                <a href="#">Terms of Use</a>
-                <div class="line"></div>
-                <a href="#">Privacy Policy</a>
-                <div class="line"></div>
-                <a href="#">Cookie Policy</a>
+                <a href="#" class="legal-link">Terms of Use</a>
+                <span class="divider"></span>
+                <a href="#" class="legal-link">Privacy Policy</a>
+                <span class="divider"></span>
+                <a href="#" class="legal-link">Cookie Policy</a>
             </div>
         </div>
     </div>
