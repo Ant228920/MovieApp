@@ -4,24 +4,27 @@
     <meta charset="UTF-8">
     <title>StreamVibe - Movie Streaming Platform</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 </head>
-<body style="background: aquamarine">
+<body>
 <header class="page-header">
     <h1 class="header-title">Movie Platform</h1>
-    <form class="search-form">
+    <form class="search-form" method="post" action="">
         <label for="search-text" class="search-label">Enter the movie name!</label><br>
         <input type="text" id="search-text" class="search-input" placeholder="Enter here!">
         <button type="submit" class="search-button">Enter</button>
     </form>
 
     <div class="search-results">
-        <h2 class="search-results__title">Результати пошуку</h2>
+        <h2 class="search-results__title">Результати пошуку:</h2>
         <div class="search-results__container">
         </div>
     </div>
 
     <nav class="main-nav">
-        <img class="nav-logo" src="../images/logo-icon.svg" alt="StreamVibe logo">
+        <img class="nav-logo" src="../images/logo-icon2.svg" alt="StreamVibe logo">
 
         <ul class="nav-menu">
             <li><a class="nav-link nav-link--active" href="../pages/home-page.html">Home</a></li>
@@ -92,10 +95,11 @@
                 <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/fourthrow-eighth-movie.svg">
                 <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/fourthrow-nineth-movie.svg">
             </div>
+        </div>
             <img class="hero-background" alt="Featured movie" src="../images/background-movie.png">
             <div class="fade-overlay fade-overlay--top"></div>
             <div class="fade-overlay fade-overlay--bottom"></div>
-            <img class="hero-design" alt="Abstract design" src="../images/AbstractDesign.svg">
+            <img class="hero-design" alt="Abstract design" src="../images/abstractpng.png">
             <div class="hero-content">
                 <div class="hero-text">
                     <h2 class="hero-heading">The Best Streaming Experience</h2>
@@ -106,7 +110,6 @@
                     <span>Start Watching Now</span>
                 </button>
             </div>
-        </div>
     </section>
 
     <section class="categories-section">
