@@ -3,24 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="../css/style-movies&shows.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 </head>
-<body style="background-color: aquamarine">
+<body>
 <header class="page-header">
     <h1 class="header-title">Movie Platform</h1>
-    <form class="search-form">
+    <form class="search-form" method="post" action="">
         <label for="search-text" class="search-label">Enter the movie name!</label><br>
         <input type="text" id="search-text" class="search-input" placeholder="Enter here!">
         <button type="submit" class="search-button">Enter</button>
     </form>
 
     <div class="search-results">
-        <h2 class="search-results__title">Результати пошуку</h2>
+        <h2 class="search-results__title">Результати пошуку:</h2>
         <div class="search-results__container">
         </div>
     </div>
 
     <nav class="main-nav">
-        <img class="nav-logo" src="../images/logo-icon.svg" alt="StreamVibe logo">
+        <img class="nav-logo" src="../images/logo-icon2.svg" alt="StreamVibe logo">
 
         <ul class="nav-menu">
             <li><a class="nav-link nav-link--active" href="../pages/home-page.html">Home</a></li>
@@ -45,7 +49,7 @@
 </header>
 
 <main>
-    <section class="featured-movie" style="background: url('../images/avengers-bg.png') no-repeat">
+    <section class="featured-movie">
         <div class="featured-movie__container">
             <div class="featured-movie__content">
                 <h3 class="featured-movie__title">Avengers : Endgame</h3>

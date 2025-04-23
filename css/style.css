@@ -153,6 +153,9 @@ body{
 
 /*Main */
 
+main{
+    padding: 0 160px;
+}
 /*Hero*/
 .hero-section{
     display: flex;
@@ -515,7 +518,7 @@ body{
     color: #999999;
 }
 
-.action-button{
+.ask-button{
     align-self: flex-end;
     border-radius: 8px;
     background-color: #e50000;
@@ -526,7 +529,7 @@ body{
     font-size: 18px;
     height: fit-content;
 }
-.action-button span{
+.ask-button span{
     color: #fff;
     position: relative;
     line-height: 150%;
