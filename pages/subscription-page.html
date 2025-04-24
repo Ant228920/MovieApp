@@ -4,42 +4,40 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
-<body style="background: aquamarine">
-<header>
-    <h1>Movie Platform</h1>
-    <form class="search-form">
-        <label for="search-text">Enter the movie name!</label><br>
-        <input type="text" id="search-text" placeholder="Enter here!">
-        <button type="submit">Enter</button>
+<body>
+<header class="page-header">
+    <h1 class="header-title">Movie Platform</h1>
+    <form class="search-form" method="post" action="">
+        <label for="search-text" class="search-label">Enter the movie name!</label><br>
+        <input type="text" id="search-text" class="search-input" placeholder="Enter here!">
+        <button type="submit" class="search-button">Enter</button>
     </form>
 
-
     <div class="search-results">
-        <h2 class="search-results__title">Результати пошуку</h2>
+        <h2 class="search-results__title">Результати пошуку:</h2>
         <div class="search-results__container">
         </div>
     </div>
 
+    <nav class="main-nav">
+        <img class="nav-logo" src="../images/logo-icon2.svg" alt="StreamVibe logo">
 
-    <nav class="navbar">
-        <img class="logo-icon" src="../images/logo-icon.svg" alt="logo-icon">
-
-        <ul class="buttons-container">
-            <li><a class = "nav-button active" href="../pages/home-page.html">Home</a></li>
-            <li><a class = "nav-button" href="../pages/movies-shows-page.html">Movies & Shows</a></li>
-            <li><a class = "nav-button" href="../pages/support-page.html">Support</a></li>
-            <li><a class = "nav-button" href="../pages/subscription-page.html">Subscriptions</a></li>
+        <ul class="nav-menu">
+            <li><a class="nav-link nav-link--active" href="../pages/home-page.html">Home</a></li>
+            <li><a class="nav-link" href="../pages/movies-shows-page.html">Movies & Shows</a></li>
+            <li><a class="nav-link" href="../pages/support-page.html">Support</a></li>
+            <li><a class="nav-link" href="../pages/subscription-page.html">Subscriptions</a></li>
         </ul>
 
-        <ul class="buttons-container">
+        <ul class="nav-actions">
             <li>
-                <a class="icon-button" href="">
-                    <img class="icon" src="../images/search-icon.svg" alt="search-icon">
+                <a class="action-button" href="#">
+                    <img class="action-icon" src="../images/search-icon.svg" alt="Search">
                 </a>
             </li>
             <li>
-                <a class="icon-button" href="">
-                    <img class="icon" src="../images/notification-icon.svg" alt="notification-icon">
+                <a class="action-button" href="#">
+                    <img class="action-icon" src="../images/notification-icon.svg" alt="Notifications">
                 </a>
             </li>
         </ul>

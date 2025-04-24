@@ -3,43 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="../css/style-shows-open.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 </head>
-<body style="background: aquamarine">
-<header>
-    <h1>Movie Platform</h1>
-    <form class="search-form">
-        <label for="search-text">Enter the movie name!</label><br>
-        <input type="text" id="search-text" placeholder="Enter here!">
-        <button type="submit">Enter</button>
+<body>
+<header class="page-header">
+    <h1 class="header-title">Movie Platform</h1>
+    <form class="search-form" method="post" action="">
+        <label for="search-text" class="search-label">Enter the movie name!</label><br>
+        <input type="text" id="search-text" class="search-input" placeholder="Enter here!">
+        <button type="submit" class="search-button">Enter</button>
     </form>
 
-
     <div class="search-results">
-        <h2 class="search-results__title">Результати пошуку</h2>
+        <h2 class="search-results__title">Результати пошуку:</h2>
         <div class="search-results__container">
         </div>
     </div>
 
+    <nav class="main-nav">
+        <img class="nav-logo" src="../images/logo-icon2.svg" alt="StreamVibe logo">
 
-    <nav class="navbar">
-        <img class="logo-icon" src="../images/logo-icon.svg" alt="logo-icon">
-
-        <ul class="buttons-container">
-            <li><a class = "nav-button active" href="../pages/home-page.html">Home</a></li>
-            <li><a class = "nav-button" href="../pages/movies-shows-page.html">Movies & Shows</a></li>
-            <li><a class = "nav-button" href="../pages/support-page.html">Support</a></li>
-            <li><a class = "nav-button" href="../pages/subscription-page.html">Subscriptions</a></li>
+        <ul class="nav-menu">
+            <li><a class="nav-link nav-link--active" href="../pages/home-page.html">Home</a></li>
+            <li><a class="nav-link" href="../pages/movies-shows-page.html">Movies & Shows</a></li>
+            <li><a class="nav-link" href="../pages/support-page.html">Support</a></li>
+            <li><a class="nav-link" href="../pages/subscription-page.html">Subscriptions</a></li>
         </ul>
 
-        <ul class="buttons-container">
+        <ul class="nav-actions">
             <li>
-                <a class="icon-button" href="#">
-                    <img class="icon" src="../images/search-icon.svg" alt="search-icon">
+                <a class="action-button" href="#">
+                    <img class="action-icon" src="../images/search-icon.svg" alt="Search">
                 </a>
             </li>
             <li>
-                <a class="icon-button" href="#">
-                    <img class="icon" src="../images/notification-icon.svg" alt="notification-icon">
+                <a class="action-button" href="#">
+                    <img class="action-icon" src="../images/notification-icon.svg" alt="Notifications">
                 </a>
             </li>
         </ul>
@@ -47,7 +49,7 @@
 </header>
 
 <main>
-    <section class="featured-movie" style="background: url('../images/strangerthings-bg.png') no-repeat">
+    <section class="featured-movie">
         <div class="featured-movie__container">
             <div class="featured-movie__content">
                 <h3 class="featured-movie__title">Stranger Things</h3>
@@ -65,21 +67,6 @@
                 </div>
             </div>
         </div>
-        <div class="slider-controls">
-            <a class="slider-arrow" href="#">
-                <img class="arrow-icon" alt="Previous" src="../images/categories-left-arrow.svg">
-            </a>
-
-            <div class="slider-dots">
-                <div class="slider-dot slider-dot--active"></div>
-                <div class="slider-dot"></div>
-                <div class="slider-dot"></div>
-                <div class="slider-dot"></div>
-            </div>
-            <a class="slider-arrow" href="#">
-                <img class="arrow-icon" alt="Next" src="../images/categories-right-arrow.svg">
-            </a>
-        </div>
     </section>
 
     <section class="tv-show-details">
@@ -88,15 +75,13 @@
                 <h2 class="section-title">Seasons and Episodes</h2>
                 <div class="seasons-list">
                     <div class="season-item">
-                        <div class="season-header">
-                            <div class="season-info">
-                                <h3 class="season-title">Season 01</h3>
-                                <span class="episode-count">9 Episodes</span>
-                            </div>
-                            <a class="toggle-button" href="#">
-                                <img class="toggle-icon" alt="Expand season" src="../images/arrow-down.svg">
-                            </a>
+                        <div class="season-info">
+                            <h3 class="season-title">Season 01</h3>
+                            <span class="episode-count">9 Episodes</span>
                         </div>
+                        <a class="toggle-button" href="#">
+                            <img class="toggle-icon" alt="Expand season" src="../images/arrow-down.svg">
+                        </a>
                     </div>
 
                     <div class="season-item season-item--expanded">
@@ -210,15 +195,13 @@
                     </div>
                 </div>
             </div>
-
-            <div class="show-description">
-                <h3 class="description-title">Description</h3>
+            <div class="description-block">
+                <h2 class="section-title">Description</h2>
                 <p class="description-text">When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces and one strange little girl.</p>
             </div>
-
             <div class="cast-section">
                 <div class="section-header">
-                    <h3 class="section-title">Cast</h3>
+                    <h3 class="section-subtitle">Cast</h3>
                     <div class="slider-controls">
                         <a class="slider-arrow" href="#">
                             <img class="arrow-icon" alt="Previous" src="../images/arrow-left-description.svg">
@@ -229,27 +212,26 @@
                     </div>
                 </div>
                 <div class="cast-grid">
-                    <img class="cast-member" alt="Cast member" src="../images/cast1-strange.svg">
-                    <img class="cast-member" alt="Cast member" src="../images/cast2-strange.svg">
-                    <img class="cast-member" alt="Cast member" src="../images/cast3-strange.svg">
-                    <img class="cast-member" alt="Cast member" src="../images/cast4-strange.svg">
-                    <img class="cast-member" alt="Cast member" src="../images/cast5-strange.svg">
-                    <img class="cast-member" alt="Cast member" src="../images/cast6-strange.svg">
-                    <img class="cast-member" alt="Cast member" src="../images/cast7-strange.svg">
-                    <img class="cast-member" alt="Cast member" src="../images/cast8-strange.svg">
+                    <img class="cast-photo" alt="Cast member" src="../images/cast1-strange.svg">
+                    <img class="cast-photo" alt="Cast member" src="../images/cast2-strange.svg">
+                    <img class="cast-photo" alt="Cast member" src="../images/cast3-strange.svg">
+                    <img class="cast-photo" alt="Cast member" src="../images/cast4-strange.svg">
+                    <img class="cast-photo" alt="Cast member" src="../images/cast5-strange.svg">
+                    <img class="cast-photo" alt="Cast member" src="../images/cast6-strange.svg">
+                    <img class="cast-photo" alt="Cast member" src="../images/cast7-strange.svg">
+                    <img class="cast-photo" alt="Cast member" src="../images/cast8-strange.svg">
                 </div>
             </div>
-
             <div class="reviews-section">
-                <div class="section-header">
-                    <h3 class="section-title">Reviews</h3>
-                    <button class="add-review-button">
-                        <img class="plus-icon" alt="Add review" src="../images/plus.svg">
+                <div class="section-header-reviews">
+                    <h3 class="section-subtitle">Reviews</h3>
+                    <button class="review-button">
+                        <img src="../images/plus.svg" alt="Add review">
                         <span>Add Your Review</span>
                     </button>
                 </div>
 
-                <div class="reviews-list">
+                <div class="reviews-grid">
                     <div class="review-card">
                         <div class="review-header">
                             <div class="reviewer-info">
@@ -257,7 +239,7 @@
                                 <span class="reviewer-location">From India</span>
                             </div>
                             <div class="review-rating">
-                                <div class="star-rating">
+                                <div class="stars">
                                     <img class="star-icon" alt="Full star" src="../images/fullrate-icon.svg">
                                     <img class="star-icon" alt="Full star" src="../images/fullrate-icon.svg">
                                     <img class="star-icon" alt="Full star" src="../images/fullrate-icon.svg">
@@ -267,7 +249,7 @@
                                 <span class="rating-value">4.5</span>
                             </div>
                         </div>
-                        <p class="review-text">This movie was recommended to me by a very dear friend who went for the movie by herself. I went to the cinemas to watch but had a houseful board so couldn't watch it.</p>
+                        <p class="review-content">This movie was recommended to me by a very dear friend who went for the movie by herself. I went to the cinemas to watch but had a houseful board so couldn't watch it.</p>
                     </div>
 
                     <div class="review-card">
@@ -277,7 +259,7 @@
                                 <span class="reviewer-location">From India</span>
                             </div>
                             <div class="review-rating">
-                                <div class="star-rating">
+                                <div class="stars">
                                     <img class="star-icon" alt="Full star" src="../images/fullrate-icon.svg">
                                     <img class="star-icon" alt="Full star" src="../images/fullrate-icon.svg">
                                     <img class="star-icon" alt="Full star" src="../images/fullrate-icon.svg">
@@ -287,7 +269,7 @@
                                 <span class="rating-value">5</span>
                             </div>
                         </div>
-                        <p class="review-text">A restless king promises his lands to the local tribals in exchange of a stone (Panjurli, a deity of Keradi Village) wherein he finds solace and peace of mind.</p>
+                        <p class="review-content">A restless king promises his lands to the local tribals in exchange of a stone (Panjurli, a deity of Keradi Village) wherein he finds solace and peace of mind.</p>
                     </div>
                 </div>
 
@@ -308,7 +290,7 @@
             </div>
         </div>
 
-        <div class="sidebar">
+        <div class="details-sidebar">
             <div class="info-card">
                 <div class="info-header">
                     <img class="info-icon" alt="Calendar" src="../images/calendar-icon.svg">
@@ -340,7 +322,7 @@
                     <div class="rating-item">
                         <h4 class="rating-source">IMDb</h4>
                         <div class="rating-value-container">
-                            <div class="star-rating">
+                            <div class="stars">
                                 <img class="star-icon" alt="Full star" src="../images/fullrate-icon.svg">
                                 <img class="star-icon" alt="Full star" src="../images/fullrate-icon.svg">
                                 <img class="star-icon" alt="Full star" src="../images/fullrate-icon.svg">
@@ -353,7 +335,7 @@
                     <div class="rating-item">
                         <h4 class="rating-source">Streamvibe</h4>
                         <div class="rating-value-container">
-                            <div class="star-rating">
+                            <div class="stars">
                                 <img class="star-icon" alt="Full star" src="../images/fullrate-icon.svg">
                                 <img class="star-icon" alt="Full star" src="../images/fullrate-icon.svg">
                                 <img class="star-icon" alt="Full star" src="../images/fullrate-icon.svg">
@@ -400,11 +382,13 @@
                 </div>
             </div>
         </div>
+
+
     </section>
 
     <section class="trial-section">
         <div class="trial-background">
-            <div class="movie-grid movie-grid--row1">
+            <div class="image-container">
                 <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/first-movie.svg">
                 <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/second-movie.svg">
                 <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/third-movie.svg">
@@ -415,7 +399,7 @@
                 <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/eighth-movie.svg">
                 <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/nineth-movie.svg">
             </div>
-            <div class="movie-grid movie-grid--row2">
+            <div class="image-container">
                 <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/secondrow-first-movie.svg">
                 <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/secondrow-second-movie.svg">
                 <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/secondrow-third-movie.svg">
@@ -426,7 +410,7 @@
                 <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/secondrow-eighth-movie.svg">
                 <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/secondrow-nineth-movie.svg">
             </div>
-            <div class="movie-grid movie-grid--row3">
+            <div class="image-container">
                 <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/thirdrow-first-movie.svg">
                 <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/thirdrow-second-movie.svg">
                 <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/thirdrow-third-movie.svg">
@@ -437,7 +421,7 @@
                 <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/thirdrow-eigtht-movie.svg">
                 <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/thirdrow-nineth-movie.svg">
             </div>
-            <div class="movie-grid movie-grid--row4">
+            <div class="image-container">
                 <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/fourthrow-first-movie.svg">
                 <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/fourthrow-second-movie.svg">
                 <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/fourthrow-third-movie.svg">
@@ -454,16 +438,14 @@
             <h2 class="trial-heading">Start your free trial today!</h2>
             <p class="trial-text">This is a clear and concise call to action that encourages users to sign up for a free trial of StreamVibe.</p>
         </div>
-        <button class="trial-button">
-            Start a Free Trial
-        </button>
+        <button class="trial-button">Start a Free Trial</button>
     </section>
 
 
 </main>
 
-<footer class="footer">
-    <div class="footer-grid">
+<footer class="page-footer">
+    <div class="footer-content">
         <div class="footer-section">
             <h3 class="footer-heading">Home</h3>
             <ul class="footer-links">
@@ -486,14 +468,14 @@
 
         <div class="footer-section">
             <h3 class="footer-heading">Connect With Us</h3>
-            <div class="social-icons">
-                <a href="#" aria-label="Facebook">
+            <div class="social-links">
+                <a href="#" class="social-link" aria-label="Facebook">
                     <img src="../images/facebook-icon.svg" alt="Facebook">
                 </a>
-                <a href="#" aria-label="Twitter">
+                <a href="#" class="social-link" aria-label="Twitter">
                     <img src="../images/twitter-icon.svg" alt="Twitter">
                 </a>
-                <a href="#">
+                <a href="#" class="social-link" aria-label="LinkedIn">
                     <img src="../images/linkedin-icon.svg" alt="Linkedin">
                 </a>
             </div>
@@ -501,14 +483,14 @@
     </div>
 
     <div class="footer-bottom">
-        <div class="copyright">
-            <span>© 2023 StreamVibe, All Rights Reserved</span>
+        <div class="footer-info">
+            <span class="copyright">© 2023 StreamVibe, All Rights Reserved</span>
             <div class="legal-links">
-                <a href="#">Terms of Use</a>
-                <div class="line"></div>
-                <a href="#">Privacy Policy</a>
-                <div class="line"></div>
-                <a href="#">Cookie Policy</a>
+                <a href="#" class="legal-link">Terms of Use</a>
+                <span class="divider"></span>
+                <a href="#" class="legal-link">Privacy Policy</a>
+                <span class="divider"></span>
+                <a href="#" class="legal-link">Cookie Policy</a>
             </div>
         </div>
     </div>

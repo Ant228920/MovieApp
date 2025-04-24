@@ -3,24 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="../css/style-movies-open-page.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 </head>
-<body style="background: aquamarine">
+<body>
 <header class="page-header">
     <h1 class="header-title">Movie Platform</h1>
-    <form class="search-form">
+    <form class="search-form" method="post" action="">
         <label for="search-text" class="search-label">Enter the movie name!</label><br>
         <input type="text" id="search-text" class="search-input" placeholder="Enter here!">
         <button type="submit" class="search-button">Enter</button>
     </form>
 
     <div class="search-results">
-        <h2 class="search-results__title">Результати пошуку</h2>
+        <h2 class="search-results__title">Результати пошуку:</h2>
         <div class="search-results__container">
         </div>
     </div>
 
     <nav class="main-nav">
-        <img class="nav-logo" src="../images/logo-icon.svg" alt="StreamVibe logo">
+        <img class="nav-logo" src="../images/logo-icon2.svg" alt="StreamVibe logo">
 
         <ul class="nav-menu">
             <li><a class="nav-link nav-link--active" href="../pages/home-page.html">Home</a></li>
@@ -45,7 +49,7 @@
 </header>
 
 <main>
-    <section class="featured-movie" style="background: url('../images/kantara-bg.png') no-repeat">
+    <section class="featured-movie">
         <div class="featured-movie__container">
             <div class="featured-movie__content">
                 <h3 class="featured-movie__title">Kantara</h3>
@@ -62,21 +66,6 @@
                     <img class="action-icon" alt="Volume" src="../images/volume-icon.svg">
                 </div>
             </div>
-        </div>
-        <div class="slider-controls">
-            <a class="slider-arrow">
-                <img class="arrow-icon" alt="Previous" src="../images/categories-left-arrow.svg">
-            </a>
-
-            <div class="slider-dots">
-                <div class="slider-dot slider-dot--active"></div>
-                <div class="slider-dot"></div>
-                <div class="slider-dot"></div>
-                <div class="slider-dot"></div>
-            </div>
-            <a class="slider-arrow">
-                <img class="arrow-icon" alt="Next" src="../images/categories-right-arrow.svg">
-            </a>
         </div>
     </section>
 
@@ -112,7 +101,7 @@
             </div>
 
             <div class="reviews-section">
-                <div class="section-header">
+                <div class="section-header-reviews">
                     <h3 class="section-subtitle">Reviews</h3>
                     <button class="review-button">
                         <img src="../images/plus.svg" alt="Add review">
@@ -274,7 +263,7 @@
 
     <section class="trial-section">
         <div class="trial-background">
-            <div class="movie-grid movie-grid--row1">
+            <div class="image-container">
                 <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/first-movie.svg">
                 <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/second-movie.svg">
                 <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/third-movie.svg">
@@ -285,7 +274,7 @@
                 <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/eighth-movie.svg">
                 <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/nineth-movie.svg">
             </div>
-            <div class="movie-grid movie-grid--row2">
+            <div class="image-container">
                 <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/secondrow-first-movie.svg">
                 <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/secondrow-second-movie.svg">
                 <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/secondrow-third-movie.svg">
@@ -296,7 +285,7 @@
                 <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/secondrow-eighth-movie.svg">
                 <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/secondrow-nineth-movie.svg">
             </div>
-            <div class="movie-grid movie-grid--row3">
+            <div class="image-container">
                 <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/thirdrow-first-movie.svg">
                 <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/thirdrow-second-movie.svg">
                 <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/thirdrow-third-movie.svg">
@@ -307,7 +296,7 @@
                 <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/thirdrow-eigtht-movie.svg">
                 <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/thirdrow-nineth-movie.svg">
             </div>
-            <div class="movie-grid movie-grid--row4">
+            <div class="image-container">
                 <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/fourthrow-first-movie.svg">
                 <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/fourthrow-second-movie.svg">
                 <img class="movie-thumbnail" alt="Movie thumbnail" src="../images/fourthrow-third-movie.svg">
@@ -324,9 +313,7 @@
             <h2 class="trial-heading">Start your free trial today!</h2>
             <p class="trial-text">This is a clear and concise call to action that encourages users to sign up for a free trial of StreamVibe.</p>
         </div>
-        <button class="trial-button">
-            Start a Free Trial
-        </button>
+        <button class="trial-button">Start a Free Trial</button>
     </section>
 
 
