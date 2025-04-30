@@ -1354,6 +1354,8 @@ body{
         gap: 10px;
     }
 
+    /*Footer*/
+
     .page-footer{
         padding: 80px 80px 40px 80px;
         gap: 80px;
@@ -1821,4 +1823,5 @@ body{
         flex-direction: column;
         gap: 30px;
     }
+
 }
