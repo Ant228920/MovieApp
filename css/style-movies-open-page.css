@@ -127,7 +127,7 @@ body{
     padding: 10px 40px 10px 10px;
     gap: 30px;
     background-color: var(--controls);
-    border: 4px solid #1F1F1F;
+    border: 4px solid #1f1f1f;
     border-radius: 12px;
     align-items: center;
 }
@@ -135,7 +135,10 @@ body{
 
 .nav-menu li .nav-link{
     position: relative;
+    color: #BFBFBF;
     text-align: left;
+    font-size: 18px;
+    font-weight: 400;
     line-height: 150%;
 }
 .nav-menu li .nav-link--active{
@@ -143,17 +146,31 @@ body{
     justify-content: start;
     padding: 14px 24px;
     background-color: var(--main-bg);
+    color: var(--full-white);
+    border-radius: 8px;
+    border: 1px solid var(--main-bg);
+    font-weight: 500;
+    gap: 10px;
 }
-
-.nav-menu li .nav-link{
-    color: #BFBFBF;
-}
-
-
 
 .nav-actions{
     display: flex;
     gap: 30px;
+}
+
+.burger-menu{
+    display: none;
+    padding: 12px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 6px;
+    border: 3px solid var(--main-border);
+    background: #1A1A1A;
+}
+
+.burger-menu .action-icon{
+    width: 24px;
+    height: 24px;
 }
 
 .nav-actions .action-icon{
@@ -739,4 +756,95 @@ body{
 .legal-links{
     display: flex;
     gap: 40px;
+}
+
+@media screen and (max-width: 1440px) and (min-width: 390px){
+    h2{
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 150%;
+        color: var(--full-white);
+    }
+    p{
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+        color: var(--main-text);
+    }
+    /*Navigation*/
+    .main-nav{
+        padding: 24px 80px;
+    }
+
+    .nav-logo{
+        width: 165px;
+        height: 50px;
+    }
+
+    .nav-menu{
+        padding: 8px 30px 8px 30px;
+        gap: 16px;
+        border-radius: 10px;
+    }
+
+    .nav-menu li .nav-link{
+        font-size: 14px;
+    }
+
+    .nav-menu li .nav-link--active{
+        padding: 12px 20px;
+    }
+
+    .nav-actions{
+        gap: 14px;
+    }
+
+    .nav-actions .action-icon{
+        width: 24px;
+        height: 24px;
+    }
+
+    .featured-movie{
+        padding: 40px 40px 16px 40px;
+        margin: 100px 60px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    h2{
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 150%;
+    }
+
+    p{
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 150%;
+        color: var(--main-text);
+    }
+
+    .main-nav{
+        padding: 40px 16px 14px 16px;
+    }
+
+    .nav-logo{
+        width: 116px;
+        gap: 2px;
+    }
+
+    .nav-menu{
+        display: none;
+    }
+    .nav-actions{
+        display: none;
+    }
+    .burger-menu{
+        display: flex;
+    }
+
+    .featured-movie__title{
+        font-size: 30px;
+    }
 }
