@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>StreamVibe - Movie Streaming Platform</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -44,7 +45,13 @@
                     <img class="action-icon" src="../images/notification-icon.svg" alt="Notifications">
                 </a>
             </li>
+            <li>
+
+            </li>
         </ul>
+        <a class="burger-menu" href="#">
+            <img class="action-icon" src="../images/burger-icon.svg" alt="burger-menu">
+        </a>
     </nav>
 </header>
 
@@ -103,7 +110,7 @@
         <div class="hero-content">
             <div class="hero-text">
                 <h2 class="hero-heading">The Best Streaming Experience</h2>
-                <p class="hero-description">StreamVibe is the best streaming experience for watching your favorite movies and shows on demand, anytime, anywhere. With StreamVibe, you can enjoy a wide variety of content, including the latest blockbusters, classic movies, popular TV shows, and more. You can also create your own watchlists, so you can easily find the content you want to watch.</p>
+                <p class="hero-description">StreamVibe is the best streaming experience for watching your favorite movies and shows on demand, anytime, anywhere. <span class="extended-txt">With StreamVibe, you can enjoy a wide variety of content, including the latest blockbusters, classic movies, popular TV shows, and more. You can also create your own watchlists, so you can easily find the content you want to watch.</span></p>
             </div>
             <button class="cta-button">
                 <img src="../images/btn-arrow.svg" alt="">
@@ -134,99 +141,107 @@
                 </a>
             </div>
         </div>
-        <div class="categories-grid">
-            <div class="category-card">
-                <div class="card-preview">
-                    <div class="preview-row">
-                        <img class="preview-image" alt="Action movie" src="../images/card1-first-movie.svg">
-                        <img class="preview-image" alt="Action movie" src="../images/card1-second-movie.svg">
+        <div class="indicator-placement">
+            <div class="categories-grid">
+                <div class="category-card">
+                    <div class="card-preview">
+                        <div class="preview-row">
+                            <img class="preview-image" alt="Action movie" src="../images/card1-first-movie.svg">
+                            <img class="preview-image" alt="Action movie" src="../images/card1-second-movie.svg">
+                        </div>
+                        <div class="preview-row">
+                            <img class="preview-image" alt="Action movie" src="../images/card1-third-movie.svg">
+                            <img class="preview-image" alt="Action movie" src="../images/card1-fourth-movie.svg">
+                        </div>
+                        <div class="card-overlay"></div>
                     </div>
-                    <div class="preview-row">
-                        <img class="preview-image" alt="Action movie" src="../images/card1-third-movie.svg">
-                        <img class="preview-image" alt="Action movie" src="../images/card1-fourth-movie.svg">
+                    <div class="card-footer">
+                        <span class="category-name">Action</span>
+                        <img class="arrow-icon" alt="View more" src="../images/categories-right-arrow.svg">
                     </div>
-                    <div class="card-overlay"></div>
                 </div>
-                <div class="card-footer">
-                    <span class="category-name">Action</span>
-                    <img class="arrow-icon" alt="View more" src="../images/categories-right-arrow.svg">
+                <div class="category-card">
+                    <div class="card-preview">
+                        <div class="preview-row">
+                            <img class="preview-image" alt="Adventure movie" src="../images/card2-first-movie.svg">
+                            <img class="preview-image" alt="Adventure movie" src="../images/card2-second-movie.svg">
+                        </div>
+                        <div class="preview-row">
+                            <img class="preview-image" alt="Adventure movie" src="../images/card2-third-movie.svg">
+                            <img class="preview-image" alt="Adventure movie" src="../images/card2-fourth-movie.svg">
+                        </div>
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-footer">
+                        <span class="category-name">Adventure</span>
+                        <img class="arrow-icon" alt="View more" src="../images/categories-right-arrow.svg">
+                    </div>
+                </div>
+                <div class="category-card">
+                    <div class="card-preview">
+                        <div class="preview-row">
+                            <img class="preview-image" alt="Comedy movie" src="../images/card3-first-movie.svg">
+                            <img class="preview-image" alt="Comedy movie" src="../images/card3-second-movie.svg">
+                        </div>
+                        <div class="preview-row">
+                            <img class="preview-image" alt="Comedy movie" src="../images/card3-third-movie.svg">
+                            <img class="preview-image" alt="Comedy movie" src="../images/card3-fourth-movie.svg">
+                        </div>
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-footer">
+                        <span class="category-name">Comedy</span>
+                        <img class="arrow-icon" alt="View more" src="../images/categories-right-arrow.svg">
+                    </div>
+                </div>
+                <div class="category-card">
+                    <div class="card-preview">
+                        <div class="preview-row">
+                            <img class="preview-image" alt="Drama movie" src="../images/card4-first-movie.svg">
+                            <img class="preview-image" alt="Drama movie" src="../images/card4-second-movie.svg">
+                        </div>
+                        <div class="preview-row">
+                            <img class="preview-image" alt="Drama movie" src="../images/card4-third-movie.svg">
+                            <img class="preview-image" alt="Drama movie" src="../images/card4-fourth-movie.svg">
+                        </div>
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-footer">
+                        <span class="category-name">Drama</span>
+                        <img class="arrow-icon" alt="View more" src="../images/categories-right-arrow.svg">
+                    </div>
+                </div>
+                <div class="category-card">
+                    <div class="card-preview">
+                        <div class="preview-row">
+                            <img class="preview-image" alt="Horror movie" src="../images/card5-first-movie.svg">
+                            <img class="preview-image" alt="Horror movie" src="../images/card5-second-movie.svg">
+                        </div>
+                        <div class="preview-row">
+                            <img class="preview-image" alt="Horror movie" src="../images/card5-third-movie.svg">
+                            <img class="preview-image" alt="Horror movie" src="../images/card5-fourth-movie.svg">
+                        </div>
+                        <div class="card-overlay"></div>
+                    </div>
+                    <div class="card-footer">
+                        <span class="category-name">Horror</span>
+                        <img class="arrow-icon" alt="View more" src="../images/categories-right-arrow.svg">
+                    </div>
                 </div>
             </div>
-            <div class="category-card">
-                <div class="card-preview">
-                    <div class="preview-row">
-                        <img class="preview-image" alt="Adventure movie" src="../images/card2-first-movie.svg">
-                        <img class="preview-image" alt="Adventure movie" src="../images/card2-second-movie.svg">
-                    </div>
-                    <div class="preview-row">
-                        <img class="preview-image" alt="Adventure movie" src="../images/card2-third-movie.svg">
-                        <img class="preview-image" alt="Adventure movie" src="../images/card2-fourth-movie.svg">
-                    </div>
-                    <div class="card-overlay"></div>
-                </div>
-                <div class="card-footer">
-                    <span class="category-name">Adventure</span>
-                    <img class="arrow-icon" alt="View more" src="../images/categories-right-arrow.svg">
-                </div>
-            </div>
-            <div class="category-card">
-                <div class="card-preview">
-                    <div class="preview-row">
-                        <img class="preview-image" alt="Comedy movie" src="../images/card3-first-movie.svg">
-                        <img class="preview-image" alt="Comedy movie" src="../images/card3-second-movie.svg">
-                    </div>
-                    <div class="preview-row">
-                        <img class="preview-image" alt="Comedy movie" src="../images/card3-third-movie.svg">
-                        <img class="preview-image" alt="Comedy movie" src="../images/card3-fourth-movie.svg">
-                    </div>
-                    <div class="card-overlay"></div>
-                </div>
-                <div class="card-footer">
-                    <span class="category-name">Comedy</span>
-                    <img class="arrow-icon" alt="View more" src="../images/categories-right-arrow.svg">
-                </div>
-            </div>
-            <div class="category-card">
-                <div class="card-preview">
-                    <div class="preview-row">
-                        <img class="preview-image" alt="Drama movie" src="../images/card4-first-movie.svg">
-                        <img class="preview-image" alt="Drama movie" src="../images/card4-second-movie.svg">
-                    </div>
-                    <div class="preview-row">
-                        <img class="preview-image" alt="Drama movie" src="../images/card4-third-movie.svg">
-                        <img class="preview-image" alt="Drama movie" src="../images/card4-fourth-movie.svg">
-                    </div>
-                    <div class="card-overlay"></div>
-                </div>
-                <div class="card-footer">
-                    <span class="category-name">Drama</span>
-                    <img class="arrow-icon" alt="View more" src="../images/categories-right-arrow.svg">
-                </div>
-            </div>
-            <div class="category-card">
-                <div class="card-preview">
-                    <div class="preview-row">
-                        <img class="preview-image" alt="Horror movie" src="../images/card5-first-movie.svg">
-                        <img class="preview-image" alt="Horror movie" src="../images/card5-second-movie.svg">
-                    </div>
-                    <div class="preview-row">
-                        <img class="preview-image" alt="Horror movie" src="../images/card5-third-movie.svg">
-                        <img class="preview-image" alt="Horror movie" src="../images/card5-fourth-movie.svg">
-                    </div>
-                    <div class="card-overlay"></div>
-                </div>
-                <div class="card-footer">
-                    <span class="category-name">Horror</span>
-                    <img class="arrow-icon" alt="View more" src="../images/categories-right-arrow.svg">
+            <div class="indicator-phone">
+                <div class="indicator-background">
+                    <div class="indicator-element"></div>
                 </div>
             </div>
         </div>
+
     </section>
 
     <section class="devices-section">
         <div class="section-intro">
             <h2 class="section-title">We Provide you streaming experience across various devices.</h2>
-            <p class="section-description">With StreamVibe, you can enjoy your favorite movies and TV shows anytime, anywhere. Our platform is designed to be compatible with a wide range of devices, ensuring that you never miss a moment of entertainment.</p>
+            <p class="section-description">With StreamVibe, you can enjoy your favorite movies and TV shows anytime, anywhere. <span class="extended-txt">Our platform is designed to be compatible with a wide range of devices, ensuring that you never miss a moment of entertainment.</span></p>
         </div>
         <div class="devices-container">
             <div class="devices-column">
@@ -358,7 +373,7 @@
                     <img class="faq-toggle" alt="Expand" src="../images/plus.svg">
                 </div>
                 <div class="divider"></div>
-                <div class="faq-item">
+                <div class="faq-item extended-block">
                     <div class="faq-number">
                         <span>07</span>
                     </div>
@@ -366,7 +381,7 @@
                     <img class="faq-toggle" alt="Expand" src="../images/plus.svg">
                 </div>
                 <div class="divider"></div>
-                <div class="faq-item">
+                <div class="faq-item extended-block">
                     <div class="faq-number">
                         <span>08</span>
                     </div>
@@ -508,60 +523,66 @@
 
 <footer class="page-footer">
     <div class="footer-content">
-        <div class="footer-section">
-            <h3 class="footer-heading">Home</h3>
-            <ul class="footer-links">
-                <li><a href="#" class="footer-link">Categories</a></li>
-                <li><a href="#" class="footer-link">Devices</a></li>
-                <li><a href="#" class="footer-link">Pricing</a></li>
-                <li><a href="#" class="footer-link">FAQ</a></li>
-            </ul>
-        </div>
+        <div class="footer-phone">
+            <div class="footer-section">
+                <h3 class="footer-heading">Home</h3>
+                <ul class="footer-links">
+                    <li><a href="#" class="footer-link">Categories</a></li>
+                    <li><a href="#" class="footer-link">Devices</a></li>
+                    <li><a href="#" class="footer-link">Pricing</a></li>
+                    <li><a href="#" class="footer-link">FAQ</a></li>
+                </ul>
+            </div>
 
-        <div class="footer-section">
-            <h3 class="footer-heading">Movies</h3>
-            <ul class="footer-links">
-                <li><a href="#" class="footer-link">Genres</a></li>
-                <li><a href="#" class="footer-link">Trending</a></li>
-                <li><a href="#" class="footer-link">New Release</a></li>
-                <li><a href="#" class="footer-link">Popular</a></li>
-            </ul>
+            <div class="footer-section">
+                <h3 class="footer-heading">Movies</h3>
+                <ul class="footer-links">
+                    <li><a href="#" class="footer-link">Genres</a></li>
+                    <li><a href="#" class="footer-link">Trending</a></li>
+                    <li><a href="#" class="footer-link">New Release</a></li>
+                    <li><a href="#" class="footer-link">Popular</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="footer-section">
-            <h3 class="footer-heading">Shows</h3>
-            <ul class="footer-links">
-                <li><a href="#" class="footer-link">Genres</a></li>
-                <li><a href="#" class="footer-link">Trending</a></li>
-                <li><a href="#" class="footer-link">New Release</a></li>
-                <li><a href="#" class="footer-link">Popular</a></li>
-            </ul>
+        <div class="footer-phone">
+            <div class="footer-section">
+                <h3 class="footer-heading">Shows</h3>
+                <ul class="footer-links">
+                    <li><a href="#" class="footer-link">Genres</a></li>
+                    <li><a href="#" class="footer-link">Trending</a></li>
+                    <li><a href="#" class="footer-link">New Release</a></li>
+                    <li><a href="#" class="footer-link">Popular</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3 class="footer-heading">Support</h3>
+                <ul class="footer-links">
+                    <li><a href="#" class="footer-link">Contact us</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="footer-section">
-            <h3 class="footer-heading">Support</h3>
-            <ul class="footer-links">
-                <li><a href="#" class="footer-link">Contact us</a></li>
-            </ul>
-        </div>
-        <div class="footer-section">
-            <h3 class="footer-heading">Subscription</h3>
-            <ul class="footer-links">
-                <li><a href="#" class="footer-link">Plans</a></li>
-                <li><a href="#" class="footer-link">Features</a></li>
-            </ul>
-        </div>
+        <div class="footer-phone">
+            <div class="footer-section">
+                <h3 class="footer-heading">Subscription</h3>
+                <ul class="footer-links">
+                    <li><a href="#" class="footer-link">Plans</a></li>
+                    <li><a href="#" class="footer-link">Features</a></li>
+                </ul>
+            </div>
 
-        <div class="footer-section">
-            <h3 class="footer-heading">Connect With Us</h3>
-            <div class="social-links">
-                <a href="#" class="social-link" aria-label="Facebook">
-                    <img src="../images/facebook-icon.svg" alt="Facebook">
-                </a>
-                <a href="#" class="social-link" aria-label="Twitter">
-                    <img src="../images/twitter-icon.svg" alt="Twitter">
-                </a>
-                <a href="#" class="social-link" aria-label="LinkedIn">
-                    <img src="../images/linkedin-icon.svg" alt="Linkedin">
-                </a>
+            <div class="footer-section">
+                <h3 class="footer-heading">Connect With Us</h3>
+                <div class="social-links">
+                    <a href="#" class="social-link" aria-label="Facebook">
+                        <img src="../images/facebook-icon.svg" alt="Facebook">
+                    </a>
+                    <a href="#" class="social-link" aria-label="Twitter">
+                        <img src="../images/twitter-icon.svg" alt="Twitter">
+                    </a>
+                    <a href="#" class="social-link" aria-label="LinkedIn">
+                        <img src="../images/linkedin-icon.svg" alt="Linkedin">
+                    </a>
+                </div>
             </div>
         </div>
     </div>
@@ -571,9 +592,9 @@
             <span class="copyright">© 2023 StreamVibe, All Rights Reserved</span>
             <div class="legal-links">
                 <a href="#" class="legal-link">Terms of Use</a>
-                <span class="divider"></span>
+                <span class="divider-footer"></span>
                 <a href="#" class="legal-link">Privacy Policy</a>
-                <span class="divider"></span>
+                <span class="divider-footer"></span>
                 <a href="#" class="legal-link">Cookie Policy</a>
             </div>
         </div>
