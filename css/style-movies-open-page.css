@@ -690,6 +690,7 @@ body{
 /*Footer*/
 
 .page-footer{
+    background: var(--controls);
     display: flex;
     padding: 100px 162px 50px 162px;
     text-align: left;
@@ -704,7 +705,6 @@ body{
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    gap: 30px;
     width: 100%;
 }
 
@@ -723,17 +723,36 @@ body{
 
 .footer-links li a{
     width: 100%;
-    color: var(--full-white);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 150%;
+    color: var(--main-text);
 }
 
 .footer-heading{
     width: 100%;
     position: relative;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 150%;
     font-weight: 500;
-    color: var(--main-text);
+    color: var(--full-white);
     text-align: left;
+}
+
+.social-links{
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+}
+
+.social-link{
+    display: flex;
+    padding: 16px;
+    gap: 10px;
+    align-items: flex-start;
+    border-radius: 8px;
+    border: 1px solid var(--main-border);
+    background: #1A1A1A;
 }
 
 .footer-bottom{
@@ -755,7 +774,19 @@ body{
 
 .legal-links{
     display: flex;
-    gap: 40px;
+    gap: 20px;
+}
+
+.divider-footer{
+    width: 1px;
+    height: 21px;
+    background: var(--main-border);
+}
+
+.legal-link{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 150%;
 }
 
 @media screen and (max-width: 1440px) and (min-width: 390px){
@@ -809,6 +840,263 @@ body{
         padding: 40px 40px 16px 40px;
         margin: 100px 60px;
     }
+
+    .featured-movie__title{
+        font-size: 30px;
+    }
+
+    .featured-movie__description{
+        font-size: 16px;
+    }
+
+    .featured-movie__actions{
+        gap: 20px;
+    }
+
+    .play-button{
+        padding: 14px 20px;
+        gap: 4px;
+        border-radius: 8px;
+    }
+
+    .play-button span{
+        font-size: 14px;
+    }
+
+    .play-button img{
+        width: 24px;
+        height: 24px;
+    }
+
+    .action-buttons{
+        gap: 8px;
+    }
+
+    .action-icon{
+        padding: 12px;
+        gap: 10px;
+    }
+
+    .movie-details{
+        padding: 40px 40px 16px 40px;
+        margin: 100px 60px;
+        gap: 20px;
+    }
+
+    .details-main{
+        gap: 20px;
+    }
+
+    .description-block{
+        padding: 40px;
+        gap: 10px;
+    }
+
+    .section-title{
+        font-size: 16px;
+    }
+
+    .description-text{
+        font-size: 16px;
+    }
+
+    .cast-section{
+        padding: 40px;
+        gap: 20px;
+    }
+
+    .section-header{
+        gap: 30px;
+    }
+
+    .section-subtitle{
+        font-size: 16px;
+    }
+
+    .slider-controls{
+        gap: 8px;
+    }
+
+    .slider-arrow{
+        padding: 12px;
+        gap: 10px;
+    }
+
+    .cast-grid{
+        gap: 10px;
+    }
+
+    .cast-photo{
+        width: 87px;
+        height: 89px;
+    }
+
+    .reviews-section{
+        padding: 40px;
+        gap: 30px;
+    }
+
+    .section-header-reviews{
+        gap: 14px;
+    }
+
+    .review-button{
+        padding: 12px;
+        gap: 4px;
+        border-radius: 6px;
+    }
+
+    .reviews-grid{
+        gap: 16px;
+    }
+
+    .review-card{
+        gap: 16px;
+        padding: 30px;
+    }
+
+    .review-header{
+        gap: 41px;
+    }
+
+    .review-rating{
+        padding: 4px 8px;
+        gap: 2px;
+    }
+
+    .details-sidebar{
+        width: 416px;
+        gap: 24px;
+        padding: 40px;
+    }
+
+    .info-card{
+        gap: 10px;
+    }
+
+    .info-header{
+        gap: 2px;
+    }
+
+    .info-icon{
+        width: 20px;
+        height: 20px;
+    }
+
+    .info-title{
+        font-size: 16px;
+    }
+
+    .ratings-container{
+        gap: 16px;
+    }
+
+    .rating-item{
+        padding: 14px;
+        gap: 4px;
+        border-radius: 8px;
+    }
+
+    .rating-source{
+        font-size: 16px;
+    }
+
+    .star-icon{
+        width: 18px;
+        height: 18px;
+    }
+
+    .person-card{
+        padding: 12px;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .person-photo{
+        width: 50px;
+        height: 50px;
+    }
+
+    .person-name{
+        font-size: 16px;
+    }
+
+    .person-location{
+        font-size: 14px;
+    }
+
+    /*Trial*/
+    .trial-section{
+        padding: 80px 60px;
+        margin: 120px 80px;
+        width: 1280px;
+    }
+
+    .trial-background{
+        height: 355px;
+
+    }
+
+    .fade-overlay--left{
+        height: 250px;
+        top: 52px;
+    }
+
+    .trial-content{
+        gap: 10px;
+    }
+
+    .trial-heading{
+        font-size: 28px;
+    }
+
+    .trial-button{
+        padding: 14px 20px;
+        gap: 10px;
+    }
+
+    /*Footer*/
+
+    .page-footer{
+        padding: 80px 80px 40px 80px;
+        gap: 80px;
+    }
+
+    .footer-section{
+        gap: 20px;
+    }
+
+    .footer-heading{
+        font-size: 18px;
+    }
+
+    .social-links{
+        gap: 10px;
+    }
+
+    .social-link{
+        padding: 12px;
+        gap: 10px;
+        border-radius: 6px;
+    }
+
+    .social-link img{
+        width: 20px;
+        height: 20px;
+    }
+
+    .legal-links{
+        gap: 20px;
+    }
+
+    .legal-link{
+        font-size: 14px;
+    }
+
+
+
+
+
 }
 
 @media screen and (max-width: 390px) {
@@ -844,7 +1132,8 @@ body{
         display: flex;
     }
 
-    .featured-movie__title{
-        font-size: 30px;
-    }
+
+
+
+
 }
