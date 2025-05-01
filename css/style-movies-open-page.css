@@ -331,7 +331,6 @@ body{
     justify-content: space-between;
     display: flex;
     align-items: center;
-    gap: 30px;
     align-self: stretch;
 }
 
@@ -412,7 +411,7 @@ body{
     flex: 1 0 0;
     border-radius: 12px;
     border: 1px solid var(--main-border);
-    background: var(--main-bg);
+    background: var(--controls);
 }
 
 .review-header{
@@ -424,6 +423,9 @@ body{
 }
 
 .review-rating{
+    border-radius: 51px;
+    border: 1px solid var(--main-border);
+    background: #141414;
     display: flex;
     gap: 5px;
     align-items: center;
@@ -879,7 +881,6 @@ body{
 
     .movie-details{
         padding: 40px 40px 16px 40px;
-        margin: 100px 60px;
         gap: 20px;
     }
 
@@ -914,12 +915,12 @@ body{
     }
 
     .slider-controls{
-        gap: 8px;
+        gap: 10px;
     }
 
-    .slider-arrow{
-        padding: 12px;
-        gap: 10px;
+    .arrow-icon{
+        width: 44px;
+        height: 44px;
     }
 
     .cast-grid{
@@ -998,6 +999,14 @@ body{
     }
 
     .rating-source{
+        font-size: 16px;
+    }
+
+    .reviewer-name{
+        font-size: 18px;
+    }
+
+    .reviewer-location{
         font-size: 16px;
     }
 
@@ -1166,21 +1175,17 @@ body{
         padding: 12px;
     }
 
-    .section-header{
-        display: none;
-    }
-
     .movie-details{
-        width: 358px;
+        margin: 24px 24px 16px 24px;
         flex-direction: column;
         align-items: flex-start;
         gap: 20px;
+        padding: 0;
     }
 
     .details-main{
         flex-direction: column;
         width: 100%;
-        order: 2;
     }
 
     .description-block{
@@ -1190,16 +1195,198 @@ body{
         font-size: 14px;
     }
 
-    .details-sidebar{
-        pointer-events: none;
-        order: 1;
+    .cast-section{
+        gap: 16px;
+        padding: 24px;
+    }
+
+    .section-subtitle{
+        font-size: 14px;
+    }
+
+    .slider-controls{
+        gap: 8px;
+    }
+
+    .arrow-icon{
+        width: 44px;
+        height: 44px;
     }
 
 
+    .cast-grid{
+        overflow: hidden;
+        gap: 10px;
+    }
 
+    .cast-photo{
+        height: 69px;
+        width: 100%;
+    }
 
+    .reviews-section{
+        padding: 24px;
+        gap: 24px;
+    }
 
+    .section-header-reviews{
+        gap: 14px;
+    }
 
+    .review-button{
+        padding: 12px;
+        gap: 4px;
+        border-radius: 6px;
+    }
+
+    .review-button img{
+        width: 24px;
+        height: 24px;
+    }
+
+    .review-button span{
+        font-size: 14px;
+    }
+
+    .reviews-grid{
+        gap: 16px;
+        border-radius: 12px;
+    }
+
+    .review-card{
+        padding: 24px;
+        gap: 16px;
+        border-radius: 12px;
+    }
+
+    .reviews-grid .review-card:last-child {
+        display: none;
+    }
+
+    .reviewer-info{
+        gap: 41px;
+    }
+
+    .reviewer-name{
+        font-size: 16px;
+    }
+
+    .reviewer-location{
+        font-size: 14px;
+    }
+
+    .review-rating{
+        padding: 4px 8px;
+        gap: 2px;
+        border-radius: 51px;
+    }
+
+    .stars{
+        gap: 1px;
+    }
+
+    .star-icon{
+        width: 14px;
+        height: 14px;
+    }
+
+    .rating-value{
+        font-size: 14px;
+    }
+
+    .details-sidebar{
+        width: 100%;
+        padding: 24px;
+    }
+
+    .info-card{
+        gap: 10px;
+    }
+
+    .info-title{
+        font-size: 14px;
+    }
+
+    .info-value{
+        font-size: 16px;
+    }
+
+    .tags-container{
+        gap: 10px;
+        font-size: 14px;
+    }
+
+    .language-tag{
+        padding: 6px 12px;
+        border-radius: 6px;
+    }
+
+    .ratings-container{
+        gap: 16px;
+    }
+
+    .rating-item{
+        padding: 12px;
+        gap: 2px;
+    }
+
+    .rating-source{
+        font-size: 14px;
+    }
+
+    .rating-value-container{
+        gap: 2px;
+    }
+
+    .tags-container{
+        gap: 10px;
+    }
+
+    .genre-tag{
+        padding: 6px 12px;
+        border-radius: 6px;
+        font-size: 14px;
+    }
+
+    .person-card{
+        padding: 10px;
+        gap: 8px;
+        border-radius: 8px;
+    }
+
+    /*Footer*/
+    .page-footer{
+        padding: 50px 16px 20px 16px;
+        gap: 50px;
+    }
+
+    .footer-content{
+        gap: 30px;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .footer-section{
+        text-align: left;
+        justify-content: flex-start;
+        align-items: flex-end;
+    }
+
+    .footer-phone{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .footer-bottom{
+        flex-direction: column;
+    }
+
+    .footer-info{
+        flex-direction: column;
+        gap: 30px;
+    }
 
 
 }

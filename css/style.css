@@ -422,7 +422,7 @@ body{
 }
 
 .indicator-placement{
-    display: none;
+    pointer-events: none;
 }
 
 .card-preview{
@@ -1533,6 +1533,7 @@ body{
     }
 
     .indicator-placement{
+        pointer-events: visible;
         display: flex;
         flex-direction: column;
         justify-content: center;

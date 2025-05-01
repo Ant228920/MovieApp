@@ -48,6 +48,10 @@ body{
     color: var(--full-white);
 }
 
+.mobile-header{
+    display: none;
+}
+
 
 /*Header*/
 .page-header{
@@ -360,6 +364,7 @@ main{
 
 .section-controls{
     position: relative;
+    justify-content: space-between;
     display: flex;
     gap: 100px;
     align-items: center;
@@ -437,6 +442,7 @@ main{
     height: 252px;
     top: 20px;
     position: absolute;
+    z-index: 0;
     background: linear-gradient(180deg, rgba(26, 26, 26, 0.00) 0%, var(--main-bg) 101.79%);
 }
 
@@ -501,6 +507,7 @@ main{
     flex-direction: column;
     align-items: flex-start;
     gap: 4px;
+    z-index: 100;
 }
 
 .top-genre-prefix{
@@ -935,9 +942,6 @@ main{
         font-size: 30px;
     }
 
-    .section-controls{
-        justify-content: space-between;
-    }
     .slider-controls-cards{
         padding: 12px;
         gap: 12px;
