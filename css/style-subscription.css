@@ -136,7 +136,7 @@ body{
     padding: 10px 40px 10px 10px;
     gap: 30px;
     background-color: var(--controls);
-    border: 4px solid #1F1F1F;
+    border: 4px solid #1f1f1f;
     border-radius: 12px;
     align-items: center;
 }
@@ -144,7 +144,10 @@ body{
 
 .nav-menu li .nav-link{
     position: relative;
+    color: #BFBFBF;
     text-align: left;
+    font-size: 18px;
+    font-weight: 400;
     line-height: 150%;
 }
 .nav-menu li .nav-link--active{
@@ -152,17 +155,31 @@ body{
     justify-content: start;
     padding: 14px 24px;
     background-color: var(--main-bg);
+    color: var(--full-white);
+    border-radius: 8px;
+    border: 1px solid var(--main-bg);
+    font-weight: 500;
+    gap: 10px;
 }
-
-.nav-menu li .nav-link{
-    color: #BFBFBF;
-}
-
-
 
 .nav-actions{
     display: flex;
     gap: 30px;
+}
+
+.burger-menu{
+    display: none;
+    padding: 12px;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 6px;
+    border: 3px solid var(--main-border);
+    background: #1A1A1A;
+}
+
+.burger-menu .action-icon{
+    width: 24px;
+    height: 24px;
 }
 
 .nav-actions .action-icon{
