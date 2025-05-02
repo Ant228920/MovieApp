@@ -1354,6 +1354,38 @@ body{
         border-radius: 8px;
     }
 
+    /*Trial*/
+
+    .trial-section{
+        overflow: hidden;
+        padding: 50px 30px;
+        margin: 56px 16px;
+        width: 358px;
+        gap: 50px;
+        flex-direction: column;
+    }
+
+    .trial-background{
+        top: 0;
+        height: 100%;
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .image-container{
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        align-self: stretch;
+    }
+
+    .fade-overlay{
+        display: none;
+        /*Доробити тінь*/
+    }
+
     /*Footer*/
     .page-footer{
         padding: 50px 16px 20px 16px;

@@ -1773,11 +1773,9 @@ body{
     }
 
     .trial-background{
-        overflow: hidden;
+        top: 0;
+        height: 100%;
         display: flex;
-        width: 1395px;
-        height: 693px;
-        flex-direction: column;
         align-items: flex-start;
         gap: 10px;
     }
@@ -1788,6 +1786,11 @@ body{
         align-items: flex-start;
         gap: 10px;
         align-self: stretch;
+    }
+
+    .fade-overlay{
+        display: none;
+        /*Доробити тінь*/
     }
 
     /*Footer*/
