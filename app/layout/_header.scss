@@ -1,5 +1,128 @@
+@import "../abstracts/vars";
+
+
+body{
+  background-color: #141414;
+  font-family: "Manrope", sans-serif;
+  font-weight: normal;
+  color: var(--full-white);
+
+}
 .page-header{
-  background-color: #0F0F0F;
-  color: #0F0F0F;
-  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 100;
+  .header-title{
+    font-weight: bold;
+    color: $full-white;
+    text-align: center;
+  }
+  .search-form{
+    width: fit-content;
+    height: fit-content;
+    border: 3px solid $full-white;
+    border-radius: 15px;
+    margin: 0 auto;
+    padding: 15px;
+
+    .search-label{
+      position: relative;
+      font-size: 22px;
+      font-weight: bold;
+      color: $full-white;
+      margin: 15px 0;
+    }
+
+    .search-input{
+      position: relative;
+      padding: 5px;
+      border: 1px solid red;
+      border-radius: 15px;
+      margin: 10px 0;
+      text-indent: 5px;
+      outline: none;
+    }
+
+    .search-button{
+      padding: 10px;
+      margin: 0 5px;
+      border-radius: 10px;
+    }
+  }
+
+  .search-results{
+    text-align: center;
+    color: $full-white;
+    .search-results__container{
+      border: 3px solid $full-white;
+      border-radius: 15px;
+      padding: 20px;
+    }
+  }
+
+  //Navigation
+
+  .main-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 160px;
+    width: 100%;
+    box-sizing: border-box;
+    .nav-menu{
+      display: flex;
+      padding: 10px 40px 10px 10px;
+      gap: 30px;
+      background-color: $controls;
+      border: 4px solid #1f1f1f;
+      border-radius: 12px;
+      align-items: center;
+      li{
+        .nav-link{
+          position: relative;
+          color: #BFBFBF;
+          text-align: left;
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 150%;
+        }
+        .nav-link--active{
+          display: flex;
+          justify-content: start;
+          padding: 14px 24px;
+          background-color: $main-bg;
+          color: $full-white;
+          border-radius: 8px;
+          border: 1px solid $main-bg;
+          font-weight: 500;
+          gap: 10px;
+        }
+      }
+    }
+    .nav-actions{
+      display: flex;
+      gap: 30px;
+      .action-icon{
+        width: 34px;
+        height: 34px;
+      }
+    }
+
+    .burger-menu{
+      display: none;
+      padding: 12px;
+      align-items: flex-start;
+      gap: 10px;
+      border-radius: 6px;
+      border: 3px solid $main-border;
+      background: $main-bg;
+      .action-icon{
+        width: 24px;
+        height: 24px;
+      }
+    }
+
+
+  }
 }

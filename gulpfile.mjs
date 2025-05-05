@@ -18,14 +18,14 @@ const server = () => {
     browser.init({
         server: {
             baseDir: 'public',
-            index: 'pages/home-page.html'
+            index: 'pages/support-page.html'
         }
     })
     browser.watch('public/**/*').on('change', browser.reload)
 }
 
 const watchFiles = () => {
-    gulp.watch('app/**/*.sass', gulp.series(sassToCSS))
+    gulp.watch('app/**/*.scss', gulp.series(sassToCSS))
 }
 
 const build = gulp.parallel(watchFiles, server)

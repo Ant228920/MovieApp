@@ -116,7 +116,7 @@ body{
     box-sizing: border-box;
 }
 
-.logo-icon{
+.nav-logo{
     width: 60px;
     height: 60px;
 }
@@ -175,6 +175,7 @@ body{
 .nav-actions .action-icon{
     width: 34px;
     height: 34px;
+
 }
 
 /*Main */
