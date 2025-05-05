@@ -1,0 +1,26 @@
+{
+  "name": "movieapp",
+  "version": "1.0.0",
+  "description": "movieapp website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ant228920/MovieApp.git"
+  },
+  "author": "Anton",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ant228920/MovieApp/issues"
+  },
+  "homepage": "https://github.com/Ant228920/MovieApp#readme",
+  "dependencies": {
+    "browser-sync": "^3.0.4",
+    "gulp": "^5.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^6.0.1",
+    "sass": "^1.87.0"
+  }
+}

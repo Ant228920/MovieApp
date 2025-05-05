@@ -495,6 +495,7 @@ body{
 /*Footer*/
 
 .page-footer{
+    background: var(--controls);
     display: flex;
     padding: 100px 162px 50px 162px;
     text-align: left;
@@ -509,7 +510,6 @@ body{
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    gap: 30px;
     width: 100%;
 }
 
@@ -528,17 +528,36 @@ body{
 
 .footer-links li a{
     width: 100%;
-    color: var(--full-white);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 150%;
+    color: var(--main-text);
 }
 
 .footer-heading{
     width: 100%;
     position: relative;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 150%;
     font-weight: 500;
-    color: var(--main-text);
+    color: var(--full-white);
     text-align: left;
+}
+
+.social-links{
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+}
+
+.social-link{
+    display: flex;
+    padding: 16px;
+    gap: 10px;
+    align-items: flex-start;
+    border-radius: 8px;
+    border: 1px solid var(--main-border);
+    background: #1A1A1A;
 }
 
 .footer-bottom{
@@ -560,7 +579,19 @@ body{
 
 .legal-links{
     display: flex;
-    gap: 40px;
+    gap: 20px;
+}
+
+.divider-footer{
+    width: 1px;
+    height: 21px;
+    background: var(--main-border);
+}
+
+.legal-link{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 150%;
 }
 
 @media screen and (max-width: 1440px) and (min-width: 390px){
