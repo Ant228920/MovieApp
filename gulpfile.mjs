@@ -17,8 +17,11 @@ const sassToCSS = () => {
 const openPages = () => {
     const pages = [
         'public/pages/home-page.html',
-        'public/pages/support-page.html',
-        'public/pages/subscription-page.html'
+        'public/pages/movies-open-page.html',
+        'public/pages/movies-shows-page.html',
+        'public/pages/shows-open-page.html',
+        'public/pages/subscription-page.html',
+        'public/pages/support-page.html'
     ];
 
     return gulp.src(pages)

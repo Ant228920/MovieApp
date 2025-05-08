@@ -137,6 +137,7 @@
             font-size: 24px;
             font-weight: 600;
             line-height: 150%;
+            color: $full-white;
 
             @include respond-to("laptop") {
               font-size: 20px;
