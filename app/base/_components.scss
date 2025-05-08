@@ -1,0 +1,96 @@
+@import "../abstracts/vars";
+@import "../abstracts/mixins";
+.section-title {
+  line-height: 150%;
+  font-size: 38px;
+  position: relative;
+  font-weight: 700;
+  color: $full-white;
+
+  @include respond-to("laptop") {
+    font-size: 28px;
+  }
+
+  @include respond-to("mobile") {
+    font-size: 24px;
+  }
+}
+
+.section-subtitle {
+  line-height: 150%;
+  font-size: 18px;
+  font-weight: 400;
+  color: $main-text;
+
+  @include respond-to("laptop") {
+    font-size: 16px;
+  }
+}
+
+.section-controls {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  border-radius: 12px;
+  border: 1px solid #1f1f1f;
+  padding: 16px;
+  background-color: $controls;
+
+  @include respond-to("laptop") {
+    padding: 12px;
+    gap: 12px;
+    border-radius: 10px;
+  }
+
+  @include respond-to("mobile") {
+    display: none;
+  }
+  .slider-indicators {
+    display: flex;
+    gap: 3px;
+    flex-direction: row;
+    width: 81px;
+    align-items: flex-start;
+    justify-content: start;
+
+    @include respond-to("laptop") {
+      width: 69px;
+    }
+    .indicator {
+      flex: 1;
+      position: relative;
+      border-radius: 100px;
+      background-color: #333;
+      height: 4px;
+
+      &--active {
+        flex: 0 0 23px;
+        background-color: $main-btn;
+
+        @include respond-to("laptop") {
+          flex: 0 0 18px;
+        }
+      }
+    }
+  }
+  .slider-button {
+    padding: 14px;
+    position: relative;
+    background-color: $main-bg;
+    border: 1px solid #1f1f1f;
+    gap: 10px;
+    border-radius: 8px;
+
+    @include respond-to("laptop") {
+      padding: 10px;
+      border-radius: 6px;
+    }
+
+    img {
+      @include respond-to("laptop") {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+}

@@ -1,6 +1,14 @@
 @import "abstracts/vars";
 @import "base/resets";
+@import "base/components";
 
 @import "layout/header";
+
+@import "layout/hero";
+@import "layout/categories";
+@import "layout/devices";
+@import "layout/FAQ";
+@import "layout/pricing";
+@import "layout/trial";
 
 @import "layout/footer";

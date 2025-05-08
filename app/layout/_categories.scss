@@ -1,0 +1,215 @@
+@import "../abstracts/vars";
+@import "../abstracts/mixins";
+
+// Categories Section
+.categories-section {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  text-align: left;
+  padding: 150px 160px 0 160px;
+  width: 100%;
+
+  @include respond-to("laptop") {
+    gap: 60px;
+    padding: 0 80px;
+  }
+
+  @include respond-to("mobile") {
+    padding: 0 16px;
+  }
+
+  .section-header {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+
+    @include respond-to("laptop") {
+      gap: 10px;
+    }
+    .header-text {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 14px;
+      text-align: left;
+
+      @include respond-to("mobile") {
+        gap: 8px;
+      }
+    }
+  }
+
+  .indicator-placement {
+    pointer-events: none;
+
+    @include respond-to("mobile") {
+      pointer-events: visible;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 24px;
+    }
+    .categories-grid {
+      display: flex;
+      align-items: flex-start;
+      gap: 30px;
+      align-self: stretch;
+
+      @include respond-to("laptop") {
+        gap: 15px;
+      }
+
+      @include respond-to("mobile") {
+        overflow: hidden;
+        gap: 20px;
+      }
+      .category-card {
+        display: flex;
+        padding: 30px;
+        flex-direction: column;
+        align-items: flex-start;
+        border-radius: 12px;
+        border: 1px solid $main-border;
+        background: $main-bg;
+
+        @include respond-to("laptop") {
+          gap: 20px;
+          padding: 24px;
+          border-radius: 10px;
+        }
+
+        @include respond-to("mobile") {
+          padding: 15px;
+          border-radius: 10px;
+        }
+        .card-preview {
+          position: relative;
+          display: flex;
+          height: 252px;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 5px;
+          align-self: stretch;
+
+          @include respond-to("laptop") {
+            height: 210px;
+          }
+
+          @include respond-to("mobile") {
+            height: 140px;
+          }
+          .preview-row {
+            display: flex;
+            align-items: flex-start;
+            gap: 5px;
+            flex: 1 0 0;
+            align-self: stretch;
+
+            @include respond-to("mobile") {
+              gap: 0;
+            }
+            .preview-image {
+              @include respond-to("laptop") {
+                width: 94px;
+                height: 102px;
+              }
+
+              @include respond-to("mobile") {
+                width: 67px;
+                height: 67px;
+              }
+            }
+          }
+          .card-overlay {
+            width: 237px;
+            position: absolute;
+            top: 6px;
+            margin: 0 !important;
+            background: linear-gradient(180deg, rgba(26, 26, 26, 0), $main-bg);
+            height: 252px;
+            z-index: 10;
+
+            @include respond-to("laptop") {
+              width: 193px;
+              height: 210px;
+            }
+
+            @include respond-to("mobile") {
+              height: 150px;
+              width: 150px;
+              right: 0;
+            }
+          }
+        }
+        .card-footer {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          text-align: left;
+          justify-content: space-between;
+          .category-name {
+            position: relative;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 150%;
+            color: $full-white;
+
+            @include respond-to("laptop") {
+              font-size: 16px;
+            }
+
+            @include respond-to("mobile") {
+              font-size: 14px;
+            }
+          }
+          .arrow-icon {
+            position: relative;
+            width: 30px;
+            height: 30px;
+
+            @include respond-to("laptop") {
+              width: 24px;
+              height: 24px;
+            }
+
+            @include respond-to("mobile") {
+              width: 20px;
+              height: 20px;
+            }
+          }
+        }
+      }
+    }
+    .indicator-phone {
+      display: none;
+
+      @include respond-to("mobile") {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        align-self: stretch;
+        .indicator-background {
+          display: flex;
+          width: 79px;
+          height: 5px;
+          padding-right: 59px;
+          align-items: center;
+          border-radius: 20px;
+          background: #333;
+          .indicator-element {
+            width: 20px;
+            height: 5px;
+            flex-shrink: 0;
+            border-radius: 20px;
+            background: $main-btn;
+          }
+        }
+      }
+    }
+  }
+}
+

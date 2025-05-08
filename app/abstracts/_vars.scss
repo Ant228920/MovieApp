@@ -4,3 +4,8 @@ $main-text: #999999;
 $main-bg: #1A1A1A;
 $full-white:#fff;
 $controls:#0F0F0F;
+
+$breakpoints: (
+        "mobile": 390px,
+        "laptop": 1440px
+);

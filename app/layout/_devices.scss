@@ -1,0 +1,161 @@
+@import "../abstracts/vars";
+@import "../abstracts/mixins";
+
+// Devices Section
+.devices-section {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 80px;
+  text-align: left;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 150px 160px 0 160px;
+
+  @include respond-to("laptop") {
+    padding: 120px 80px 0 80px;
+    gap: 60px;
+  }
+
+  @include respond-to("mobile") {
+    gap: 40px;
+    padding: 56px 16px;
+  }
+
+  .section-intro {
+    width: 100%;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    padding-right: 300px;
+    gap: 14px;
+    text-align: left;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    @include respond-to("laptop") {
+      margin-right: 150px;
+      gap: 10px;
+    }
+
+    @include respond-to("mobile") {
+      gap: 10px;
+      padding: 0;
+    }
+  }
+
+  .devices-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    gap: 30px;
+
+    @include respond-to("laptop") {
+      gap: 20px;
+    }
+
+    @include respond-to("mobile") {
+      gap: 20px;
+    }
+    .devices-column {
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      position: relative;
+      gap: 30px;
+
+      @include respond-to("laptop") {
+        gap: 20px;
+      }
+
+      @include respond-to("mobile") {
+        flex-direction: column;
+      }
+      .device-card {
+        flex: 1;
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        background: linear-gradient(221.52deg, rgba(229, 0, 0, 0.1), rgba(229, 0, 0, 0) 40%), $controls;
+        border-radius: 12px;
+        border: 1px solid $main-border;
+        gap: 30px;
+
+        @include respond-to("laptop") {
+          padding: 40px;
+          gap: 24px;
+        }
+
+        @include respond-to("mobile") {
+          padding: 24px;
+          gap: 20px;
+        }
+        .card-header {
+          align-items: center;
+          display: flex;
+          gap: 16px;
+
+          @include respond-to("laptop") {
+            gap: 12px;
+          }
+          .device-icon-container {
+            width: 72px;
+            height: 72px;
+            padding: 16px;
+            background-color: $main-bg;
+            border-radius: 12px;
+            border: 1px solid #1f1f1f;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+
+            @include respond-to("laptop") {
+              width: 54px;
+              height: 54px;
+              padding: 12px;
+            }
+
+            @include respond-to("mobile") {
+              padding: 10px;
+              width: 44px;
+              height: 44px;
+            }
+            .device-icon {
+              width: 40px;
+              height: 40px;
+              object-fit: contain;
+
+              @include respond-to("mobile") {
+                width: 30px;
+                height: 30px;
+              }
+            }
+          }
+          .device-name {
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 150%;
+
+            @include respond-to("laptop") {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+}

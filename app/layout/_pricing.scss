@@ -1,0 +1,261 @@
+@import "../abstracts/vars";
+@import "../abstracts/mixins";
+
+/* ===================== */
+/* PRICING SECTION */
+/* ===================== */
+.pricing-section {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  text-align: left;
+  padding: 150px 160px 0 160px;
+  width: 100%;
+
+  @include respond-to("laptop") {
+    padding: 120px 80px 80px;
+    gap: 60px;
+  }
+
+  @include respond-to("mobile") {
+    padding: 56px 16px;
+    gap: 40px;
+  }
+
+  // Header section
+  .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    @include respond-to("mobile") {
+      flex-direction: column;
+      justify-content: flex-end;
+      gap: 20px;
+    }
+
+    .header-text {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+
+      @include respond-to("mobile") {
+        gap: 10px;
+      }
+    }
+
+    .toggle-switch {
+      margin-left: 100px;
+      align-self: flex-end;
+      display: flex;
+      justify-content: flex-start;
+      padding: 10px;
+      align-items: center;
+      border-radius: 10px;
+      background-color: $controls;
+      border: 1px solid $main-border;
+
+      @include respond-to("laptop") {
+        margin-left: 80px;
+        border-radius: 8px;
+        padding: 8px;
+      }
+
+      @include respond-to("mobile") {
+        margin-left: 0;
+        align-self: flex-start;
+      }
+
+      .toggle-option {
+        padding: 14px 24px;
+        gap: 10px;
+        position: relative;
+        background: none;
+        color: $main-text;
+
+        @include respond-to("laptop") {
+          padding: 12px 20px;
+        }
+
+        span {
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 150%;
+
+          @include respond-to("laptop") {
+            font-size: 14px;
+          }
+        }
+
+        &--active {
+          color: $full-white;
+          padding: 14px 24px;
+          gap: 10px;
+          border-radius: 10px;
+          background-color: #1f1f1f;
+
+          @include respond-to("laptop") {
+            padding: 12px 20px;
+            border-radius: 6px;
+          }
+        }
+      }
+    }
+  }
+
+  .pricing-cards {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+    position: relative;
+    width: 100%;
+
+    @include respond-to("laptop") {
+      gap: 20px;
+    }
+
+    @include respond-to("mobile") {
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .plan-card {
+      border-radius: 12px;
+      background-color: $main-bg;
+      border: 1px solid $main-border;
+      display: flex;
+      flex-direction: column;
+      padding: 50px;
+      gap: 50px;
+      align-items: flex-start;
+      justify-content: flex-start;
+      flex: 1;
+
+      @include respond-to("laptop") {
+        border-radius: 10px;
+        gap: 40px;
+        padding: 40px;
+      }
+
+      @include respond-to("mobile") {
+        padding: 24px;
+        gap: 30px;
+      }
+
+      .plan-info {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        gap: 16px;
+
+        @include respond-to("laptop") {
+          gap: 12px;
+        }
+
+        .plan-name {
+          font-size: 24px;
+          font-weight: 700;
+          line-height: 150%;
+          color: $full-white;
+
+          @include respond-to("laptop") {
+            font-size: 20px;
+          }
+
+          @include respond-to("mobile") {
+            font-size: 18px;
+          }
+        }
+      }
+
+      .plan-price {
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        gap: 4px;
+
+        @include respond-to("laptop") {
+          gap: 2px;
+        }
+
+        .price {
+          font-size: 40px;
+          line-height: 73%;
+          font-weight: 600;
+          color: $full-white;
+
+          @include respond-to("laptop") {
+            font-size: 30px;
+          }
+
+          @include respond-to("mobile") {
+            font-size: 24px;
+          }
+        }
+
+        .billing-cycle {
+          font-size: 18px;
+          line-height: 73%;
+          font-weight: 500;
+          color: #999;
+
+          @include respond-to("laptop") {
+            font-size: 16px;
+          }
+
+          @include respond-to("mobile") {
+            font-size: 14px;
+          }
+        }
+      }
+
+      .plan-actions {
+        display: flex;
+        gap: 20px;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
+
+        @include respond-to("laptop") {
+          gap: 12px;
+        }
+
+        .secondary-button {
+          border-radius: 8px;
+          padding: 18px 24px;
+          background-color: #141414;
+          border: 1px solid $main-border;
+          color: $full-white;
+
+          @include respond-to("laptop") {
+            padding: 14px 20px;
+            border-radius: 6px;
+          }
+        }
+
+        .primary-button {
+          border-radius: 8px;
+          padding: 18px 24px;
+          background-color: #E50000;
+          color: $full-white;
+
+          @include respond-to("laptop") {
+            padding: 14px 20px;
+            border-radius: 6px;
+          }
+        }
+
+        .secondary-button span,
+        .primary-button span {
+          font-size: 18px;
+          font-weight: 600;
+          line-height: 150%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,232 @@
+@import "../abstracts/vars";
+@import "../abstracts/mixins";
+
+/* ===================== */
+/* FAQ SECTION */
+/* ===================== */
+.faq-section {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  text-align: left;
+  padding: 150px 160px 0 160px;
+  width: 100%;
+
+  @include respond-to("laptop") {
+    padding: 120px 80px 0 80px;
+    gap: 60px;
+  }
+
+  @include respond-to("mobile") {
+    padding: 56px 16px;
+    gap: 50px;
+  }
+
+  .section-header {
+    display: flex;
+    justify-content: space-between;
+
+    @include respond-to("mobile") {
+      flex-direction: column;
+      gap: 20px;
+      align-items: flex-start;
+      align-self: stretch;
+    }
+
+    .header-text {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+    .ask-button {
+      align-self: flex-end;
+      border-radius: 8px;
+      background-color: #e50000;
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      padding: 18px 24px;
+      height: fit-content;
+
+      @include respond-to("laptop") {
+        padding: 14px 20px;
+        border-radius: 6px;
+      }
+
+      @include respond-to("mobile") {
+        align-self: flex-start;
+        padding: 14px 20px;
+        gap: 10px;
+      }
+
+      span {
+        color: $full-white;
+        position: relative;
+        line-height: 150%;
+        font-size: 18px;
+        font-weight: 600;
+
+        @include respond-to("laptop") {
+          font-size: 14px;
+        }
+      }
+    }
+
+  }
+
+
+  // FAQ container
+  .faq-container {
+    display: flex;
+    gap: 80px;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    @include respond-to("laptop") {
+      gap: 60px;
+    }
+
+    @include respond-to("mobile") {
+      flex-direction: column;
+      gap: 20px;
+    }
+    .faq-column {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      flex: 1;
+      .faq-item {
+        width: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 34px;
+        box-sizing: border-box;
+        gap: 20px;
+        text-align: left;
+
+        @include respond-to("laptop") {
+          padding: 24px;
+          gap: 16px;
+        }
+
+        @include respond-to("mobile") {
+          padding: 40px 10px;
+          gap: 12px;
+        }
+
+        &--open {
+          .faq-content {
+            display: flex;
+          }
+
+          p {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 150%;
+
+            @include respond-to("laptop") {
+              font-size: 16px;
+            }
+
+            @include respond-to("mobile") {
+              font-size: 14px;
+            }
+          }
+
+          img {
+            align-self: flex-start;
+          }
+        }
+        .faq-number {
+          border-radius: 10px;
+          background-color: #1F1F1F;
+          border: 1px solid $main-border;
+          display: flex;
+          align-items: flex-start;
+          justify-content: flex-start;
+          padding: 20px;
+          height: fit-content;
+
+          @include respond-to("laptop") {
+            padding: 16px;
+            border-radius: 8px;
+            gap: 10px;
+          }
+
+          @include respond-to("mobile") {
+            padding: 12px;
+            gap: 10px;
+          }
+
+          span {
+            font-size: 20px;
+            font-weight: 600;
+            color: $full-white;
+            line-height: 150%;
+
+            @include respond-to("laptop") {
+              font-size: 16px;
+            }
+          }
+        }
+        .faq-content {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: flex-start;
+          gap: 20px;
+
+          @include respond-to("laptop") {
+            gap: 14px;
+          }
+          .faq-question {
+            width: 100%;
+            font-size: 22px;
+            font-weight: 500;
+            line-height: 150%;
+            color: $full-white;
+
+            @include respond-to("laptop") {
+              font-size: 20px;
+            }
+          }
+        }
+        .faq-question {
+          width: 100%;
+          font-size: 22px;
+          font-weight: 500;
+          line-height: 150%;
+          color: $full-white;
+
+          @include respond-to("laptop") {
+            font-size: 20px;
+          }
+        }
+        .faq-toggle {
+          margin-left: auto;
+          width: 24px;
+          height: 24px;
+        }
+      }
+      .divider {
+        align-self: stretch;
+        position: relative;
+        background: linear-gradient(90deg, transparent, #e50000, transparent);
+        box-sizing: border-box;
+        height: 1px;
+
+        @include respond-to("mobile") {
+          width: 358px;
+          background: linear-gradient(90deg, rgba(229, 0, 0, 0.00) 0%, #E50000 16.67%, rgba(229, 0, 0, 0.00) 100%);
+        }
+      }
+    }
+  }
+  .extended-block {
+    @include respond-to("mobile") {
+      display: none;
+    }
+  }
+}

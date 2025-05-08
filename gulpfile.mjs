@@ -3,6 +3,7 @@ import browserSync from 'browser-sync'
 import rename from 'gulp-rename'
 import * as dartSass from 'sass'
 import gulpSass from 'gulp-sass'
+import open from 'gulp-open'
 
 const sass = gulpSass(dartSass)
 
@@ -13,22 +14,38 @@ const sassToCSS = () => {
         .pipe(gulp.dest('public/css'))
 }
 
+const openPages = () => {
+    const pages = [
+        'public/pages/home-page.html',
+        'public/pages/support-page.html',
+        'public/pages/subscription-page.html'
+    ];
+
+    return gulp.src(pages)
+        .pipe(open({ uri: '', app: 'chrome' }));
+};
+
 const server = () => {
-    const browser = browserSync.create()
+    const browser = browserSync.create();
     browser.init({
         server: {
             baseDir: 'public',
-            index: 'pages/support-page.html'
-        }
-    })
-    browser.watch('public/**/*').on('change', browser.reload)
-}
+            index: 'pages/home-page.html',
+        },
+        open: false // Вимкнути автоматичне відкриття браузера
+    });
+
+    browser.watch('public/**/*').on('change', browser.reload);
+};
 
 const watchFiles = () => {
     gulp.watch('app/**/*.scss', gulp.series(sassToCSS))
 }
 
-const build = gulp.parallel(watchFiles, server)
+const build = gulp.series(
+    sassToCSS,
+    gulp.parallel(watchFiles, server, openPages)
+);
 
 export {
     sassToCSS,
