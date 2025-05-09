@@ -1,0 +1,271 @@
+@import "../abstracts/vars";
+@import "../abstracts/mixins";
+
+.pricing-compare-section {
+  display: flex;
+  padding: 150px 160px 0 160px;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 80px;
+
+  @include respond-to("laptop") {
+    padding: 120px 80px;
+    gap: 60px;
+  }
+
+  @include respond-to("mobile") {
+    padding: 56px 16px;
+    gap: 40px;
+  }
+
+  .pricing-header {
+    display: flex;
+    padding-right: 300px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+    align-self: stretch;
+
+    @include respond-to("laptop") {
+      padding-right: 150px;
+      gap: 10px;
+    }
+
+    @include respond-to("mobile") {
+      padding: 0;
+      gap: 8px;
+    }
+
+    .pricing-title {
+      font-size: 48px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 150%;
+      color: $full-white;
+
+      @include respond-to("laptop") {
+        font-size: 38px;
+      }
+
+      @include respond-to("mobile") {
+        font-size: 24px;
+      }
+    }
+
+    .pricing-description {
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 150%;
+      color: $main-text;
+
+      @include respond-to("laptop") {
+        font-size: 16px;
+      }
+
+      @include respond-to("mobile") {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .pricing-table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+    border-radius: 12px;
+    border: 1px solid $main-border;
+
+    @include respond-to("laptop") {
+      border-radius: 10px;
+    }
+
+    @include respond-to("mobile") {
+      display: none;
+    }
+
+    .pricing-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      align-self: stretch;
+      border-bottom: 1px solid $main-border;
+
+      &.pricing-header-row {
+        background: $controls;
+
+        .plan-column {
+          .plan-name {
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 600;
+            color: $full-white;
+
+            @include respond-to("laptop") {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+
+      &.last-row {
+        border-bottom: none;
+      }
+
+      .plan-column {
+        width: 100%;
+        display: flex;
+        padding: 30px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-left: 1px solid $main-border;
+
+        @include respond-to("laptop") {
+          padding: 24px;
+          gap: 10px;
+        }
+
+        &.highlighted-plan {
+          position: relative;
+        }
+
+        .plan-name {
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 150%;
+          color: $main-text;
+        }
+
+        .plan-feature {
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 150%;
+          color: $main-text;
+        }
+
+        .popular-badge {
+          display: flex;
+          padding: 6px 10px;
+          align-items: center;
+          justify-content: center;
+          gap: 10px;
+          border-radius: 2px;
+          background: $main-btn;
+
+          @include respond-to("laptop") {
+            padding: 6px;
+            gap: 10px;
+          }
+
+          .badge-text {
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            color: $full-white;
+            leading-trim: both;
+            text-edge: cap;
+          }
+        }
+      }
+    }
+  }
+
+  .phone-table {
+    display: none;
+
+    @include respond-to("mobile") {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+      align-self: stretch;
+    }
+
+    .phone-tabs {
+      display: flex;
+      padding: 8px;
+      align-items: center;
+      align-self: stretch;
+      border-radius: 8px;
+      border: 1px solid $main-border;
+      background: $controls;
+
+      .phone-btn {
+        display: flex;
+        padding: 12px 20px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        background: none;
+        border-radius: 100px;
+        flex: 1 0 0;
+        color: $main-text;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 150%;
+
+        &.btn-active {
+          color: $full-white;
+          border-radius: 6px;
+          background: #1F1F1F;
+        }
+      }
+    }
+
+    .phone-grid {
+      display: flex;
+      padding: 24px;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 24px;
+      align-self: stretch;
+      border-radius: 12px;
+      border: 1px solid $main-border;
+      background: $controls;
+
+      .phone-row {
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+        align-self: stretch;
+      }
+
+      .row-text-block {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+        flex: 1 0 0;
+
+        .top-text {
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 150%;
+          color: $main-text;
+        }
+
+        .bottom-text {
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 150%;
+          color: #F1F1F3;
+        }
+
+        span {
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 150%;
+          color: $main-text;
+        }
+      }
+    }
+  }
+}

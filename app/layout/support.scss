@@ -1,0 +1,379 @@
+@import "../abstracts/vars";
+@import "../abstracts/mixins";
+
+.support-section {
+  display: flex;
+  padding: 50px 160px;
+  align-items: flex-start;
+  gap: 80px;
+
+  @include respond-to("laptop") {
+    gap: 50px;
+    padding: 50px 80px;
+  }
+
+  @include respond-to("mobile") {
+    position: relative;
+    gap: 50px;
+    width: 357px;
+    padding: 50px 15px;
+    flex-direction: column;
+  }
+
+  .support-container {
+    display: flex;
+    width: 533px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 50px;
+    flex-shrink: 0;
+    align-self: stretch;
+
+    @include respond-to("laptop") {
+      width: 429px;
+      gap: 40px;
+    }
+
+    @include respond-to("mobile") {
+      width: 100%;
+    }
+
+    .support-header {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 14px;
+      align-self: stretch;
+
+      @include respond-to("laptop") {
+        gap: 10px;
+      }
+
+      @include respond-to("mobile") {
+        width: 100%;
+        position: relative;
+        gap: 10px;
+      }
+
+      .support-title {
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 150%;
+        color: $full-white;
+
+        @include respond-to("laptop") {
+          font-size: 38px;
+        }
+
+        @include respond-to("mobile") {
+          font-size: 28px;
+        }
+      }
+
+      .support-description {
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+        color: $main-text;
+
+        @include respond-to("laptop") {
+          font-size: 16px;
+        }
+
+        @include respond-to("mobile") {
+          font-size: 14px;
+        }
+      }
+    }
+
+    .movie-gallery-container {
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      align-items: center;
+      align-self: stretch;
+      border-radius: 6px;
+      border: 6px solid $main-border;
+      background: $controls;
+
+      @include respond-to("laptop") {
+        width: 449px;
+        height: 547px;
+        border-radius: 4px;
+      }
+
+      @include respond-to("mobile") {
+        width: 357px;
+        height: 344px;
+        gap: 0;
+      }
+
+      .movie-gallery {
+        width: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+
+        .movie-row {
+          position: relative;
+          display: flex;
+          align-items: flex-start;
+          gap: 20px;
+          align-self: stretch;
+
+          .movie-poster {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+
+            @include respond-to("laptop") {
+              width: 97px;
+              height: 121px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .support-form {
+    display: flex;
+    padding: 50px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 50px;
+    border-radius: 12px;
+    border: 1px solid $main-border;
+    background: $main-black;
+
+    @include respond-to("laptop") {
+      width: 100%;
+      height: 750px;
+      position: relative;
+      padding: 40px;
+      gap: 40px;
+      border-radius: 10px;
+    }
+
+    @include respond-to("mobile") {
+      margin-left: 5%;
+      width: 100%;
+      height: 100%;
+    }
+
+    .form-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 50px;
+      align-self: stretch;
+
+      @include respond-to("laptop") {
+        gap: 20px;
+      }
+
+      @include respond-to("mobile") {
+        flex-direction: column;
+      }
+
+      .form-group {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        flex: 1 0 0;
+
+        @include respond-to("laptop") {
+          gap: 12px;
+        }
+
+        label {
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 150%;
+          color: $main-text;
+        }
+
+        .form-field {
+          display: flex;
+          padding: 20px;
+          align-items: center;
+          gap: 77px;
+          align-self: stretch;
+          border-radius: 8px;
+          border: 1px solid $main-border;
+          background: #141414;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 150%;
+          color: $main-text;
+
+          @include respond-to("laptop") {
+            gap: 77px;
+            padding: 17px;
+            border-radius: 6px;
+            font-size: 14px;
+          }
+        }
+
+        .form-container {
+          display: flex;
+          align-items: center;
+          gap: 16px;
+          align-self: stretch;
+
+          @include respond-to("laptop") {
+            gap: 12px;
+          }
+
+          .choose-field {
+            display: flex;
+            padding: 0 12px;
+            color: $full-white;
+            align-items: center;
+            gap: 6px;
+            align-self: stretch;
+            border-radius: 8px;
+            border: 1px solid $main-border;
+            background: #141414;
+
+            @include respond-to("laptop") {
+              padding: 0 8px;
+              gap: 4px;
+              border-radius: 6px;
+            }
+          }
+
+          .phone-number {
+            width: 100%;
+            display: flex;
+            padding: 20px;
+            align-items: center;
+            gap: 77px;
+            border-radius: 8px;
+            border: 1px solid $main-border;
+            background: #141414;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 150%;
+            color: $main-text;
+
+            @include respond-to("laptop") {
+              padding: 16px;
+              gap: 77px;
+              border-radius: 6px;
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+
+    .form-message-group {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 16px;
+      align-self: stretch;
+
+      @include respond-to("laptop") {
+        gap: 12px;
+      }
+
+      label {
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 150%;
+        color: $main-text;
+      }
+
+      .form-textarea {
+        display: flex;
+        height: 163px;
+        padding: 20px;
+        align-items: flex-start;
+        gap: 77px;
+        align-self: stretch;
+        border-radius: 8px;
+        border: 1px solid $main-border;
+        background: #141414;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+        color: $main-text;
+
+        @include respond-to("laptop") {
+          height: 129px;
+          padding: 16px;
+          gap: 77px;
+          font-size: 14px;
+        }
+      }
+    }
+
+    .form-footer {
+      display: flex;
+      align-items: center;
+      align-self: stretch;
+      justify-content: space-between;
+
+      @include respond-to("mobile") {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .form-checkbox {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+        color: $main-text;
+
+        @include respond-to("laptop") {
+          gap: 8px;
+        }
+
+        input[type="checkbox"] {
+          width: 20px;
+          height: 20px;
+        }
+      }
+
+      .form-btn {
+        display: flex;
+        padding: 18px 24px;
+        align-items: flex-start;
+        gap: 10px;
+        border-radius: 8px;
+        background: $main-btn;
+        color: $full-white;
+        font-size: 18px;
+        font-weight: 500;
+        cursor: pointer;
+
+        @include respond-to("laptop") {
+          padding: 14px 20px;
+          gap: 10px;
+          font-size: 14px;
+        }
+
+        @include respond-to("mobile") {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}
