@@ -266,11 +266,6 @@ body{
 }
 
 /*Main*/
-.main-connector{
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-}
 .movie-details{
     display: flex;
     padding: 50px 160px;

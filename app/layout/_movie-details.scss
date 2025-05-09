@@ -1,0 +1,652 @@
+@import "../abstracts/vars";
+@import "../abstracts/mixins";
+
+.movie-details {
+  display: flex;
+  padding: 50px 160px;
+  align-items: flex-start;
+  gap: 20px;
+
+  @include respond-to("laptop") {
+    padding: 40px;
+    gap: 20px;
+  }
+
+  @include respond-to("mobile") {
+    flex-direction: column;
+    padding: 24px;
+    margin: 24px 0 16px;
+    gap: 20px;
+  }
+
+  .details-main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 30px;
+    flex: 1 0 0;
+
+    @include respond-to("laptop") {
+      gap: 20px;
+    }
+
+    @include respond-to("mobile") {
+      width: 100%;
+    }
+
+    .description-block {
+      display: flex;
+      padding: 50px;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 14px;
+      align-self: stretch;
+      border-radius: 12px;
+      border: 1px solid $main-border;
+      background: $main-bg;
+
+      @include respond-to("laptop") {
+        padding: 40px;
+        gap: 10px;
+      }
+
+      @include respond-to("mobile") {
+        padding: 24px;
+        gap: 8px;
+        border-radius: 10px;
+      }
+
+      .details-title {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 150%;
+        color: $main-text;
+
+        @include respond-to("laptop") {
+          font-size: 16px;
+        }
+
+        @include respond-to("mobile") {
+          font-size: 14px;
+        }
+      }
+
+      .description-text {
+        color: $full-white;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 150%;
+
+        @include respond-to("laptop") {
+          font-size: 16px;
+        }
+
+        @include respond-to("mobile") {
+          font-size: 14px;
+        }
+      }
+    }
+
+    .cast-section {
+      width: 100%;
+      display: flex;
+      padding: 50px;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 30px;
+      align-self: stretch;
+      border-radius: 12px;
+      border: 1px solid $main-border;
+      background: $main-bg;
+
+      @include respond-to("laptop") {
+        padding: 40px;
+        gap: 20px;
+      }
+
+      @include respond-to("mobile") {
+        padding: 24px;
+        gap: 16px;
+      }
+
+      .section-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        align-self: stretch;
+
+        @include respond-to("laptop") {
+          gap: 30px;
+        }
+
+        .section-subtitle {
+          color: $main-text;
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 150%;
+
+          @include respond-to("laptop") {
+            font-size: 16px;
+          }
+
+          @include respond-to("mobile") {
+            font-size: 14px;
+          }
+        }
+
+        .slider-controls {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+        }
+      }
+
+      .cast-grid {
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+        align-self: stretch;
+
+        @include respond-to("laptop") {
+          gap: 10px;
+        }
+
+        @include respond-to("mobile") {
+          overflow: hidden;
+          gap: 10px;
+        }
+
+        .cast-photo {
+          @include respond-to("laptop") {
+            width: 87px;
+            height: 89px;
+          }
+
+          @include respond-to("mobile") {
+            height: 69px;
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    .reviews-section {
+      display: flex;
+      padding: 50px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      align-self: stretch;
+      border-radius: 12px;
+      border: 1px solid $main-border;
+      background: $main-bg;
+
+      @include respond-to("laptop") {
+        padding: 40px;
+        gap: 30px;
+      }
+
+      @include respond-to("mobile") {
+        padding: 24px;
+        gap: 24px;
+      }
+
+      .section-header-reviews {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 14px;
+        align-self: stretch;
+
+        .section-subtitle {
+          color: $main-text;
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 150%;
+
+          @include respond-to("laptop") {
+            font-size: 16px;
+          }
+
+          @include respond-to("mobile") {
+            font-size: 14px;
+          }
+        }
+
+        .review-button {
+          display: flex;
+          padding: 14px 16px;
+          align-items: center;
+          gap: 4px;
+          border-radius: 8px;
+          border: 1px solid $main-border;
+          background: $main-black;
+
+          @include respond-to("laptop") {
+            padding: 12px;
+            border-radius: 6px;
+          }
+
+          @include respond-to("mobile") {
+            padding: 12px;
+            border-radius: 6px;
+
+            img {
+              width: 24px;
+              height: 24px;
+            }
+          }
+
+          span {
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 153%;
+            color: $full-white;
+
+            @include respond-to("mobile") {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+
+      .reviews-grid {
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+        align-self: stretch;
+
+        @include respond-to("laptop") {
+          gap: 16px;
+        }
+
+        @include respond-to("mobile") {
+          gap: 16px;
+
+          .review-card:last-child {
+            display: none;
+          }
+        }
+
+        .review-card {
+          display: flex;
+          padding: 40px;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 20px;
+          flex: 1 0 0;
+          border-radius: 12px;
+          border: 1px solid $main-border;
+          background: $controls;
+
+          @include respond-to("laptop") {
+            padding: 30px;
+            gap: 16px;
+          }
+
+          @include respond-to("mobile") {
+            padding: 24px;
+            gap: 16px;
+          }
+
+          .review-header {
+            display: flex;
+            align-items: center;
+            gap: 41px;
+            justify-content: space-between;
+            align-self: stretch;
+
+            .reviewer-info {
+              display: flex;
+              flex-direction: column;
+              gap: 4px;
+
+              .reviewer-name {
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 150%;
+                color: $full-white;
+
+                @include respond-to("mobile") {
+                  font-size: 16px;
+                }
+              }
+
+              .reviewer-location {
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 150%;
+                color: $main-text;
+
+                @include respond-to("mobile") {
+                  font-size: 14px;
+                }
+              }
+            }
+
+            .review-rating {
+              border-radius: 51px;
+              border: 1px solid $main-border;
+              background: $main-black;
+              display: flex;
+              gap: 5px;
+              align-items: center;
+              padding: 4px 8px;
+
+              @include respond-to("mobile") {
+                gap: 2px;
+              }
+
+              .stars {
+                display: flex;
+                gap: 5px;
+                align-items: flex-start;
+
+                @include respond-to("mobile") {
+                  gap: 1px;
+                }
+
+                .star-icon {
+                  @include respond-to("mobile") {
+                    width: 14px;
+                    height: 14px;
+                  }
+                }
+              }
+
+              .rating-value {
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 150%;
+                color: $full-white;
+
+                @include respond-to("mobile") {
+                  font-size: 14px;
+                }
+              }
+            }
+          }
+
+          .review-content {
+            font-size: 16px;
+            line-height: 1.5;
+            color: $full-white;
+          }
+        }
+      }
+
+      .slider-controls {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        .slider-dots {
+          display: flex;
+          width: 81px;
+          align-items: flex-start;
+          gap: 3px;
+
+          .dot {
+            flex: 1;
+            height: 4px;
+            border-radius: 100px;
+            background: #333;
+
+            &--active {
+              flex: 1.5;
+              border-radius: 100px;
+              background: $main-btn;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .details-sidebar {
+    display: flex;
+    width: 519px;
+    padding: 50px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    border-radius: 12px;
+    border: 1px solid $main-border;
+    background: $main-bg;
+
+    @include respond-to("laptop") {
+      width: 416px;
+      gap: 24px;
+      padding: 40px;
+    }
+
+    @include respond-to("mobile") {
+      width: 100%;
+      padding: 24px;
+    }
+
+    .info-card {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 14px;
+      align-self: stretch;
+
+      @include respond-to("mobile") {
+        gap: 10px;
+      }
+
+      .info-header {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        align-self: stretch;
+
+        @include respond-to("mobile") {
+          gap: 2px;
+        }
+
+        .info-icon {
+          @include respond-to("mobile") {
+            width: 20px;
+            height: 20px;
+          }
+        }
+
+        .info-title {
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 150%;
+          color: $main-text;
+
+          @include respond-to("mobile") {
+            font-size: 14px;
+          }
+        }
+      }
+
+      .info-value {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 150%;
+        color: $full-white;
+
+        @include respond-to("mobile") {
+          font-size: 16px;
+        }
+      }
+
+      .tags-container {
+        display: flex;
+        gap: 10px;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+
+        .language-tag {
+          display: flex;
+          padding: 8px 14px;
+          align-items: flex-start;
+          gap: 10px;
+          border-radius: 8px;
+          border: 1px solid $main-border;
+          background: $main-black;
+
+          @include respond-to("mobile") {
+            padding: 6px 12px;
+            border-radius: 6px;
+            font-size: 14px;
+          }
+        }
+      }
+
+      .ratings-container {
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+        align-self: stretch;
+
+        @include respond-to("mobile") {
+          gap: 16px;
+        }
+
+        .rating-item {
+          display: flex;
+          padding: 16px;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 4px;
+          flex: 1 0 0;
+          border-radius: 8px;
+          border: 1px solid $main-border;
+          background: $main-black;
+
+          @include respond-to("mobile") {
+            padding: 12px;
+            gap: 2px;
+          }
+
+          .rating-source {
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 150%;
+            color: $full-white;
+
+            @include respond-to("mobile") {
+              font-size: 14px;
+            }
+          }
+
+          .rating-value-container {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+
+            @include respond-to("mobile") {
+              gap: 2px;
+            }
+
+            .stars {
+              display: flex;
+              gap: 5px;
+              align-items: flex-start;
+
+              @include respond-to("mobile") {
+                gap: 1px;
+              }
+
+              .star-icon {
+                @include respond-to("mobile") {
+                  width: 14px;
+                  height: 14px;
+                }
+              }
+            }
+
+            .rating-value {
+              font-size: 20px;
+              font-weight: 500;
+              line-height: 150%;
+              color: $full-white;
+
+              @include respond-to("mobile") {
+                font-size: 14px;
+              }
+            }
+          }
+        }
+      }
+
+      .tags-container {
+        .genre-tag {
+          display: flex;
+          padding: 8px 14px;
+          align-items: flex-start;
+          gap: 10px;
+          border-radius: 8px;
+          border: 1px solid $main-border;
+          background: $main-black;
+
+          @include respond-to("mobile") {
+            padding: 6px 12px;
+            border-radius: 6px;
+            font-size: 14px;
+          }
+        }
+      }
+
+      .person-card {
+        display: flex;
+        padding: 14px;
+        align-items: center;
+        gap: 10px;
+        align-self: stretch;
+        border-radius: 8px;
+        border: 1px solid $main-border;
+        background: $main-black;
+
+        @include respond-to("mobile") {
+          padding: 10px;
+          gap: 8px;
+        }
+
+        .person-photo {
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+        }
+
+        .person-info {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: flex-start;
+          flex: 1 0 0;
+
+          .person-name {
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 150%;
+            color: $full-white;
+
+            @include respond-to("mobile") {
+              font-size: 16px;
+            }
+          }
+
+          .person-location {
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 150%;
+            color: $main-text;
+
+            @include respond-to("mobile") {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
