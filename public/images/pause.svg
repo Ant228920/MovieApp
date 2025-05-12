@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px">
+    <style>
+        .icon {
+        fill: white;
+        }
+    </style>
+    <path class="icon" d="M520-200v-560h240v560H520Zm-320 0v-560h240v560H200Zm400-80h80v-400h-80v400Zm-320 0h80v-400h-80v400Zm0-400v400-400Zm320 0v400-400Z"/>
+</svg>
+
+<svg width="199" height="60" viewBox="0 0 199 60" xmlns="http://www.w3.org/2000/svg">
+<style>
+    .circle {
+    animation: rotateAnimation 4s linear infinite; /* Додаємо анімацію */
+    }
+
+    @keyframes rotateAnimation {
+    0% {
+    transform: rotate(0deg);
+    }
+    100% {
+    transform: rotate(360deg); /* Коло обертається на 360 градусів */
+    }
+    }
+</style>
+<!-- Коло -->
+<path class="circle" d="M49.7834 24.0839C49.3635 10.9327 38.7071 0.319787 25.5115 0C25.1716 0 24.8917 0.259827 24.8917 0.5996L24.8717 9.43371C24.8717 9.87342 24.5318 10.2132 24.092 10.2332C10.9364 10.6329 0.319893 21.3058 0 34.497C0 34.8368 0.259913 35.1166 0.5998 35.1166L9.41686 35.1366C9.85671 35.1366 10.1966 35.4763 10.2166 35.9161C10.6365 49.0673 21.3129 59.6802 34.4885 60C34.8284 60 35.1083

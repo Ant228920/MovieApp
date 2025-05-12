@@ -66,7 +66,6 @@
 
       .movie-thumbnail {
         display: block;
-        // розміри чи стилі при потребі
       }
     }
 
@@ -77,13 +76,15 @@
       height: 344px;
       background: linear-gradient(90deg, #0F0F0F 2.42%, rgba(20, 15, 15, 0.97) 25.46%, rgba(34, 14, 14, 0.91) 46.72%, rgba(229, 0, 0, 0.00) 168.98%);
 
+
       @include respond-to("laptop") {
         top: 52px;
         height: 250px;
       }
 
       @include respond-to("mobile") {
-        display: none;
+        height: 400px;
+        bottom: 0;
       }
     }
   }
@@ -92,6 +93,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    text-align: center;
     gap: 14px;
     z-index: 2;
 
@@ -111,7 +113,7 @@
     }
 
     .trial-text {
-      color: $full-white;
+      color: $main-text;
     }
   }
 

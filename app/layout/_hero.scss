@@ -219,6 +219,8 @@
       padding: 18px 24px;
       box-sizing: border-box;
       gap: 4px;
+      transition:all 0.3s ease;
+      @include red-button-hover();
 
       @include respond-to("laptop") {
         width: 209px;

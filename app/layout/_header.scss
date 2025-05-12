@@ -85,6 +85,7 @@
     .nav-logo {
       width: 200px;
       height: 60px;
+      cursor: pointer;
 
       @include respond-to("desktop") {
         width: 165px;
@@ -124,10 +125,13 @@
           font-size: 18px;
           font-weight: 400;
           line-height: 150%;
+          transition: all 0.3s ease;
 
           @include respond-to("desktop") {
             font-size: 14px;
           }
+          @include navigation();
+
 
           &--active {
             display: flex;

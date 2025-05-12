@@ -7,7 +7,19 @@
   }
 }
 
-@mixin heading{
+@mixin red-button-hover {
+  &:hover {
+    cursor: pointer;
+    background-color: #ba3b34;
+  }
+}
 
+@mixin navigation {
+  &:not(.nav-link--active):hover {
+    display: flex;
+    padding: 15px;
+    border-radius: 20px;
+    background: $main-text;
+  }
 }
 

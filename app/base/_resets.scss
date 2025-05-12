@@ -47,3 +47,22 @@ body{
   font-weight: normal;
   color: $full-white;
 }
+
+.circle {
+  animation: rotateAnimation 4s linear infinite;
+  animation-play-state: paused;
+  transform-origin: 30px 30px;
+}
+
+@keyframes rotateAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.icon-pause{
+  display: none;
+}
