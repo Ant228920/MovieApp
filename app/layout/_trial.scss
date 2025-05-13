@@ -85,6 +85,8 @@
       @include respond-to("mobile") {
         height: 400px;
         bottom: 0;
+        top: 0px;
+        background: linear-gradient(180deg, #0F0F0F 0.18%, rgba(20, 15, 15, 0.97) 29.35%, rgba(34, 14, 14, 0.91) 58.53%, rgba(229, 0, 0, 0.00) 87.7%);
       }
     }
   }

@@ -33,12 +33,10 @@
       align-self: stretch;
     }
     .movie-grid {
-      position: relative;
-      display: grid;
-      grid-template-columns: repeat(9, 1fr);
-      gap: 20px;
+      overflow: hidden;
       width: 100%;
-      align-items: flex-start;
+      position: relative;
+      z-index: 1;
 
       @include respond-to("laptop") {
         gap: 10px;
@@ -50,20 +48,58 @@
         left: 50%;
         transform: translateX(-50%);
       }
-      .movie-thumbnail {
-        width: 190px;
-        grid-auto-rows: 200px;
-        border-radius: 12px;
-        align-self: stretch;
+      .movie-track {
+        display: flex;
+        gap: 20px;
+        width: max-content;
+        animation: scroll-left 30s linear infinite;
 
-        @include respond-to("laptop") {
-          width: 151px;
+        @keyframes scroll-left {
+          0% {
+            transform: translateX(0);
+          }
+          100% {
+            transform: translateX(-50%);
+          }
         }
+        .movie-thumbnail {
+          width: 190px;
+          grid-auto-rows: 200px;
+          border-radius: 12px;
+          align-self: stretch;
 
-        @include respond-to("mobile") {
-          width: 134px;
-          grid-auto-rows: 144px;
+          @include respond-to("laptop") {
+            width: 151px;
+          }
+
+          @include respond-to("mobile") {
+            width: 134px;
+            grid-auto-rows: 144px;
+          }
         }
+      }
+
+    }
+    .hero-design {
+      width: 470px;
+      height: 470px;
+      position: absolute;
+      top: calc(40% - 250px);
+      left: calc(50% - 235px);
+      z-index: 10;
+
+      @include respond-to("laptop") {
+        width: 300px;
+        height: 300px;
+        top: calc(30% - 200px);
+        left: calc(50% - 150px);
+      }
+
+      @include respond-to("mobile") {
+        width: 200px;
+        height: 200px;
+        top: calc(40% - 150px);
+        left: calc(50% - 100px);
       }
     }
   }
@@ -126,28 +162,7 @@
     }
   }
 
-  .hero-design {
-    width: 470px;
-    height: 470px;
-    position: absolute;
-    top: calc(40% - 250px);
-    left: calc(50% - 235px);
-    z-index: 100;
 
-    @include respond-to("laptop") {
-      width: 300px;
-      height: 300px;
-      top: calc(30% - 200px);
-      left: calc(50% - 150px);
-    }
-
-    @include respond-to("mobile") {
-      width: 200px;
-      height: 200px;
-      top: calc(40% - 150px);
-      left: calc(50% - 100px);
-    }
-  }
 
   .hero-content {
     position: relative;
