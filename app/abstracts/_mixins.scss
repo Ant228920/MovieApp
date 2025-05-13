@@ -12,6 +12,23 @@
     cursor: pointer;
     background-color: #ba3b34;
   }
+  &:active{
+    background-color: $controls;
+    border-radius: 20px;
+  }
+}
+
+@mixin black-button-hover{
+  &:hover{
+    cursor: pointer;
+    color: black;
+    background-color: $main-text;
+  }
+  &:active{
+    background-color: azure;
+    border-radius: 20px;
+    color: black;
+  }
 }
 
 @mixin navigation {
@@ -22,4 +39,5 @@
     background: $main-text;
   }
 }
+
 

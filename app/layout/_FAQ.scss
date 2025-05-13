@@ -47,6 +47,9 @@
       justify-content: flex-start;
       padding: 18px 24px;
       height: fit-content;
+      transition: all 0.3s ease;
+
+      @include red-button-hover();
 
       @include respond-to("laptop") {
         padding: 14px 20px;
@@ -177,6 +180,7 @@
           justify-content: flex-start;
           align-items: flex-start;
           gap: 20px;
+          transition: all 0.3s ease;
 
           @include respond-to("laptop") {
             gap: 14px;
@@ -192,19 +196,22 @@
               font-size: 20px;
             }
           }
-        }
-        .faq-question {
-          width: 100%;
-          font-size: 22px;
-          font-weight: 500;
-          line-height: 150%;
-          color: $full-white;
+          .faq-answer {
+            max-height: 0;
+            opacity: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease, opacity 0.5s ease;
+            pointer-events: none;
 
-          @include respond-to("laptop") {
-            font-size: 20px;
+            &.visible {
+              max-height: 300px;
+              opacity: 1;
+              pointer-events: auto;
+            }
           }
         }
         .faq-toggle {
+          cursor: pointer;
           margin-left: auto;
           width: 24px;
           height: 24px;

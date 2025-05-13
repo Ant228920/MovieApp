@@ -1,9 +1,6 @@
 @import "../abstracts/vars";
 @import "../abstracts/mixins";
 
-/* ===================== */
-/* PRICING SECTION */
-/* ===================== */
 .pricing-section {
   display: flex;
   flex-direction: column;
@@ -70,8 +67,10 @@
         padding: 14px 24px;
         gap: 10px;
         position: relative;
+        cursor: pointer;
         background: none;
         color: $main-text;
+
 
         @include respond-to("laptop") {
           padding: 12px 20px;
@@ -230,6 +229,8 @@
           background-color: #141414;
           border: 1px solid $main-border;
           color: $full-white;
+          transition: 0.3s ease;
+          @include black-button-hover();
 
           @include respond-to("laptop") {
             padding: 14px 20px;
@@ -242,6 +243,8 @@
           padding: 18px 24px;
           background-color: #E50000;
           color: $full-white;
+          transition: 0.3s ease;
+          @include red-button-hover();
 
           @include respond-to("laptop") {
             padding: 14px 20px;
