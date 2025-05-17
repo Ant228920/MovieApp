@@ -19,3 +19,27 @@ function AdditionalText(){
     const answer = document.querySelector(".faq-answer");
     answer.classList.toggle("visible");
 }
+
+let bool = false;
+function ShowMore(event){
+    const expandedInfo = document.querySelector(".episodes-list");
+    const btn = event.currentTarget;
+
+    // скидаємо анімацію
+    btn.style.animation = "none";
+
+    if(!bool){
+        expandedInfo.style.display = "flex";
+        bool = true;
+        setTimeout(() => {
+            btn.style.animation = "arrow-animation 1s ease-in-out forwards";
+        }, 10);
+    }
+    else{
+        expandedInfo.style.display = "none";
+        bool = false;
+        setTimeout(() => {
+            btn.style.animation = "arrow-animation 1s ease-in-out reverse";
+        }, 10);
+    }
+}

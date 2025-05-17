@@ -361,6 +361,8 @@
         font-size: 18px;
         font-weight: 500;
         cursor: pointer;
+        transition: all 0.3s ease;
+        @include red-button-hover();
 
         @include respond-to("laptop") {
           padding: 14px 20px;

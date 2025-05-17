@@ -101,6 +101,8 @@
             border-radius: 8px;
             border: 1px solid $main-border;
             background: #1A1A1A;
+            transition: all 0.3s;
+            @include black-button-hover();
             @include respond-to("mobile"){
               padding: 12px;
               gap: 10px;

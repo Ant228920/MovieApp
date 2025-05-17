@@ -103,6 +103,8 @@
         gap: 4px;
         height: fit-content;
         color: $full-white;
+        transition: all 0.3s ease;
+        @include red-button-hover();
         @include respond-to("laptop"){
           padding: 14px 20px;
           gap: 4px;
@@ -145,6 +147,8 @@
           padding: 14px;
           border-radius: 8px;
           border: 1px solid $main-border;
+          transition: all 0.3s ease;
+          @include black-button-hover();
           @include respond-to("laptop"){
             padding: 12px;
             gap: 10px;
