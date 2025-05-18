@@ -1428,8 +1428,6 @@
             gap: 12px;
           }
           .must-poster {
-            width: 320px;
-            height: 404px;
             @include respond-to("laptop") {
               width: 253px;
               height: 324px;

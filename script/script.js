@@ -17,6 +17,13 @@ function MoveCircle() {
 
 function AdditionalText(){
     const answer = document.querySelector(".faq-answer");
+    const img = document.querySelector(".faq-toggle");
+
+    if (answer.classList.contains("visible")) {
+        img.src = "../images/minus.svg";
+    } else {
+        img.src = "../images/plus.svg";
+    }
     answer.classList.toggle("visible");
 }
 
@@ -25,7 +32,6 @@ function ShowMore(event){
     const expandedInfo = document.querySelector(".episodes-list");
     const btn = event.currentTarget;
 
-    // скидаємо анімацію
     btn.style.animation = "none";
 
     if(!bool){

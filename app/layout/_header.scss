@@ -7,58 +7,57 @@
   flex-direction: column;
   position: relative;
   z-index: 100;
-
-  .header-title {
-    font-weight: bold;
-    color: $full-white;
-    text-align: center;
-  }
-
-  .search-form {
-    width: fit-content;
-    height: fit-content;
-    border: 3px solid $full-white;
-    border-radius: 15px;
-    margin: 0 auto;
-    padding: 15px;
-
-    .search-label {
-      position: relative;
-      font-size: 22px;
+    .header-title {
       font-weight: bold;
       color: $full-white;
-      margin: 15px 0;
+      text-align: center;
+    }
 
-      @include respond-to("laptop") {
-        font-size: 18px;
+    .search-form {
+      width: fit-content;
+      height: fit-content;
+      border: 3px solid $full-white;
+      border-radius: 15px;
+      margin: 0 auto;
+      padding: 15px;
+
+      .search-label {
+        position: relative;
+        font-size: 22px;
+        font-weight: bold;
+        color: $full-white;
+        margin: 15px 0;
+
+        @include respond-to("laptop") {
+          font-size: 18px;
+        }
+      }
+
+      .search-input {
+        position: relative;
+        padding: 5px;
+        border: 1px solid red;
+        border-radius: 15px;
+        margin: 10px 0;
+        text-indent: 5px;
+        outline: none;
+      }
+
+      .search-button {
+        padding: 10px;
+        margin: 0 5px;
+        border-radius: 10px;
       }
     }
 
-    .search-input {
-      position: relative;
-      padding: 5px;
-      border: 1px solid red;
-      border-radius: 15px;
-      margin: 10px 0;
-      text-indent: 5px;
-      outline: none;
-    }
+    .search-results {
+      text-align: center;
+      color: $full-white;
 
-    .search-button {
-      padding: 10px;
-      margin: 0 5px;
-      border-radius: 10px;
-    }
-  }
-
-  .search-results {
-    text-align: center;
-    color: $full-white;
-
-    &__container {
-      border: 3px solid $full-white;
-      border-radius: 15px;
-      padding: 20px;
+      &__container {
+        border: 3px solid $full-white;
+        border-radius: 15px;
+        padding: 20px;
     }
   }
 
